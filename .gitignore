@@ -36,5 +36,5 @@ files/.config/watson/state
 files/.maid/maid.log
 
 # Vim
-files/.vim/tmp/
+files/.vim/tmp/*
 files/.vim/.netrwhist
