@@ -1,0 +1,40 @@
+# Cache files
+*.zwc
+*.zwc.old
+*\~
+
+# Atom
+files/.atom/.apm
+files/.atom/.node-gyp
+files/.atom/blob-store
+files/.atom/compile-cache
+files/.atom/packages/
+files/.atom/storage
+
+# Composer
+files/.composer/vendor
+files/.composer/cache
+files/.composer/*.phar
+files/.composer/composer.lock
+files/.composer/auth.json
+files/.composer/keys.*
+
+# Config
+files/.config/asciinema
+files/.config/configstore
+files/.config/direnv
+files/.config/git
+files/.config/hub
+files/.config/psysh
+files/.config/thefuck/settings.pyc
+
+# Watson
+files/.config/watson/frames
+files/.config/watson/state
+
+# Maid
+files/.maid/maid.log
+
+# Vim
+files/.vim/tmp/
+files/.vim/.netrwhist

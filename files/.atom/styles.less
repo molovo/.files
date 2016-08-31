@@ -1,0 +1,414 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 300;
+  src: local('SFMono-Light');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 400;
+  src: local('SFMono-Regular');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 500;
+  src: local('SFMono-Medium');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 600;
+  src: local('SFMono-Semibold');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 700;
+  src: local('SFMono-Bold');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 900;
+  src: local('SFMono-Heavy');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 300;
+  font-style: italic;
+  src: local('SFMono-LightItalic');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 400;
+  font-style: italic;
+  src: local('SFMono-RegularItalic');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 500;
+  font-style: italic;
+  src: local('SFMono-MediumItalic');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 600;
+  font-style: italic;
+  src: local('SFMono-SemiboldItalic');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 700;
+  font-style: italic;
+  src: local('SFMono-BoldItalic');
+}
+@font-face {
+  font-family: 'SF Mono';
+  font-weight: 900;
+  font-style: italic;
+  src: local('SFMono-HeavyItalic');
+}
+
+
+// Colors
+@dark: #1c1f26;
+@yellow: #e3ca87;
+@red: #c06068;
+@green: #b2c89e;
+@gray: darken(#65737f, 7.5%);
+@magenta: #b28bac;
+@blue: #8FA1B3;
+@font-ui: -apple-system, "BlinkMacSystemFont", "SanFranciscoText-Regular", "SF UI Text", ".SFNSText-Regular", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+@font-mono: 'Fira Code', 'Hasklig', 'Source Code Pro', monospace;
+
+// Set the typography for UI elements
+html, body, .tree-view, .tab-bar .tab, .item-views, .bottom, .modal, status-bar {
+  font-family: @font-ui;
+  font-size: 14px;
+  line-height: 1.5em;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
+status-bar, .bottom, linter-message {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+linter-message {
+  width: 100%;
+  padding: 2px 20px;
+  .linter-message-item {
+    font-size: 15px;
+    line-height: 20px;
+    order: 1;
+    align-self: center;
+
+    &:not(.badge) {
+      flex: 0 1 100%;
+    }
+
+    &.badge {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: bold;
+      order: 2;
+      padding: 0.25em 1.5em;
+    }
+
+    .linter-message-link {
+      font-size: 13px;
+      line-height: 16px;
+      display: block;
+      margin-left: 0;
+    }
+  }
+}
+
+atom-pane {
+  .tab-bar {
+    background: @dark;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+
+    .tab {
+      line-height: 1.5em;
+      font-size: 14px;
+      padding: 10px 30px 10px 10px;
+      transition: background .15s, color .15s, -webkit-flex .15s;
+
+      &:not(.active):hover {
+        background: lighten(@dark, 2%);
+      }
+
+      &.active {
+        background: #272B35;
+      }
+
+      .title {
+        line-height: 1.5em;
+        position: relative !important;
+        top: 0 !important;
+
+        &:before {
+          font-size: 16px !important;
+          line-height: 1.5em !important;
+          margin-right: 10px !important;
+        }
+      }
+
+      .close-icon {
+        position: absolute;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        text-align: center;
+        cursor: pointer;
+        right: 17px;
+        width: 10px;
+        height: 10px;
+
+        &:before {
+          width: 8px;
+          height: 14px;
+          font-size: 14px;
+          position: absolute;
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+        }
+      }
+
+      &.modified {
+        .close-icon {
+          top: 50%;
+          transform: translateY(-50%)
+        }
+      }
+    }
+  }
+
+  .tab-bar .tab.modified {
+    &:hover {
+      .close-icon {
+        color: @red;
+      }
+    }
+
+    &:not(:hover) {
+      .close-icon {
+        border-color: @yellow;
+      }
+    }
+  }
+
+  .tab-bar, .tab-bar .tab, .tab-bar .tab.active, .tab-bar .tab.modified {
+    &, &:before, &:first-child {
+      margin: 0;
+      height: auto;
+    }
+  }
+}
+
+.tree-view {
+  background: @dark;
+
+  .status-modified {
+    > .header.list-item, > .icon-file-text {
+      color: @yellow !important;
+    }
+  }
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  background-color: @dark;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: @font-mono;
+  line-height: 1.5em;
+  // -webkit-font-smoothing: antialiased;
+}
+
+atom-pane-resize-handle {
+  background: #272B35 !important;
+}
+
+* {
+  -webkit-font-feature-settings: "liga" on, "dlig" on, "calt" on;
+  text-rendering: optimizeLegibility;
+}
+
+atom-text-editor::shadow {
+  .cursor-line {
+    -webkit-font-feature-settings: "liga" off, "dlig" off, "calt" off;
+    text-rendering: optimizeSpeed;
+  }
+
+  .gutter {
+    background-color: @dark;
+
+    .line-number {
+      // color: @gray;
+      opacity: 1;
+
+      &.cursor-line {
+        color: @green;
+      }
+
+      &.git-line-modified {
+        border-color: @yellow;
+      }
+    }
+  }
+
+  // .comment {
+  //   color: @gray !important;
+  // }
+
+  .cursor {
+    // border-color: @green;
+    transition: opacity .15s;
+  }
+
+  // .invisible-character {
+  //   color: @gray;
+  // }
+
+  .selection .region {
+    background: #272B35;
+  }
+
+  .linter-highlight.error:not(.line-number) {
+    background-color: @red !important;
+  }
+
+  .linter-highlight.warning:not(.line-number) {
+    background-color: @yellow !important;
+  }
+}
+
+.tooltip .tooltip-arrow {
+  border-bottom-color: @blue !important;
+}
+
+.tooltip .tooltip-inner {
+  background: @blue;
+  color: @dark;
+  font-family: @font-mono;
+  font-size: 14px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+
+  .php-integrator-popover-wrapper {
+    font-size: 16px;
+    padding: 10px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .php-integrator-popover-wrapper .section > h4 {
+    font-size: 14px;
+    font-family: @font-ui;
+  }
+}
+
+.linter-highlight {
+  text-shadow: none;
+}
+
+.linter-highlight.error:not(.line-number) {
+  background-color: @red !important;
+}
+
+.linter-highlight.warning:not(.line-number) {
+  background-color: @yellow !important;
+  color: @dark;
+}
+
+linter-bottom-status.status-error {
+  color: @red !important;
+}
+
+linter-bottom-status.status-warning {
+  color: @yellow !important;
+}
+
+linter-bottom-status.status-success {
+  color: @green !important;
+}
+
+.icon-diff-modified.status-modified {
+  color: @yellow;
+}
+
+.silent-sync {
+  .ss-status.syncing {
+    color: @yellow;
+  }
+}
+
+code, kbd, pre, samp {
+  font-family: 'Hasklig';
+  font-size: 14px;
+}
+
+.modal.overlay.from-top {
+  margin-left: 0;
+  width: 100vw;
+  margin-left: -50vw;
+
+  &, * {
+    white-space: nowrap !important;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: @dark !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background: @dark !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  background: @dark !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lighten(@dark, 5%);
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 5px;
+}
+
+.tree-view-resizer, atom-text-editor /deep/ ::-webkit-scrollbar {
+  width: 0;
+  height: initial;
+  &-track  { background-color: initial; }
+  &-corner { background-color: initial; }
+  &-thumb  { background-color: initial; }
+}
+
+atom-text-editor::shadow atom-text-editor-minimap:not([stand-alone]), atom-text-editor atom-text-editor-minimap:not([stand-alone]), html atom-text-editor-minimap:not([stand-alone]) {
+  width: 80px;
+}
+
+atom-text-editor::shadow .gutter .line-number.cursor-line,
+:host .gutter .line-number.cursor-line,
+atom-text-editor::shadow .line.cursor-line,
+:host .line.cursor-line {
+  background-color: @dark !important;
+}

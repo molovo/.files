@@ -1,0 +1,19 @@
+"new.molovo.dev":
+  title: "new.molovo.dev"
+  paths: [
+    "/usr/local/var/www/new.molovo.dev"
+  ]
+"rma.dev":
+  title: "rma.dev"
+  paths: [
+    "/usr/local/var/www/rma.dev"
+  ]
+  php:
+    enabled: true
+    php_integrator:
+      enabled: true
+      phpVersion: 5.6
+      excludedPaths: []
+      fileExtensions: [
+        "php"
+      ]

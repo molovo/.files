@@ -1,0 +1,286 @@
+"*":
+  "api-docs":
+    _theme: "Dark"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "a21ed3b1-d369-4457-876a-de8d9cfc3a6d"
+  "atom-ctags":
+    GotoSymbolKey: [
+      "ctrl"
+    ]
+    autoBuildTagsWhenActive: true
+    buildTimeout: 30000
+    cmdArgs: "--exclude=.git --exclude=.svn --exclude=node_modules --exclude=.DS_Store"
+  "atom-fuzzy-grep": {}
+  "autocomplete-ctags": {}
+  "autocomplete-modules": {}
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+    defaultProvider: "Fuzzy"
+  blame: {}
+  "color-picker":
+    preferredFormat: "HEX"
+  core:
+    disabledPackages: [
+      "linter-phpcs"
+      "language-gfm"
+      "atom-jade"
+      "tree-view-breadcrumb"
+      "tree-view-autoresize"
+      "tree-view-filter"
+      "tree-view-big-files"
+      "tree-view-copy-relative-path"
+      "linter-coffee-variables"
+      "atom-bracket-highlight"
+      "fancy-bracket-matcher"
+      "tree-view-git-branch"
+      "synced-sidebar"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "node_modules"
+      "._*"
+      "Thumbs.db"
+      ".tags*"
+    ]
+    packagesWithKeymapsDisabled: [
+      "color-picker"
+      "php-integrator-tooltips"
+      "project-manager"
+    ]
+    projectHome: "/usr/local/var/www"
+    themes: [
+      "spacegray-dark-neue-ui"
+      "alternatone-stark-sea-syntax"
+    ]
+  crystal:
+    compilerColorOutput: true
+  "ctags-status":
+    executablePath: "/usr/local/bin/ctags"
+  docblockr:
+    development_mode: true
+    spacer_between_sections: true
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "Hasklig"
+    invisibles: {}
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    scrollPastEnd: true
+    scrollSensitivity: 80
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
+  emmet: {}
+  "exception-reporting":
+    userId: "83350cd4-9f31-d095-89d1-97303c8ae8e4"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  fonts:
+    fontFamily: "Hasklig"
+  "fuzzy-finder": {}
+  "git-clone": {}
+  "git-plus":
+    gitPath: "/usr/local/bin/git"
+  "git-projects":
+    ignoredPatterns: "node_modules;\\.git;\\.svn;vendor"
+    rootPath: "/usr/local/var/www;/Users/molovo/projects"
+    sortBy: "Latest modification date"
+  "imdone-atom":
+    openIn: {}
+    todaysJournal: {}
+  "imdone-atom-github":
+    accessToken: "109fa60c09ed2757d193af7d9719b34e92744034"
+  linter:
+    errorPanelHeight: 327
+    showErrorTabLine: true
+    statusIconScope: "File"
+  "linter-coffee-variables": {}
+  "linter-jade": {}
+  "linter-php": {}
+  "linter-phpcs":
+    executablePath: "/Users/molovo/.composer/vendor/bin/phpcs"
+  "linter-phpmd":
+    executablePath: "/Users/molovo/.composer/vendor/bin/phpmd"
+    rulesets: "/Users/molovo/.phpmd.xml"
+  "linter-sass-lint":
+    configPath: "/Users/molovo/.sass-lint.yml"
+  "markdown-deluxe": {}
+  "markdown-preview-plus": {}
+  minimap:
+    absoluteMode: true
+    independentMinimapScroll: true
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+    scrollAnimation: true
+  nuclide:
+    remoteProjectsConfig: []
+  "nuclide-health": {}
+  "package-sync":
+    forceOverwrite: true
+  "php-cs-fixer":
+    executablePath: "/usr/local/bin/php-cs-fixer"
+    executeOnSave: true
+    fixers: "short_array_syntax,unalign_equals,unalign_double_arrow,align_equals,align_double_arrow,phpdoc_order,ordered_use,-phpdoc_indent,-phpdoc_inline_tag,-new_with_braces,-pre_increment,-psr0,-phpdoc_no_package"
+    level: "symfony"
+    phpExecutablePath: "/usr/local/bin/php"
+    runPhpWithoutAnyIni: true
+  "php-debug": {}
+  "php-getters-setters": {}
+  "php-integrator-autocomplete-plus":
+    insertNewlinesForUseStatements: true
+  "php-integrator-base":
+    composerCommand: "/usr/local/bin/composer"
+    phpCommand: "/usr/local/bin/php"
+  "php-integrator-linter":
+    showUnknownMembers: true
+  "php-integrator-navigation": {}
+  "php-integrator-symbol-viewer":
+    defaultShowInherited: true
+  pigments:
+    extendAutocompleteToVariables: true
+    markerType: "dot"
+    traverseIntoSymlinkDirectories: true
+  "project-plus":
+    showPath: true
+  "pull-requests":
+    githubAuthorizationToken: "75c9848867d8cc699811d7eb92de27a28f759427"
+  "regex-railroad-diagram": {}
+  "seti-icons":
+    iconsPlus: true
+  "silent-sync":
+    notifyMissingConfig: true
+    useConfigFile: true
+  "slack-chat": {}
+  "smart-tab-name": {}
+  "spell-check": {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "sync-settings":
+    _analyticsUserId: "3c8fed7b-8f4c-4314-b1f6-a39d2648e2dc"
+    _lastBackupHash: "1e91b3db5f38ed7c09055883e06ddb9d9ce4dbde"
+    gistId: "d89098d55c8c9151aed5"
+    personalAccessToken: "85cfad119950d302c83011b96848d0dbbf360013"
+  tabs:
+    enableVcsColoring: true
+  "tidy-markdown":
+    ensureFirstHeaderIsH1: false
+  "tidy-tabs":
+    runOnSave: true
+  "todo-manager":
+    ignoredNames: [
+      "**/node_module/**"
+      "**/vendor/**"
+      "**/bower_components/**"
+      "**/libraries/ace/**"
+      "classes/javascriptpacker.php **/libraries/whoops/**"
+      "**/libraries/google/**"
+      "**/libraries/mailchimp/**"
+      "**/libraries/pdf/**"
+      "**/libraries/rte/**"
+      "**/libraries/packer/**"
+      "**/libraries/less/**"
+      "**/libraries/predis/**"
+      "**/classes/Requests/**"
+    ]
+  "tool-bar":
+    position: "Left"
+  "tool-bar-almighty": {}
+  "tree-view":
+    hideIgnoredNames: true
+  typewriter: {}
+  welcome:
+    showOnStartup: false
+  "you-complete-me":
+    lintDuringEdit: true
+    pythonExecutable: "/usr/local/bin/python"
+".coffee.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".crystal.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".css.less.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".css.scss.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".css.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".diff.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".dotfiles.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".ecr.html.text":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".html.php.text":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 12
+    tabLength: 4
+".jade.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".litcoffee.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".pug.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".sass.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".shell-session.text":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".shell.source":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+".text.todo":
+  editor:
+    nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
+    softWrapHangingIndent: 4
+"source.gfm":
+  editor:
+    softWrap: true
+"text.md":
+  editor:
+    softWrap: true

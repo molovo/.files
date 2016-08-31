@@ -1,0 +1,37 @@
+# ~/.tmuxinator/project.yml
+
+name: molovo
+root: /usr/local/var/www/new.molovo.dev
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: export PATH=~/projects/phillip:$PATH
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t project
+
+windows:
+  - roots:
+      root: /usr/local/var/www/new.molovo.dev
+      layout: 7f43,119x75,0,0[119x56,0,0,0,119x18,0,57,1]
+      #layout: 099e,127x28,0,0[127x19,0,0,1,127x8,0,20,3]
+      panes:
+        - 
+        - roots watch
