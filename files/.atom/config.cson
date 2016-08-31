@@ -132,6 +132,7 @@
     remoteProjectsConfig: []
   "nuclide-health": {}
   "package-sync":
+    createOnChange: true
     forceOverwrite: true
   "php-cs-fixer":
     executablePath: "/usr/local/bin/php-cs-fixer"
