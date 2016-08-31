@@ -9,7 +9,7 @@ zsh
 git clone --recursive https://github.com/molovo/.files "${ZDOTDIR:-$HOME}/.files"
 
 setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.files/files/*; do
+for rcfile in "${ZDOTDIR:-$HOME}"/.files/files/*(D); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/${rcfile:t}"
 done
 
