@@ -29,10 +29,18 @@ root: ~/.config/zulu
 
 windows:
   - zulu:
+      root: ~/.zulu/core
+      panes:
+        - git status
+  - config:
       root: ~/.config/zulu
       panes:
-        - pwd
+        - git status
+  - index:
+      root: ~/.zulu/index
+      panes:
+        - git status
   - plugins:
       root: ~/projects/zulu-plugins
       panes:
-        - pwd
+        - ls
