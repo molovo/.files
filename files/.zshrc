@@ -1,5 +1,7 @@
 zmodload 'zsh/zprof'
 
+[[ $TMUX = "" ]] && tmux -u
+
 export WATSON_DIR=~/.config/watson
 
 # Initialise zulu plugin manager
