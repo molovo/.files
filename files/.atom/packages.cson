@@ -66,6 +66,7 @@ packages: [
   "linter-phpmd"
   "linter-proselint"
   "linter-sass-lint"
+  "linter-shellcheck"
   "linter-write-good"
   "linter-xo"
   "mac-fix-path"
