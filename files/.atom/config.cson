@@ -53,6 +53,7 @@
       "project-manager"
     ]
     projectHome: "/usr/local/var/www"
+    telemetryConsent: "limited"
     themes: [
       "spacegray-dark-neue-ui"
       "alternatone-stark-sea-syntax"
