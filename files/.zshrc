@@ -8,4 +8,6 @@ export WATSON_DIR=~/.config/watson
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
 zulu init
 
-eval $(thefuck --alias)
+if command type thefuck > /dev/null; then
+  eval $(thefuck --alias)
+fi
