@@ -16,9 +16,10 @@ gitio
 history-substring-search
 insert-sudo
 k
+lumberjack
 nvm-auto-use
 pretty-time
+revolver
 syntax-highlighting
 z
 z-cd
-lumberjack
