@@ -8,8 +8,6 @@ completions
 crystal
 directory
 filthy
-fzf
-fzf-marks
 git
 gitignore
 gitio
