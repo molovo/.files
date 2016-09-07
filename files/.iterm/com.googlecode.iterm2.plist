@@ -31787,12 +31787,14 @@
 	<string>670 959 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1417 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>-1101 135 796 473 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Hasklig-Regular</key>
 	<string>-883 202 260 627 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame com.apple.typography_panel_SFMono-Regular</key>
 	<string>-883 787 260 42 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1200 -480 810 652 -1200 -480 1200 1897 </string>
+	<string>-1196 -480 810 652 -1200 -480 1200 1897 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-970 -480 810 702 -1200 -480 1200 1920 </string>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F</key>
@@ -32292,9 +32294,9 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
+					<string>b</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -32320,9 +32322,9 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
+					<string>f</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -32463,11 +32465,11 @@
 			<key>Normal Font</key>
 			<string>FiraCode-Regular 18</string>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
@@ -32638,7 +32640,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-03T07:22:10Z</date>
+	<date>2016-09-07T07:38:27Z</date>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
@@ -32662,7 +32664,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
