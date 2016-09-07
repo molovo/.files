@@ -4,8 +4,6 @@ zmodload 'zsh/zprof'
 
 export EDITOR='vim'
 
-export EDITOR='vi'
-
 export WATSON_DIR=~/.config/watson
 
 # Initialise zulu plugin manager
