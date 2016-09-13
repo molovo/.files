@@ -1,6 +1,7 @@
 "*":
   "api-docs":
     _theme: "Dark"
+  "atom-alignment": {}
   "atom-beautify":
     general:
       _analyticsUserId: "a21ed3b1-d369-4457-876a-de8d9cfc3a6d"
@@ -19,6 +20,12 @@
     confirmCompletion: "tab"
     defaultProvider: "Fuzzy"
   blame: {}
+  "coffee-compile":
+    compileOnSaveWithoutPreview: true
+    destination: "./public_html/scripts"
+    focusEditorAfterCompile: true
+    noTopLevelFunctionWrapper: false
+    split: "Down"
   "color-picker":
     preferredFormat: "HEX"
   core:
