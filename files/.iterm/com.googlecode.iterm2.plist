@@ -31788,13 +31788,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1101 135 796 473 -1200 -480 1200 1920 </string>
+	<string>-1101 77 1016 502 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Hasklig-Regular</key>
 	<string>-883 202 260 627 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame com.apple.typography_panel_SFMono-Regular</key>
 	<string>-883 787 260 42 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1196 -480 810 652 -1200 -480 1200 1897 </string>
+	<string>-1200 -480 810 652 -1200 -480 1200 1897 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-970 -480 810 702 -1200 -480 1200 1920 </string>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F</key>
@@ -32016,6 +32016,8 @@
 				<key>Red Component</key>
 				<real>0.75294119119644165</real>
 			</dict>
+			<key>Application Keypad Allowed</key>
+			<false/>
 			<key>BM Growl</key>
 			<true/>
 			<key>Background Color</key>
@@ -32178,6 +32180,13 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1b</string>
+				</dict>
+				<key>0x33-0x80000</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string>#</string>
 				</dict>
 				<key>0x34-0x40000</key>
 				<dict>
@@ -32640,7 +32649,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-07T07:38:27Z</date>
+	<date>2016-09-08T07:38:28Z</date>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
