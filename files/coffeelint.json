@@ -14,10 +14,19 @@
     "level": "error"
   },
   "colon_assignment_spacing": {
+    "level": "ignore"
+  },
+  "advanced_colon_assignment_spacing": {
     "level": "warn",
     "spacing": {
-      "left": 0,
-      "right": 1
+      "left": {
+        "min": 0,
+        "max": 0
+      },
+      "right": {
+        "min": 1,
+        "max": null
+      }
     }
   },
   "cyclomatic_complexity": {
@@ -28,7 +37,7 @@
     "level": "error"
   },
   "empty_constructor_needs_parens": {
-    "level": "warn"
+    "level": "ignore"
   },
   "ensure_comprehensions": {
     "level": "warn"
@@ -117,7 +126,7 @@
     "level": "warn"
   },
   "non_empty_constructor_needs_parens": {
-    "level": "warn"
+    "level": "ignore"
   },
   "prefer_english_operator": {
     "level": "warn",
