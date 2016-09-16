@@ -38,3 +38,5 @@ files/.maid/maid.log
 # Vim
 files/.vim/tmp/*
 files/.vim/.netrwhist
+
+files/.config/sprout
