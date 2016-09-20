@@ -165,6 +165,8 @@
     extendAutocompleteToVariables: true
     markerType: "dot"
     traverseIntoSymlinkDirectories: true
+  "project-manager":
+    alwaysOpenInSameWindow: true
   "project-plus":
     showPath: true
   "pull-requests":

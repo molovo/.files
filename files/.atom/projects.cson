@@ -1,19 +1,33 @@
-"new.molovo.dev":
-  title: "new.molovo.dev"
-  paths: [
-    "/usr/local/var/www/new.molovo.dev"
-  ]
-"rma.dev":
-  title: "rma.dev"
-  paths: [
-    "/usr/local/var/www/rma.dev"
-  ]
-  php:
-    enabled: true
-    php_integrator:
+[
+  {
+    title: "new.molovo.dev"
+    group: ""
+    paths: [
+      "/usr/local/var/www/new.molovo.dev"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "rma.dev"
+    group: ""
+    paths: [
+      "/usr/local/var/www/rma.dev"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+    php:
       enabled: true
-      phpVersion: 5.6
-      excludedPaths: []
-      fileExtensions: [
-        "php"
-      ]
+      php_integrator:
+        enabled: true
+        phpVersion: 5.6
+        excludedPaths: []
+        fileExtensions: [
+          "php"
+        ]
+  }
+]
