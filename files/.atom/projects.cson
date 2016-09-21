@@ -1,33 +1,32 @@
-[
-  {
-    title: "new.molovo.dev"
-    group: ""
-    paths: [
-      "/usr/local/var/www/new.molovo.dev"
-    ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
-  }
-  {
-    title: "rma.dev"
-    group: ""
-    paths: [
-      "/usr/local/var/www/rma.dev"
-    ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
-    php:
+rma:
+  title: "RMA"
+  group: ""
+  paths: [
+    "/usr/local/var/www/rma.dev"
+  ]
+  icon: "icon-chevron-right"
+  settings: {}
+  devMode: false
+  template: null
+  php:
+    enabled: true
+    php_integrator:
+      phpVersion: 5.6
+      excludedPaths: []
+      fileExtensions: [
+        "php"
+      ]
+interrogate:
+  title: "Interrogate"
+  paths: [
+    "/usr/local/var/www/interrogate.dev"
+  ]
+  php:
+    enabled: true
+    php_integrator:
       enabled: true
-      php_integrator:
-        enabled: true
-        phpVersion: 5.6
-        excludedPaths: []
-        fileExtensions: [
-          "php"
-        ]
-  }
-]
+      phpVersion: 5.6
+      excludedPaths: []
+      fileExtensions: [
+        "php"
+      ]

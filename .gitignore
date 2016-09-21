@@ -40,4 +40,5 @@ files/.vim/tmp/*
 !files/.vim/tmp/.gitkeep
 files/.vim/.netrwhist
 
-files/.config/sprout
+# Sprout
+files/.config/sprout/
