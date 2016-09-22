@@ -67,6 +67,7 @@
     ]
   crystal:
     compilerColorOutput: true
+    formatOnSave: true
   "ctags-status":
     executablePath: "/usr/local/bin/ctags"
   docblockr:
@@ -145,7 +146,7 @@
   "php-cs-fixer":
     executablePath: "/usr/local/bin/php-cs-fixer"
     executeOnSave: true
-    fixers: "short_array_syntax,unalign_equals,unalign_double_arrow,align_equals,align_double_arrow,phpdoc_order,ordered_use,-phpdoc_indent,-phpdoc_inline_tag,-new_with_braces,-pre_increment,-psr0,-phpdoc_no_package"
+    fixers: "short_array_syntax,unalign_equals,unalign_double_arrow,align_equals,align_double_arrow,phpdoc_order,ordered_use,-phpdoc_indent,-phpdoc_inline_tag,-new_with_braces,-pre_increment,-psr0,-phpdoc_no_package,-unused_use"
     level: "symfony"
     phpExecutablePath: "/usr/local/bin/php"
     runPhpWithoutAnyIni: true
