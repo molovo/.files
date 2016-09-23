@@ -12,7 +12,6 @@ git
 gitignore
 gitio
 history-substring-search
-insert-sudo
 k
 lumberjack
 nvm-auto-use
@@ -23,3 +22,5 @@ z
 z-cd
 zunit
 pure
+load-graph
+insert-sudo
