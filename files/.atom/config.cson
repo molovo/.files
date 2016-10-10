@@ -65,6 +65,7 @@
       "spacegray-dark-neue-ui"
       "alternatone-stark-sea-syntax"
     ]
+    useCustomTitleBar: true
   crystal:
     compilerColorOutput: true
     formatOnSave: true

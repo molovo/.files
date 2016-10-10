@@ -1,6 +1,6 @@
 zmodload 'zsh/zprof'
 
-[[ -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
+[[ $TERM_PROGRAM != 'HyperTerm' && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
 
 export EDITOR='vim'
 

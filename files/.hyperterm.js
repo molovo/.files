@@ -54,9 +54,62 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
-    shell: ''
+    shell: '',
+
+    // Set modifier keys so that alt can be used as a meta key
+    modifierKeys: {
+      altIsMeta: true
+    },
 
     // for advanced config flags please refer to https://hyperterm.org/#cfg
+    hyperline: {
+      color: 'black',
+      plugins: [
+        {
+          name: 'hostname',
+          options: {
+            color: 'lightBlue'
+          }
+        },
+        {
+          name: 'memory',
+          options: {
+            color: 'white'
+          }
+        },
+        {
+          name: 'uptime',
+          options: {
+            color: 'lightYellow'
+          }
+        },
+        {
+          name: 'cpu',
+          options: {
+            colors: {
+              high: 'lightRed',
+              moderate: 'lightYellow',
+              low: 'lightGreen'
+            }
+          }
+        },
+        {
+          name: 'network',
+          options: {
+            color: 'lightCyan'
+          }
+        },
+        {
+          name: 'battery',
+          options: {
+            colors: {
+              fine: 'lightGreen',
+              critical: 'lightRed'
+            }
+          }
+        }
+      ]
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -65,7 +118,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-blink", "hyperterm-clicky"],
+  plugins: ["hyperterm-blink", "hyperterm-clicky", "hyperline"],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
