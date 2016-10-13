@@ -59,7 +59,7 @@
       "php-integrator-tooltips"
       "project-manager"
     ]
-    projectHome: "/usr/local/var/www"
+    projectHome: "~/projects"
     telemetryConsent: "limited"
     themes: [
       "spacegray-dark-neue-ui"
@@ -76,7 +76,8 @@
     spacer_between_sections: true
   editor:
     backUpBeforeSaving: true
-    fontFamily: "Hasklig"
+    fontFamily: "Fira Code"
+    fontSize: 16
     invisibles: {}
     nonWordCharacters: "./\\\\()\\\"'-_:,.;<>~!@#%^&*|+=[]{}`~?"
     scrollPastEnd: true
@@ -85,6 +86,7 @@
     softWrap: true
     softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 4
+    tabType: "soft"
   emmet: {}
   "exception-reporting":
     userId: "83350cd4-9f31-d095-89d1-97303c8ae8e4"
