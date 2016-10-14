@@ -1,6 +1,6 @@
 zmodload 'zsh/zprof'
 
-[[ $TERM_PROGRAM != 'HyperTerm' && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
+[[ -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
 
 export EDITOR='vim'
 
@@ -22,3 +22,7 @@ zle -N zsh-hints-paramflags zsh-hints
 bindkey "^Xf" zsh-hints-paramflags
 zle -N zsh-hints-glob zsh-hints
 bindkey "^Xg" zsh-hints-glob
+
+if [[ -f "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshrc.local"
+fi
