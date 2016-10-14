@@ -1,0 +1,72 @@
+[
+  {
+    "name": "has pr",
+    "color": "006b75",
+    "aliases": []
+  },
+  {
+    "name": "DO NOT MERGE",
+    "color": "b60205",
+    "aliases": []
+  },
+  {
+    "name": "future",
+    "color": "bfdadc",
+    "aliases": []
+  },
+  {
+    "name": "performance",
+    "color": "e11d21",
+    "aliases": []
+  },
+  {
+    "name": "assigned",
+    "color": "5319e7",
+    "aliases": []
+  },
+  {
+    "name": "blocked",
+    "color": "f7c6c7",
+    "aliases": []
+  },
+  {
+    "name": "low priority",
+    "color": "d4c5f9",
+    "aliases": []
+  },
+  {
+    "name": "good for beginners",
+    "color": "5ed9c7",
+    "aliases": []
+  },
+  {
+    "name": "docs",
+    "color": "5319e7",
+    "aliases": []
+  },
+  {
+    "name": "priority",
+    "color": "fbca04",
+    "aliases": []
+  },
+  {
+    "name": "question",
+    "color": "cc317c",
+    "aliases": []
+  },
+  {
+    "name": "help wanted",
+    "color": "159818",
+    "aliases": []
+  },
+  {
+    "name": "enhancement",
+    "color": "84b6eb",
+    "aliases": []
+  },
+  {
+    "name": "bug",
+    "color": "fc2929",
+    "aliases": []
+  }
+]
