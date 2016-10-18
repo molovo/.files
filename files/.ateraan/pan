@@ -1,0 +1,16 @@
+#CLASS {pan} OPEN
+
+#ACTION {Unfortunately, all you have found}
+{
+	pan
+}
+{5}
+
+#ACTION {You spot a small rock}
+{
+	pan
+}
+{5}
+
+
+#CLASS {pan} CLOSE

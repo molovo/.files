@@ -1,0 +1,36 @@
+#CLASS {sail} OPEN
+
+#alias {fire} {
+  shipfire tri-harper %1
+}
+
+#alias {load} {
+  get tri-harper munition;
+  loadweapon tri-harper;
+}
+
+#alias {buyallammo} {
+  #variable cnt 90;
+  #while {$cnt > 0} {
+    buyammo tri-harper;
+    #math cnt {$cnt - 1}
+  }
+}
+
+#alias {getblubber} {
+  dive;
+  bury;
+  get blubber;
+  board clipper-kandraissa;
+  drop blubber
+}
+
+#alias {sw} {sail west}
+#alias {se} {sail east}
+#alias {sn} {sail north}
+#alias {ss} {sail south}
+#alias {fw} {fire whale}
+#alias {gb} {getblubber}
+#alias {ll} {overboard at whale}
+
+#CLASS {sail} CLOSE

@@ -1,0 +1,16 @@
+#CLASS {dig} OPEN
+
+#ACTION {You finish digging}
+{
+	#delay {1} {dig}
+}
+{5}
+
+#ACTION {Your fingers close}
+{
+	#delay {1} {dig}
+}
+{5}
+
+
+#CLASS {dig} CLOSE

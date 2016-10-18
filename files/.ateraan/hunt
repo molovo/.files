@@ -1,0 +1,68 @@
+#class {hunt} {open}
+  #alias {sp} {suckerpunch}
+  #alias {lb} {lykosbite}
+  #alias {bf} {backfist}
+  #alias {ca} {cripplearm}
+  #alias {ds} {dustspray}
+  #alias {sd} {sojdodge}
+  #alias {p}  {poultice}
+  #alias {qh} {quickhand}
+  #alias {ec} {eat cookie}
+  #alias {ee} {eat erb}
+  #alias {dm} {drink mana}
+  #alias {de} {drink elixir}
+
+  #alias {att} {
+    ca %1;
+    attack %1;
+  }
+
+  #alias {aaa} {
+    suckerpunch;
+    #delay {2} {lykosbite};
+    #delay {2} {backfist};
+  }
+
+  #alias {bbb} {
+    sojdodge;
+    #delay {2} {quickhand};
+    #delay {2} {dustspray};
+  }
+
+  #alias {ccc} {
+    read scroll;
+    #delay {2} {aim wand at %1};
+  }
+
+  #alias {lance} {
+    unwield sword;
+    unwield dagger;
+    get lance from scabbard;
+    put sword in scabbard 2;
+    put dagger in scabbard 3;
+    wield lance;
+    wear shield;
+  }
+
+  #alias {sword} {
+    unwear shield;
+    unwield lance;
+    put lance in scabbard;
+    get sword from scabbard 2;
+    get dagger from scabbard 3;
+    wield sword;
+    wield dagger;
+  }
+
+  #alias {shield} {
+    unwield dagger;
+    put dagger in scabbard 3;
+    wear shield;
+  }
+
+  #alias {dagger} {
+    get dagger from scabbard 3;
+    unwear shield;
+    wield dagger;
+  }
+#class {hunt} {close}

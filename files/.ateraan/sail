@@ -1,0 +1,50 @@
+#CLASS {sail} OPEN
+
+#alias {fire} {
+  shipfire marinerbow %1;
+  shipfire marinercrossbow %1;
+  shipfire harpoon %1
+}
+
+#alias {load} {
+  get marinerbow munition;
+  loadweapon marinerbow;
+  get marinercrossbow munition;
+  loadweapon marinercrossbow;
+  get harpoon munition;
+  loadweapon harpoon
+}
+
+#alias {buyallammo} {
+  #variable cnt 30;
+  #while {$cnt > 0} {
+    buyammo marinerbow;
+    buyammo marinercrossbow;
+    buyammo harpoon;
+    #math cnt {$cnt - 1}
+  }
+}
+
+#alias {getblubber} {
+  dive;
+  bury;
+  get blubber;
+  board sloop-skarrn;
+  drop blubber
+}
+
+#alias {repair} {
+  disembark;
+  shiprepair sloop;
+  board sloop-skarrn
+}
+
+#alias {sw} {sail west}
+#alias {se} {sail east}
+#alias {sn} {sail north}
+#alias {ss} {sail south}
+#alias {fw} {fire whale}
+#alias {gb} {getblubber}
+#alias {ll} {overboard at whale}
+
+#CLASS {sail} CLOSE
