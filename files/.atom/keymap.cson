@@ -32,6 +32,9 @@
   'cmd-shift-p': 'git-plus:push'
   'cmd-shift-alt-p': 'git-plus:pull'
 
+'atom-text-editor:not([mini])':
+  'shift-enter': 'docblockr:parse-inline'
+
 'atom-workspace, atom-text-editor, .platform-darwin, .platform-darwin .command-palette atom-text-editor':
   # Replacement for command menu shortcut
   # which was overridden by git push
