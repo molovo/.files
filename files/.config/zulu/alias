@@ -38,3 +38,4 @@ alias restart-pf='sudo launchctl unload -w /Library/LaunchDaemons/com.molovo.pfn
 alias a='atom-beta'
 alias labels='github-label-sync --labels ~/labels.json $(git config remote.origin.url | sed "s/https\:\/\/github.com\///g" | sed "s/git@github.com\://g" | sed "s/git\:\/\/github.com\///g" | sed "s/\.git//g")'
 alias tt='cd ~/.ateraan; tt++'
+alias gcam='git commit --amend --allow-empty --reset-author'
