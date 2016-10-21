@@ -218,7 +218,7 @@ brew 'neovim/neovim/neovim', args: ['HEAD']
 brew 'sdogruyol/cryload/cryload'
 cask 'anatine'
 cask 'betterzipql'
-cask 'hyperterm'
+cask 'hyper'
 cask 'java'
 cask 'qlcolorcode'
 cask 'qlimagesize'
