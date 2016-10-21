@@ -13,6 +13,8 @@
     buildTimeout: 30000
     cmdArgs: "--exclude=.git --exclude=.svn --exclude=node_modules --exclude=.DS_Store"
   "atom-fuzzy-grep": {}
+  "atom-itunes":
+    cycleTrackInfo: true
   "autocomplete-ctags": {}
   "autocomplete-modules": {}
   "autocomplete-plus":
@@ -41,7 +43,6 @@
       "linter-coffee-variables"
       "atom-bracket-highlight"
       "fancy-bracket-matcher"
-      "tree-view-git-branch"
       "synced-sidebar"
     ]
     ignoredNames: [
@@ -160,8 +161,7 @@
   "php-integrator-base":
     composerCommand: "/usr/local/bin/composer"
     phpCommand: "/usr/local/bin/php"
-  "php-integrator-linter":
-    showUnknownMembers: true
+  "php-integrator-linter": {}
   "php-integrator-navigation": {}
   "php-integrator-symbol-viewer":
     defaultShowInherited: true
