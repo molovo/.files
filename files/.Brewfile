@@ -55,7 +55,7 @@ brew 'python'
 brew 'llvm'
 brew 'cctools'
 brew 'checkbashisms'
-brew 'chromedriver', service_restart: true
+brew 'chromedriver', restart_service: true
 brew 'clog'
 brew 'gmp'
 brew 'coreutils'
@@ -137,7 +137,7 @@ brew 'sdl2_image'
 brew 'logstalgia'
 brew 'luajit'
 brew 'lz4'
-brew 'mariadb', service_restart: true
+brew 'mariadb', restart_service: true
 brew 'mhash'
 brew 'mcrypt'
 brew 'md5sha1sum'
@@ -148,14 +148,14 @@ brew 'mysqltuner'
 brew 'popt'
 brew 'newt'
 brew 'openssl@1.1'
-brew 'nginx', args: ['devel', 'with-http2'], service_restart: true
+brew 'nginx', args: ['devel', 'with-http2'], restart_service: true
 brew 'node'
 brew 'potrace'
 brew 're2c'
 brew 'reattach-to-user-namespace'
-brew 'redis', service_restart: true
+brew 'redis', restart_service: true
 brew 'ruby'
-brew 'selenium-server-standalone', service_restart: true
+brew 'selenium-server-standalone', restart_service: true
 brew 'shellcheck'
 brew 'siege'
 brew 'spark'
@@ -220,6 +220,7 @@ cask 'anatine'
 cask 'betterzipql'
 cask 'hyper'
 cask 'java'
+cask 'kap'
 cask 'qlcolorcode'
 cask 'qlimagesize'
 cask 'qlmarkdown'
