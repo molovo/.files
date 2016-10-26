@@ -25,7 +25,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: 'x-screen {letter-spacing: -.025em; -webkit-font-smoothing: antialiased;}',
+    termCSS: 'x-screen {letter-spacing: -.025em; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -webkit-font-feature-settings: "liga" on, "dlig" on, "calt" on;}',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '15px 15px',
@@ -58,7 +58,7 @@ module.exports = {
 
     // Set modifier keys so that alt can be used as a meta key
     modifierKeys: {
-      altIsMeta: true
+      altIsMeta: false
     },
 
     // for advanced config flags please refer to https://hyperterm.org/#cfg
@@ -118,7 +118,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-blink", "hyperterm-clicky", "hyperline"],
+  plugins: ["hyperterm-blink", "hyperterm-clicky", "hyperline", "hyperterm-tab-icons"],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
