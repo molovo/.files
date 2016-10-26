@@ -1,33 +1,32 @@
-rma:
-  title: "RMA"
-  group: ""
-  paths: [
-    "/usr/local/var/www/rma.dev"
-  ]
-  icon: "icon-chevron-right"
-  settings: {}
-  devMode: false
-  template: null
-  php:
-    enabled: true
-    php_integrator:
+[
+  {
+    title: "RMA"
+    paths: [
+      "/usr/local/var/www/rma.dev"
+    ]
+    php:
       enabled: true
-      phpVersion: 5.6
-      excludedPaths: []
-      fileExtensions: [
-        "php"
-      ]
-interrogate:
-  title: "Interrogate"
-  paths: [
-    "/usr/local/var/www/interrogate.dev"
-  ]
-  php:
-    enabled: true
-    php_integrator:
+      php_integrator:
+        enabled: true
+        phpVersion: 5.6
+        excludedPaths: []
+        fileExtensions: [
+          "php"
+        ]
+  }
+  {
+    title: "Interrogate"
+    paths: [
+      "/usr/local/var/www/interrogate.dev"
+    ]
+    php:
       enabled: true
-      phpVersion: 5.6
-      excludedPaths: []
-      fileExtensions: [
-        "php"
-      ]
+      php_integrator:
+        enabled: true
+        phpVersion: 5.6
+        excludedPaths: []
+        fileExtensions: [
+          "php"
+        ]
+  }
+]
