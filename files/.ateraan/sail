@@ -47,4 +47,38 @@
 #alias {gb} {getblubber}
 #alias {ll} {overboard at whale}
 
+#alias {sns} {sn; ss}
+#alias {snw} {sn; sw}
+#alias {sne} {sn; se}
+#alias {snn} {sn; sn}
+#alias {ses} {se; ss}
+#alias {sew} {se; sw}
+#alias {see} {se; se}
+#alias {sen} {se; sn}
+#alias {sws} {sw; ss}
+#alias {sww} {sw; sw}
+#alias {swe} {sw; se}
+#alias {swn} {sw; sn}
+#alias {sss} {ss; ss}
+#alias {ssw} {ss; sw}
+#alias {sse} {ss; se}
+#alias {ssn} {ss; sn}
+
+#alias {fns} {sn; fw; ll; ss}
+#alias {fnw} {sn; fw; ll; sw}
+#alias {fne} {sn; fw; ll; se}
+#alias {fnn} {sn; fw; ll; sn}
+#alias {fes} {se; fw; ll; ss}
+#alias {few} {se; fw; ll; sw}
+#alias {fee} {se; fw; ll; se}
+#alias {fen} {se; fw; ll; sn}
+#alias {fws} {sw; fw; ll; ss}
+#alias {fww} {sw; fw; ll; sw}
+#alias {fwe} {sw; fw; ll; se}
+#alias {fwn} {sw; fw; ll; sn}
+#alias {fss} {ss; fw; ll; ss}
+#alias {fsw} {ss; fw; ll; sw}
+#alias {fse} {ss; fw; ll; se}
+#alias {fsn} {ss; fw; ll; sn}
+
 #CLASS {sail} CLOSE

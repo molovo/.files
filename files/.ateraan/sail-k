@@ -10,7 +10,7 @@
 }
 
 #alias {buyallammo} {
-  #variable cnt 90;
+  #variable cnt 91;
   #while {$cnt > 0} {
     buyammo tri-harper;
     #math cnt {$cnt - 1}
@@ -32,5 +32,22 @@
 #alias {fw} {fire whale}
 #alias {gb} {getblubber}
 #alias {ll} {overboard at whale}
+
+#alias {fns} {sn; fw; ll; ss}
+#alias {fnw} {sn; fw; ll; sw}
+#alias {fne} {sn; fw; ll; se}
+#alias {fnn} {sn; fw; ll; sn}
+#alias {fes} {se; fw; ll; ss}
+#alias {few} {se; fw; ll; sw}
+#alias {fee} {se; fw; ll; se}
+#alias {fen} {se; fw; ll; sn}
+#alias {fws} {sn; fw; ll; ss}
+#alias {fww} {sn; fw; ll; sw}
+#alias {fwe} {sn; fw; ll; se}
+#alias {fwn} {sn; fw; ll; sn}
+#alias {fss} {se; fw; ll; ss}
+#alias {fsw} {se; fw; ll; sw}
+#alias {fse} {se; fw; ll; se}
+#alias {fsn} {se; fw; ll; sn}
 
 #CLASS {sail} CLOSE

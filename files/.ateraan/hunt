@@ -65,4 +65,10 @@
     unwear shield;
     wield dagger;
   }
+
+  #alias {uw} {
+    put lance in scabbard;
+    put sword in scabbard 2;
+    put dagger in scabbard 3;
+  }
 #class {hunt} {close}
