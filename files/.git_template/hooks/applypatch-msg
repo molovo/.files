@@ -1,2 +1,4 @@
-#!/usr/bin/env bash
-git-hooks run "$0" "$@"
+#!/usr/bin/env zsh
+if command type git-hooks 2&> /dev/null; then
+  git-hooks run "$0" "$@"
+fi
