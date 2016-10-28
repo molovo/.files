@@ -56,6 +56,7 @@ packages: [
   "intentions-numbers"
   "jade-beautify"
   "language-bats"
+  "language-javascript-jsx"
   "language-markdown"
   "language-pug"
   "line-count-status"
