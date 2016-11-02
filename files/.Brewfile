@@ -93,6 +93,7 @@ brew 'gd'
 brew 'shared-mime-info'
 brew 'gdk-pixbuf'
 brew 'gflags'
+brew 'gist'
 brew 'git-cal'
 brew 'git-extras'
 brew 'git-flow'
@@ -121,6 +122,7 @@ brew 'imagemagick'
 brew 'jemalloc'
 brew 'oniguruma'
 brew 'jq'
+brew 'keybase'
 brew 'libressl'
 brew 'libssh2'
 brew 'libgit2'
@@ -138,6 +140,7 @@ brew 'logstalgia'
 brew 'luajit'
 brew 'lz4'
 brew 'mariadb', restart_service: true
+brew 'mas'
 brew 'mhash'
 brew 'mcrypt'
 brew 'md5sha1sum'
@@ -150,6 +153,7 @@ brew 'newt'
 brew 'openssl@1.1'
 brew 'nginx', args: ['devel', 'with-http2'], restart_service: true
 brew 'node'
+brew 'pinentry-mac'
 brew 'potrace'
 brew 're2c'
 brew 'reattach-to-user-namespace'
@@ -204,11 +208,19 @@ brew 'homebrew/php/php56-redis'
 brew 'homebrew/php/php56-xdebug'
 brew 'homebrew/php/php56-xhprof'
 brew 'homebrew/php/php56-yaml'
+brew 'homebrew/php/php70-igbinary', args: ['HEAD']
 brew 'homebrew/php/php70-intl'
 brew 'homebrew/php/php70-mcrypt'
-brew 'homebrew/php/php70-redis', args: ['HEAD']
+brew 'homebrew/php/php70-memcached', args: ['HEAD']
+brew 'homebrew/php/php70-redis'
 brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-yaml', args: ['HEAD']
+brew 'homebrew/php/php71'
+brew 'homebrew/php/php71-intl'
+brew 'homebrew/php/php71-mcrypt'
+brew 'homebrew/php/php71-redis'
+brew 'homebrew/php/php71-xdebug'
+brew 'homebrew/php/php71-yaml'
 brew 'homebrew/php/phpdocumentor'
 brew 'homebrew/php/phpunit'
 brew 'homebrew/php/pickle'
@@ -234,3 +246,29 @@ cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'webpquicklook'
+mas 'QuickShot (2.1)', id: 965442961
+mas 'Electron APIs (1.1.0)', id: 1119345146
+mas 'Keynote (7.0.5)', id: 409183694
+mas 'GIFHunter (1.0.11)', id: 1031163338
+mas 'iA Writer (3.2.6)', id: 775737590
+mas 'Helium (2.0)', id: 1054607607
+mas 'Duo (1.3)', id: 777886035
+mas 'Rested (2.7)', id: 421879749
+mas 'CodeRunner (2.2.2)', id: 955297617
+mas 'The Unarchiver (3.11.1)', id: 425424353
+mas 'Boom (1.9.5)', id: 415312377
+mas 'Pixelmator (3.5.1)', id: 407963104
+mas 'Tweetbot (2.4.4)', id: 557168941
+mas 'Reeder (3.0.1)', id: 880001334
+mas 'Transmit (4.4.11)', id: 403388562
+mas 'Characters (1.2.2)', id: 536511979
+mas 'Paste (2.0.1)', id: 967805235
+mas 'Pages (6.0.5)', id: 409201541
+mas 'Numbers (4.0.5)', id: 409203825
+mas 'Enpass (5.3.1)', id: 732710998
+mas 'Wunderlist (3.4.5)', id: 410628904
+mas 'Xcode (8.1)', id: 497799835
+mas 'Sunrise Calendar (1.10)', id: 886106985
+mas 'Affinity Designer (1.5.1)', id: 824171161
+mas 'PopHub (2.1.4)', id: 928494006
+mas 'Sip (4.4.1)', id: 507257563
