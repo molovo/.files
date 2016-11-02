@@ -31,7 +31,9 @@ files/.config/thefuck/settings.pyc
 
 # Watson
 files/.config/watson/frames
+files/.config/watson/frames.bak
 files/.config/watson/state
+files/.config/watson/state.bak
 
 # Maid
 files/.maid/maid.log
