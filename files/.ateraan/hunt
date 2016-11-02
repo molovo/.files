@@ -32,7 +32,7 @@
   #alias {ccc} {
     read scroll;
     #delay {2} {aim wand at %1};
-    #delay {2} {dart %2};
+    #delay {2} {dart %1};
   }
 
   #alias {lance} {
