@@ -26,3 +26,16 @@ bindkey "^Xg" zsh-hints-glob
 if [[ -f "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc.local"
 fi
+
+# Link pinentry and gpg-agent
+$(type gpg 2>&1 > /dev/null)
+if [[ $? -eq 0 ]]; then
+  if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
+    source ~/.gnupg/.gpg-agent-info
+    export GPG_AGENT_INFO
+    GPG_TTY=$(tty)
+    export GPG_TTY
+  else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+  fi
+fi
