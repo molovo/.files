@@ -2,6 +2,7 @@
   #alias {sp} {suckerpunch}
   #alias {lb} {lykosbite}
   #alias {bf} {backfist}
+  #alias {rh} {roundhouse}
   #alias {ca} {cripplearm}
   #alias {ds} {dustspray}
   #alias {sd} {sojdodge}
@@ -21,6 +22,7 @@
     suckerpunch;
     #delay {2} {lykosbite};
     #delay {2} {backfist};
+    #delay {2} {roundhouse};
   }
 
   #alias {bbb} {
