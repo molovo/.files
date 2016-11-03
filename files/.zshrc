@@ -39,3 +39,7 @@ if [[ $? -eq 0 ]]; then
     eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
   fi
 fi
+
+(( $+functions[gt] )) || function gt() {
+  git tag -s "v$1" -m "Release $1"
+}
