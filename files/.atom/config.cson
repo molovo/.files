@@ -70,6 +70,8 @@
   crystal:
     compilerColorOutput: true
     formatOnSave: true
+  "crystal-block":
+    highlightLineNumber: true
   "ctags-status":
     executablePath: "/usr/local/bin/ctags"
   docblockr:
@@ -222,6 +224,7 @@
   "tool-bar-almighty": {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   typewriter: {}
   welcome:
     showOnStartup: false
