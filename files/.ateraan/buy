@@ -1,0 +1,9 @@
+#class {buy} {open}
+  #alias {buyerbs} {
+    #variable cnt %1;
+    #while {$cnt > 0} {
+      buy erb;
+      #math {cnt} {$cnt - 1}
+    }
+  }
+#class {buy} {close}

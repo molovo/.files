@@ -29,6 +29,7 @@
 #action {You reel in all the way} {caast}
 #action {You play out too quickly} {caast}
 #action {You tug too quickly} {caast}
+#action {Your hook is not in the water} {caast}
 
 #action {attempts to break loose} {#delay {6} {playout short}}
 #action {swims toward the boat} {#delay {6} {tug light}}
