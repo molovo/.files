@@ -16,6 +16,7 @@ tap 'homebrew/versions'
 tap 'homebrew/x11'
 tap 'keplersj/tap'
 tap 'neovim/neovim'
+tap 'ravenac95/sudolikeaboss'
 tap 'sdogruyol/cryload'
 tap 'thoughtbot/formulae'
 brew 'gdbm'
@@ -146,6 +147,7 @@ brew 'mcrypt'
 brew 'md5sha1sum'
 brew 's-lang'
 brew 'midnight-commander'
+brew 'mongodb', restart_service: true
 brew 'mycli'
 brew 'mysqltuner'
 brew 'popt'
@@ -235,6 +237,7 @@ brew 'homebrew/php/pickle'
 brew 'homebrew/versions/bison27'
 brew 'keplersj/tap/update'
 brew 'neovim/neovim/neovim', args: ['HEAD']
+brew 'ravenac95/sudolikeaboss/sudolikeaboss'
 brew 'sdogruyol/cryload/cryload'
 cask 'anatine'
 cask 'betterzipql'
@@ -254,30 +257,35 @@ cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'webpquicklook'
-mas 'QuickShot (2.1)', id: 965442961
-mas 'iA Writer (3.2.6)', id: 775737590
-mas 'Helium (2.0)', id: 1054607607
-mas 'Duo (1.3)', id: 777886035
-mas 'Rested (2.7)', id: 421879749
-mas 'CCMenu (12.1)', id: 603117688
-mas 'Caffeine (1.1.1)', id: 411246225
-mas 'Dashlane (4.6.2)', id: 552383089
-mas 'Pixelmator (3.5.1)', id: 407963104
-mas 'Boom (1.9.5)', id: 415312377
-mas 'The Unarchiver (3.11.1)', id: 425424353
-mas 'Tweetbot (2.4.4)', id: 557168941
-mas 'Paste (2.0.1)', id: 967805235
-mas 'Wunderlist (3.4.5)', id: 410628904
-mas 'Characters (1.2.2)', id: 536511979
-mas 'Xcode (8.1)', id: 497799835
-mas 'Transmit (4.4.11)', id: 403388562
-mas 'Reeder (3.0.1)', id: 880001334
-mas 'Enpass (5.3.1)', id: 732710998
-mas 'Raindrop.io (1.1.8)', id: 957810159
-mas 'Sunrise Calendar (1.10)', id: 886106985
-mas 'Sketch (2.4.4)', id: 402476602
-mas 'Slack (2.3.1)', id: 803453959
-mas 'Affinity Designer (1.5.1)', id: 824171161
-mas 'Numi 2 (2.0.6)', id: 692815145
-mas 'PopHub (2.1.4)', id: 928494006
-mas 'Sip (4.4.1)', id: 507257563
+mas 'Affinity Designer', id: 824171161
+mas 'Bear', id: 1091189122
+mas 'Boom', id: 415312377
+mas 'Caffeine', id: 411246225
+mas 'CCMenu', id: 603117688
+mas 'Characters', id: 536511979
+mas 'CodeRunner', id: 955297617
+mas 'Duo', id: 777886035
+mas 'Electron APIs', id: 1119345146
+mas 'Enpass', id: 732710998
+mas 'GIFHunter', id: 1031163338
+mas 'Helium', id: 1054607607
+mas 'iA Writer', id: 775737590
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+mas 'Numi 2', id: 692815145
+mas 'Pages', id: 409201541
+mas 'Paste', id: 967805235
+mas 'Pixelmator', id: 407963104
+mas 'PopHub', id: 928494006
+mas 'QuickShot', id: 965442961
+mas 'Reeder', id: 880001334
+mas 'Rested', id: 421879749
+mas 'Sip', id: 507257563
+mas 'Sketch', id: 402476602
+mas 'Slack', id: 803453959
+mas 'Sunrise Calendar', id: 886106985
+mas 'The Unarchiver', id: 425424353
+mas 'Transmit', id: 403388562
+mas 'Tweetbot', id: 557168941
+mas 'Wunderlist', id: 410628904
+mas 'Xcode', id: 497799835

@@ -23,6 +23,7 @@ packages: [
   "battery-status"
   "codeception-snippets"
   "codenow"
+  "coffee-navigator"
   "crystal"
   "crystal-block"
   "crystal-tools"
