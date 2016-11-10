@@ -244,7 +244,7 @@ atom-pane-resize-handle {
   text-rendering: optimizeLegibility;
 }
 
-atom-text-editor::shadow {
+atom-text-editor {
   .cursor-line {
     -webkit-font-feature-settings: "liga" off, "dlig" off, "calt" off;
     text-rendering: optimizeSpeed;
@@ -402,13 +402,13 @@ code, kbd, pre, samp {
   &-thumb  { background-color: initial; }
 }
 
-atom-text-editor::shadow atom-text-editor-minimap:not([stand-alone]), atom-text-editor atom-text-editor-minimap:not([stand-alone]), html atom-text-editor-minimap:not([stand-alone]) {
+atom-text-editor atom-text-editor-minimap:not([stand-alone]), atom-text-editor atom-text-editor-minimap:not([stand-alone]), html atom-text-editor-minimap:not([stand-alone]) {
   width: 80px;
 }
 
-atom-text-editor::shadow .gutter .line-number.cursor-line,
+atom-text-editor .gutter .line-number.cursor-line,
 :host .gutter .line-number.cursor-line,
-atom-text-editor::shadow .line.cursor-line,
+atom-text-editor .line.cursor-line,
 :host .line.cursor-line {
   background-color: @dark !important;
 }
