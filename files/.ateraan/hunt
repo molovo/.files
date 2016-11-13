@@ -21,11 +21,11 @@
 
   #alias {aaa} {
     suckerpunch;
-    #delay {2} {
+    #delay {1} {
       lykosbite;
-      #delay {2} {
+      #delay {1} {
         backfist;
-        #delay {2} {
+        #delay {1} {
           roundhouse;
         }
       }
@@ -34,9 +34,9 @@
 
   #alias {bbb} {
     sojdodge;
-    #delay {2} {
+    #delay {1} {
       quickhand;
-      #delay {2} {
+      #delay {1} {
         dustspray;
       }
     }
@@ -44,9 +44,9 @@
 
   #alias {ccc} {
     read scroll;
-    #delay {2} {
+    #delay {1} {
       aim wand at %1;
-      #delay {2} {
+      #delay {1} {
         dart %1;
       }
     }
@@ -88,5 +88,10 @@
     put lance in scabbard;
     put sword in scabbard 2;
     put dagger in scabbard 3;
+  }
+
+  #alias {getskins} {
+    get skins;
+    put skins in backpack;
   }
 #class {hunt} {close}
