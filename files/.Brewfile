@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 tap 'f/guardian'
 tap 'goles/battery'
 tap 'hhvm/hhvm'
@@ -186,7 +187,7 @@ brew 'homebrew/completions/stormssh-completion'
 brew 'homebrew/completions/vagrant-completion'
 brew 'homebrew/dupes/rsync'
 brew 'homebrew/dupes/zlib'
-brew 'homebrew/php/php71'
+brew 'homebrew/php/php70'
 brew 'homebrew/php/composer'
 brew 'homebrew/php/igbinary'
 brew 'homebrew/php/php-code-sniffer'
@@ -218,7 +219,6 @@ brew 'homebrew/php/php56-redis'
 brew 'homebrew/php/php56-xdebug'
 brew 'homebrew/php/php56-xhprof'
 brew 'homebrew/php/php56-yaml'
-brew 'homebrew/php/php70'
 brew 'homebrew/php/php70-igbinary', args: ['HEAD']
 brew 'homebrew/php/php70-intl'
 brew 'homebrew/php/php70-mcrypt'
@@ -226,6 +226,7 @@ brew 'homebrew/php/php70-memcached', args: ['HEAD']
 brew 'homebrew/php/php70-redis'
 brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-yaml', args: ['HEAD']
+brew 'homebrew/php/php71'
 brew 'homebrew/php/php71-intl'
 brew 'homebrew/php/php71-mcrypt'
 brew 'homebrew/php/php71-redis'
@@ -244,6 +245,7 @@ cask 'betterzipql'
 cask 'hyper'
 cask 'java'
 cask 'kap'
+cask 'keybase'
 cask 'qlcolorcode'
 cask 'qlimagesize'
 cask 'qlmarkdown'
@@ -252,40 +254,38 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'raindropio'
+cask 'slack-beta'
 cask 'suspicious-package'
 cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'webpquicklook'
-mas 'Affinity Designer', id: 824171161
-mas 'Bear', id: 1091189122
-mas 'Boom', id: 415312377
-mas 'Caffeine', id: 411246225
-mas 'CCMenu', id: 603117688
-mas 'Characters', id: 536511979
-mas 'CodeRunner', id: 955297617
-mas 'Duo', id: 777886035
-mas 'Electron APIs', id: 1119345146
-mas 'Enpass', id: 732710998
-mas 'GIFHunter', id: 1031163338
-mas 'Helium', id: 1054607607
-mas 'iA Writer', id: 775737590
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'Numi 2', id: 692815145
-mas 'Pages', id: 409201541
-mas 'Paste', id: 967805235
-mas 'Pixelmator', id: 407963104
-mas 'PopHub', id: 928494006
 mas 'QuickShot', id: 965442961
-mas 'Reeder', id: 880001334
+mas 'Electron APIs', id: 1119345146
+mas 'Keynote', id: 409183694
+mas 'GIFHunter', id: 1031163338
+mas 'iA Writer', id: 775737590
+mas 'Helium', id: 1054607607
+mas 'Duo', id: 777886035
 mas 'Rested', id: 421879749
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Slack', id: 803453959
-mas 'Sunrise Calendar', id: 886106985
 mas 'The Unarchiver', id: 425424353
-mas 'Transmit', id: 403388562
+mas 'Boom', id: 415312377
+mas 'Pixelmator', id: 407963104
+mas 'CCMenu', id: 603117688
 mas 'Tweetbot', id: 557168941
+mas 'Reeder', id: 880001334
+mas 'Transmit', id: 403388562
+mas 'Characters', id: 536511979
+mas 'Paste', id: 967805235
+mas 'Pages', id: 409201541
+mas 'Numbers', id: 409203825
 mas 'Wunderlist', id: 410628904
 mas 'Xcode', id: 497799835
+mas 'Sunrise Calendar', id: 886106985
+mas 'Bear', id: 1091189122
+mas 'Sketch', id: 402476602
+mas 'Slack', id: 803453959
+mas 'Affinity Designer', id: 824171161
+mas 'Numi 2', id: 692815145
+mas 'PopHub', id: 928494006
+mas 'Sip', id: 507257563
