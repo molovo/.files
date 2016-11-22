@@ -15,6 +15,13 @@
   "atom-fuzzy-grep": {}
   "atom-itunes":
     cycleTrackInfo: true
+  "auto-copyright":
+    owner: "James Dinsdale"
+    template: '''
+      Copyright (c) %y James Dinsdale (hi@molovo.co). All Rights Reserved.
+      
+      Licensed under the MIT license.
+    '''
   "autocomplete-ctags": {}
   "autocomplete-modules": {}
   "autocomplete-plus":

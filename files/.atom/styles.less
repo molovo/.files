@@ -241,12 +241,14 @@ atom-pane-resize-handle {
 
 * {
   -webkit-font-feature-settings: "liga" on, "dlig" on, "calt" on;
+  font-feature-settings: "liga" on, "dlig" on, "calt" on;
   text-rendering: optimizeLegibility;
 }
 
 atom-text-editor {
   .cursor-line {
     -webkit-font-feature-settings: "liga" off, "dlig" off, "calt" off;
+    font-feature-settings: "liga" off, "dlig" off, "calt" off;
     text-rendering: optimizeSpeed;
   }
 
@@ -318,6 +320,10 @@ atom-text-editor {
 
 .linter-highlight {
   text-shadow: none;
+
+  &.linter-gutter {
+    height: 8px !important;
+  }
 }
 
 .linter-highlight.error:not(.line-number) {
@@ -407,10 +413,20 @@ atom-text-editor atom-text-editor-minimap:not([stand-alone]), atom-text-editor a
 }
 
 atom-text-editor .gutter .line-number.cursor-line,
-:host .gutter .line-number.cursor-line,
-atom-text-editor .line.cursor-line,
-:host .line.cursor-line {
-  background-color: @dark !important;
+atom-text-editor .line.cursor-line {
+  background-color: lighten(@dark, 5%);
+  position: relative;
+}
+
+atom-text-editor .line.cursor-line::before {
+  content: '';
+  width: 34px;
+  height: 25px;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 100%;
+  background: lighten(@dark, 5%);
 }
 
 .php-integrator-call-tip > div {
