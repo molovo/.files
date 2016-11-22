@@ -25,11 +25,12 @@
       lykosbite;
       #delay {1} {
         backfist;
-        #delay {1} {
-          roundhouse;
-        }
       }
     }
+  }
+
+  #alias {aab} {
+    roundhouse;
   }
 
   #alias {bbb} {
