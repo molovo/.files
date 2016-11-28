@@ -10,6 +10,8 @@
   #alias {qh} {quickhand}
   #alias {ec} {eat cookie}
   #alias {ee} {eat erb}
+  #alias {eq} {eat quella}
+  #alias {eb} {eat bread}
   #alias {eg} {eat gatortail}
   #alias {dm} {drink mana}
   #alias {de} {drink elixir}
