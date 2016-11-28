@@ -109,8 +109,6 @@ fi
     r 'remotes' \
   )
   for key command in ${(@kv)widgets}; do
-    echo $key
-    echo $command
     eval "fzf-git-$command-widget() { local result=\$(git_$command | join-lines); zle reset-prompt; LBUFFER+=\$result }"
     eval "zle -N fzf-git-$command-widget"
     eval "bindkey '^g^$key' fzf-git-$command-widget"
