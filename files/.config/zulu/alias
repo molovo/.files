@@ -18,7 +18,8 @@ alias hide-hidden='defaults write com.apple.finder AppleShowAllFiles NO; killall
 alias gh='gh-home'
 alias up='vagrant up && vagrant ssh'
 alias reup='vagrant destroy && vagrant up && vagrant ssh'
-alias gl='git log --decorate --graph --oneline --date=short --format="%C(auto)%h %C(auto)%d%n%C(5)%an %Cgreen%ad %Creset%s"'
+alias gl='git log --decorate --graph --oneline --date=short --format="%C(yellow)%h %Creset%s" --color=always'
+alias gll='git log --decorate --graph --oneline --date=short --format="%C(yellow)%h %C(5)%an %Cgreen%ad %C(auto)%d%n%Creset%s" --color=always'
 alias wl="watson log"
 alias wr="watson report"
 alias ws="watson start"
