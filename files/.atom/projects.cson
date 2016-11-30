@@ -29,4 +29,19 @@
           "php"
         ]
   }
+  {
+    title: "Commandant"
+    paths: [
+      "/Users/molovo/projects/commandant"
+    ]
+    php:
+      enabled: true
+      php_integrator:
+        enabled: true
+        phpVersion: 7.0
+        excludedPaths: []
+        fileExtensions: [
+          "php"
+        ]
+  }
 ]
