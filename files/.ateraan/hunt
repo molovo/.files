@@ -56,18 +56,22 @@
   }
 
   #alias {lance} {
-    unwield sword;
-    unwield dagger;
-    get lance from scabbard;
+    put bow in scabbard 2;
     put sword in scabbard 2;
     put dagger in scabbard 3;
+    get lance from scabbard;
     wield lance;
     wear shield;
   }
 
+  #alias {bow} {
+    put lance in scabbard;
+    get bow from scabbard 2;
+    wield bow
+  }
+
   #alias {sword} {
     unwear shield;
-    unwield lance;
     put lance in scabbard;
     get sword from scabbard 2;
     get dagger from scabbard 3;
@@ -76,7 +80,6 @@
   }
 
   #alias {shield} {
-    unwield dagger;
     put dagger in scabbard 3;
     wear shield;
   }
@@ -96,5 +99,23 @@
   #alias {getskins} {
     get skins;
     put skins in backpack;
+  }
+
+  #alias {gethorns} {
+    get horns;
+    put horns in backpack;
+  }
+
+  #alias {fw} {
+    firebow west at %1;
+  }
+  #alias {fe} {
+    firebow east at %1;
+  }
+  #alias {fn} {
+    firebow north at %1;
+  }
+  #alias {fs} {
+    firebow south at %1;
   }
 #class {hunt} {close}

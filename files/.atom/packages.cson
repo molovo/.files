@@ -74,7 +74,6 @@ packages: [
   "linter-crystal"
   "linter-flow"
   "linter-htmlhint"
-  "linter-jade"
   "linter-jsonlint"
   "linter-just-say-no"
   "linter-package-json-validator"

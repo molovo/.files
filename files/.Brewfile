@@ -260,32 +260,36 @@ cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'webpquicklook'
-mas 'QuickShot', id: 965442961
-mas 'Electron APIs', id: 1119345146
-mas 'Keynote', id: 409183694
-mas 'GIFHunter', id: 1031163338
-mas 'iA Writer', id: 775737590
-mas 'Helium', id: 1054607607
-mas 'Duo', id: 777886035
-mas 'Rested', id: 421879749
-mas 'The Unarchiver', id: 425424353
-mas 'Boom', id: 415312377
-mas 'Pixelmator', id: 407963104
-mas 'CCMenu', id: 603117688
-mas 'Tweetbot', id: 557168941
-mas 'Reeder', id: 880001334
-mas 'Transmit', id: 403388562
-mas 'Characters', id: 536511979
-mas 'Paste', id: 967805235
-mas 'Pages', id: 409201541
-mas 'Numbers', id: 409203825
-mas 'Wunderlist', id: 410628904
-mas 'Xcode', id: 497799835
-mas 'Sunrise Calendar', id: 886106985
-mas 'Bear', id: 1091189122
-mas 'Sketch', id: 402476602
-mas 'Slack', id: 803453959
-mas 'Affinity Designer', id: 824171161
 mas 'Numi 2', id: 692815145
-mas 'PopHub', id: 928494006
+mas 'Transmit', id: 403388562
+mas 'CCMenu', id: 603117688
+mas 'Duo', id: 777886035
+mas 'Reeder', id: 880001334
+mas 'Raindrop.io', id: 957810159
+mas 'Affinity Designer', id: 824171161
+mas 'Xcode', id: 497799835
+mas 'Pixelmator', id: 407963104
+mas 'Enpass', id: 732710998
 mas 'Sip', id: 507257563
+mas 'Tweetbot', id: 557168941
+mas 'Electron APIs', id: 1119345146
+mas 'Characters', id: 536511979
+mas 'Sketch', id: 402476602
+mas 'The Unarchiver', id: 425424353
+mas 'Rested', id: 421879749
+mas 'Wunderlist', id: 410628904
+mas 'PopHub', id: 928494006
+mas 'Sunrise Calendar', id: 886106985
+mas 'Pages', id: 409201541
+mas 'Helium', id: 1054607607
+mas 'Slack', id: 803453959
+mas 'Dashlane', id: 552383089
+mas 'GIFHunter', id: 1031163338
+mas 'Caffeine', id: 411246225
+mas 'Boom', id: 415312377
+mas 'Numbers', id: 409203825
+mas 'Paste', id: 967805235
+mas 'Bear', id: 1091189122
+mas 'Keynote', id: 409183694
+mas 'iA Writer', id: 775737590
+mas 'QuickShot', id: 965442961
