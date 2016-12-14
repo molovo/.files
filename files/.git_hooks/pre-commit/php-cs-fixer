@@ -35,7 +35,7 @@ function run_checks {
   for file in `git diff-index --cached --name-only HEAD` ; do
     if [ -f ${file} ]; then
       if [ "${file:${#1}-4:4}" = ".php" ]; then
-        php-cs-fixer fix ${file} --level=symfony --fixers=align_equals,align_double_arrow,phpdoc_order,ordered_use,-phpdoc_indent,-phpdoc_inline_tag,-new_with_braces,-pre_increment,-psr0,-phpdoc_no_package 1> /dev/null
+        php-cs-fixer fix -vvv --config=/Users/molovo/.files/files/.php_cs ${file} 2>&1 > /dev/null
 
         if [ $? -ne 0 ]; then
           error_message+="  - ${file}\n"

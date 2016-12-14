@@ -159,12 +159,13 @@
     createOnChange: true
     forceOverwrite: true
   "php-cs-fixer":
+    allowRisky: true
+    configPath: "/Users/molovo/.php_cs"
     executablePath: "/usr/local/bin/php-cs-fixer"
     executeOnSave: true
-    fixers: "short_array_syntax,unalign_equals,unalign_double_arrow,align_equals,align_double_arrow,phpdoc_order,ordered_use,-phpdoc_indent,-phpdoc_inline_tag,-new_with_braces,-pre_increment,-psr0,-phpdoc_no_package,-unused_use"
-    level: "symfony"
     phpExecutablePath: "/usr/local/opt/php70/bin/php"
     runPhpWithoutAnyIni: true
+    showInfoNotifications: true
   "php-debug": {}
   "php-getters-setters": {}
   "php-integrator-autocomplete-plus":
