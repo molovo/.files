@@ -32095,10 +32095,12 @@
 	<string>1</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSFontPanelSizeSliderParams</key>
 	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/mbadolato-iTerm2-Color-Schemes-a646a1d/schemes</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -32146,13 +32148,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1101 521 796 473 -1200 -480 1200 1920 </string>
+	<string>-1167 351 918 381 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Hasklig-Regular</key>
 	<string>-883 202 260 627 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame com.apple.typography_panel_SFMono-Regular</key>
 	<string>-883 787 260 42 -1200 -480 1200 1920 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 810 652 0 0 2560 1418 </string>
+	<string>-1200 -480 730 577 -1200 -480 1200 1898 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-970 -480 810 702 -1200 -480 1200 1920 </string>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F</key>
@@ -32275,13 +32277,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.55136972665786743</real>
+				<real>0.55294120311737061</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.74470877647399902</real>
+				<real>0.7450980544090271</real>
 				<key>Red Component</key>
-				<real>0.6409529447555542</real>
+				<real>0.63921570777893066</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -33771,7 +33773,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-12T08:20:52Z</date>
+	<date>2016-12-14T08:38:39Z</date>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
