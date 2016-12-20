@@ -302,11 +302,15 @@ atom-text-editor {
 }
 
 .tooltip .tooltip-inner {
-  background: @blue;
-  color: @dark;
+  background: lighten(@dark, 2%);
+  border: 1px solid lighten(@dark, 10%);
+  border-radius: 0;
+  color: white;
   font-family: @font-mono;
   font-size: 14px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+  // box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+
+
 
   .php-integrator-popover-wrapper {
     font-size: 16px;
