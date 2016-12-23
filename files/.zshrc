@@ -1,5 +1,7 @@
 zmodload 'zsh/zprof'
 
+setopt CORRECT
+
 [[ "$TERM_PROGRAM" != "Hyper" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
 
 export EDITOR='vim'
