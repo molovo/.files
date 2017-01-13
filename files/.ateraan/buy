@@ -7,6 +7,14 @@
     }
   }
 
+  #alias {buydrinks} {
+    #variable cnt %1;
+    #while {$cnt > 0} {
+      buy fruitdrink;
+      #math {cnt} {$cnt - 1}
+    }
+  }
+
   #alias {buymunitions} {
     #variable cnt %1;
     #while {$cnt > 0} {

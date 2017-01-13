@@ -15,6 +15,7 @@
   #alias {eg} {eat gatortail}
   #alias {dm} {drink mana}
   #alias {de} {drink elixir}
+  #alias {dd} {drink drink}
 
   #alias {att} {
     ca %1;
@@ -23,16 +24,16 @@
 
   #alias {aaa} {
     suckerpunch;
-    #delay {1} {
-      lykosbite;
-      #delay {1} {
-        backfist;
-      }
+    #delay {2} {
+      backfist;
     }
   }
 
   #alias {aab} {
     roundhouse;
+    #delay {1} {
+      lykosbite;
+    }
   }
 
   #alias {bbb} {

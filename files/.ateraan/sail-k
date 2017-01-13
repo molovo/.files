@@ -41,13 +41,13 @@
 #alias {few} {se; fw; ll; sw}
 #alias {fee} {se; fw; ll; se}
 #alias {fen} {se; fw; ll; sn}
-#alias {fws} {sn; fw; ll; ss}
-#alias {fww} {sn; fw; ll; sw}
-#alias {fwe} {sn; fw; ll; se}
-#alias {fwn} {sn; fw; ll; sn}
-#alias {fss} {se; fw; ll; ss}
-#alias {fsw} {se; fw; ll; sw}
-#alias {fse} {se; fw; ll; se}
-#alias {fsn} {se; fw; ll; sn}
+#alias {fws} {sw; fw; ll; ss}
+#alias {fww} {sw; fw; ll; sw}
+#alias {fwe} {sw; fw; ll; se}
+#alias {fwn} {sw; fw; ll; sn}
+#alias {fss} {ss; fw; ll; ss}
+#alias {fsw} {ss; fw; ll; sw}
+#alias {fse} {ss; fw; ll; se}
+#alias {fsn} {ss; fw; ll; sn}
 
 #CLASS {sail} CLOSE
