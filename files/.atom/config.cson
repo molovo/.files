@@ -109,7 +109,8 @@
   "fuzzy-finder": {}
   "git-clone": {}
   "git-plus":
-    gitPath: "/usr/local/bin/git"
+    general:
+      _analyticsUserId: "c3501daf-baa7-4743-a88b-2e2c66c34f50"
   "git-projects":
     ignoredPatterns: "node_modules;\\.git;\\.svn;vendor"
     rootPath: "/usr/local/var/www;/Users/molovo/projects"
@@ -120,7 +121,7 @@
   "imdone-atom-github":
     accessToken: "109fa60c09ed2757d193af7d9719b34e92744034"
   linter:
-    errorPanelHeight: 327
+    errorPanelHeight: 117
     showErrorTabLine: true
     statusIconScope: "File"
   "linter-coffee-variables": {}
