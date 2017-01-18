@@ -29,14 +29,14 @@
   dive;
   bury;
   get blubber;
-  board sloop-skarrn;
+  board sloop;
   drop blubber
 }
 
 #alias {repair} {
   disembark;
   shiprepair sloop;
-  board sloop-skarrn
+  board sloop
 }
 
 #alias {sw} {sail west}

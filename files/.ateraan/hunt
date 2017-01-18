@@ -24,16 +24,16 @@
 
   #alias {aaa} {
     suckerpunch;
-    #delay {2} {
-      backfist;
+    #delay {1} {
+      lykosbite;
+      #delay {1} {
+        backfist;
+      }
     }
   }
 
   #alias {aab} {
     roundhouse;
-    #delay {1} {
-      lykosbite;
-    }
   }
 
   #alias {bbb} {
