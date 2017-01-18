@@ -6,7 +6,6 @@ command-not-found
 completions
 crystal
 directory
-filthy
 git
 gitignore
 gitio
@@ -20,7 +19,9 @@ syntax-highlighting
 z
 z-cd
 zunit
-pure
 load-graph
 insert-sudo
 tipz
+fzf
+fzf-git
+filthy

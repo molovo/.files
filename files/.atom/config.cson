@@ -110,7 +110,7 @@
   "git-clone": {}
   "git-plus":
     general:
-      _analyticsUserId: "c3501daf-baa7-4743-a88b-2e2c66c34f50"
+      _analyticsUserId: "ce446fc9-f5d8-4053-a832-bc05fd1a5ca0"
   "git-projects":
     ignoredPatterns: "node_modules;\\.git;\\.svn;vendor"
     rootPath: "/usr/local/var/www;/Users/molovo/projects"
@@ -121,7 +121,7 @@
   "imdone-atom-github":
     accessToken: "109fa60c09ed2757d193af7d9719b34e92744034"
   linter:
-    errorPanelHeight: 117
+    errorPanelHeight: 327
     showErrorTabLine: true
     statusIconScope: "File"
   "linter-coffee-variables": {}
@@ -164,6 +164,9 @@
     configPath: "/Users/molovo/.php_cs"
     executablePath: "/usr/local/bin/php-cs-fixer"
     executeOnSave: true
+    fixerArguments: [
+      "-q"
+    ]
     phpExecutablePath: "/usr/local/opt/php70/bin/php"
     runPhpWithoutAnyIni: true
     showInfoNotifications: true
@@ -235,7 +238,6 @@
   "tool-bar-almighty": {}
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   typewriter: {}
   welcome:
     showOnStartup: false
