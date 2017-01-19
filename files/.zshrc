@@ -10,7 +10,7 @@ export WATSON_DIR=~/.config/watson
 
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
-zulu init
+zulu init --check-for-update
 
 if command type thefuck > /dev/null; then
   eval $(thefuck --alias)
