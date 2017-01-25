@@ -118,3 +118,6 @@
 [submodule "files/.vim/bundle/bats.vim"]
 	path = files/.vim/bundle/bats.vim
 	url = git://github.com/vim-scripts/bats.vim.git
+[submodule "files/.vim/bundle/vim-bracketed-paste"]
+	path = files/.vim/bundle/vim-bracketed-paste
+	url = git://github.com/ConradIrwin/vim-bracketed-paste.git
