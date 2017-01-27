@@ -1,6 +1,3 @@
-alias start='brew services start'
-alias stop='brew services stop'
-alias restart='brew services restart'
 alias more='vim'
 alias vi='vim'
 alias h='history'

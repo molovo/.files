@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+(( $+functions[start] )) || function start() {
+  local -a services
+  services=("$@")
+
+  if [[ -f '/usr/local/bin/brew' ]]; then
+    for service in ${(@f)services[@]}; do
+      brew services start $service
+    done
+  fi
+
+  if [[ -f '/bin/systemctl' ]]; then
+    for service in ${(@f)services[@]}; do
+      sudo systemctl $service start
+    done
+  fi
+}
