@@ -16,15 +16,6 @@ if command type thefuck > /dev/null; then
   eval $(thefuck --alias)
 fi
 
-zstyle ':zsh-hints:*:' dir "~/.zulu/share"
-
-zle -N zsh-hints-param zsh-hints
-bindkey "^Xp" zsh-hints-param
-zle -N zsh-hints-paramflags zsh-hints
-bindkey "^Xf" zsh-hints-paramflags
-zle -N zsh-hints-glob zsh-hints
-bindkey "^Xg" zsh-hints-glob
-
 if [[ -f "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc.local"
 fi
@@ -41,9 +32,4 @@ if [[ $? -eq 0 ]]; then
     eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
   fi
 fi
-
-# Tag a new version release
-(( $+functions[gt] )) || function gt() {
-  git tag -s "v$1" -m "Release $1"
-}
 
