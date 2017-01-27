@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+(( $+functions[gt] )) || function gt() {
+  git tag -s v$1 -m "Release $1"
+}
