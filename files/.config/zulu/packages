@@ -38,3 +38,7 @@ osx
 utility
 zsh-editing-workbench
 docker
+zsh-hints-integration
+zsh-hints
+dpkg
+fasd
