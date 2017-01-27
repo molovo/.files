@@ -57,6 +57,7 @@
   }
 
   #alias {lance} {
+    unwield staff;
     put bow in scabbard 2;
     put sword in scabbard 2;
     put dagger in scabbard 3;
@@ -66,12 +67,14 @@
   }
 
   #alias {bow} {
+    unwield staff;
     put lance in scabbard;
     get bow from scabbard 2;
     wield bow
   }
 
   #alias {sword} {
+    unwield staff;
     unwear shield;
     put lance in scabbard;
     get sword from scabbard 2;
@@ -92,6 +95,7 @@
   }
 
   #alias {uw} {
+    unwield staff;
     put lance in scabbard;
     put sword in scabbard 2;
     put dagger in scabbard 3;
