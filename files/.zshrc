@@ -12,7 +12,7 @@ export WATSON_DIR=~/.config/watson
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
 zulu init --check-for-update
 
-if command type thefuck > /dev/null; then
+if builtin type thefuck >/dev/null 2>&1; then
   eval $(thefuck --alias)
 fi
 
@@ -21,8 +21,7 @@ if [[ -f "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
 fi
 
 # Link pinentry and gpg-agent
-$(type gpg 2>&1 > /dev/null)
-if [[ $? -eq 0 ]]; then
+if builtin type gpg >/dev/null 2>&1; then
   if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
     source ~/.gnupg/.gpg-agent-info
     export GPG_AGENT_INFO
