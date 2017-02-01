@@ -44,3 +44,8 @@ windows:
       root: ~/projects/zulu-plugins
       panes:
         - ls
+  - website:
+      root: ~/projects/zulu-www
+      panes:
+        - git status
+        - roots watch
