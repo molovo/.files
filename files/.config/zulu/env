@@ -1,2 +1,1 @@
-export FILTHY_SHOW_CI_STATUS='1'
 export FILTHY_SHOW_EXIT_CODE='1'
