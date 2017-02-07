@@ -5,7 +5,7 @@
 
 - stuff: OS X and App Store installed apps
   executable: softwareupdate
-  command: -v --install --all
+  command: --install --all
   sudo: true
 
 - stuff: Composer Packages
