@@ -21,7 +21,7 @@ if [[ -f "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
 fi
 
 # Link pinentry and gpg-agent
-if builtin type gpg >/dev/null 2>&1; then
+if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; then
   if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
     source ~/.gnupg/.gpg-agent-info
     export GPG_AGENT_INFO
