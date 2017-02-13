@@ -21,12 +21,8 @@ tap 'ravenac95/sudolikeaboss'
 tap 'sdogruyol/cryload'
 tap 'thoughtbot/formulae'
 brew 'gdbm'
-brew 'pkg-config'
-brew 'makedepend'
 brew 'openssl'
 brew 'readline'
-brew 'sphinx-doc'
-brew 'icu4c'
 brew 'sqlite'
 brew 'xz'
 brew 'python3'
@@ -42,6 +38,7 @@ brew 'fontconfig'
 brew 'pixman'
 brew 'cairo'
 brew 'git'
+brew 'pkg-config'
 brew 'gobject-introspection'
 brew 'atk'
 brew 'autoconf'
@@ -52,21 +49,19 @@ brew 'boost'
 brew 'ocaml'
 brew 'ocamlbuild'
 brew 'camlp4'
-brew 'cmake'
-brew 'python'
-brew 'llvm'
 brew 'cctools'
 brew 'checkbashisms'
 brew 'chromedriver', restart_service: true
 brew 'clog'
-brew 'gmp'
+brew 'cmake'
 brew 'coreutils'
-brew 'doxygen'
+brew 'gmp'
 brew 'libevent'
 brew 'libyaml'
+brew 'python'
+brew 'llvm'
 brew 'crystal-lang'
 brew 'ctags'
-brew 'go'
 brew 'direnv'
 brew 'libgpg-error'
 brew 'libassuan'
@@ -75,7 +70,7 @@ brew 'libksba'
 brew 'pth'
 brew 'dirmngr'
 brew 'doctl'
-brew 'libelf'
+brew 'doxygen'
 brew 'dwarfutils'
 brew 'exercism'
 brew 'pcre2'
@@ -83,7 +78,6 @@ brew 'fish'
 brew 'flex'
 brew 'flow'
 brew 'fpp'
-brew 'unixodbc'
 brew 'freetds'
 brew 'fzf'
 brew 'mpfr'
@@ -94,6 +88,7 @@ brew 'webp'
 brew 'gd'
 brew 'shared-mime-info'
 brew 'gdk-pixbuf'
+brew 'gem-completion'
 brew 'gflags'
 brew 'gist'
 brew 'git-cal'
@@ -103,35 +98,36 @@ brew 'git-hooks'
 brew 'glew'
 brew 'glog'
 brew 'gnu-sed'
-brew 'hicolor-icon-theme'
-brew 'harfbuzz'
-brew 'pango'
-brew 'gtk+'
 brew 'pinentry'
 brew 'gpg-agent'
 brew 'libusb'
 brew 'libusb-compat'
 brew 'gnupg2'
+brew 'go'
 brew 'libtool'
 brew 'graphicsmagick'
+brew 'hicolor-icon-theme'
+brew 'icu4c'
+brew 'harfbuzz'
+brew 'pango'
+brew 'gtk+'
 brew 'lua'
 brew 'highlight'
 brew 'htop-osx'
 brew 'httpie'
 brew 'hub'
-brew 'perl'
-brew 'imagemagick'
 brew 'jemalloc'
 brew 'oniguruma'
 brew 'jq'
 brew 'keybase'
-brew 'libressl'
+brew 'libelf'
 brew 'libssh2'
 brew 'libgit2'
-brew 'memcached', restart_service: true
+brew 'memcached'
 brew 'libmemcached'
 brew 'libogg'
 brew 'libpcl'
+brew 'libressl'
 brew 'libvorbis'
 brew 'libxml2'
 brew 'libzip'
@@ -141,6 +137,7 @@ brew 'sdl2_image'
 brew 'logstalgia'
 brew 'luajit'
 brew 'lz4'
+brew 'makedepend'
 brew 'mariadb', restart_service: true
 brew 'mas'
 brew 'mhash'
@@ -148,7 +145,7 @@ brew 'mcrypt'
 brew 'md5sha1sum'
 brew 's-lang'
 brew 'midnight-commander'
-brew 'mongodb', restart_service: true
+brew 'mongodb'
 brew 'mycli'
 brew 'mysqltuner'
 brew 'popt'
@@ -156,6 +153,7 @@ brew 'newt'
 brew 'openssl@1.1'
 brew 'nginx', args: ['devel', 'with-http2'], restart_service: true
 brew 'node'
+brew 'perl'
 brew 'pinentry-mac'
 brew 'potrace'
 brew 're2c'
@@ -166,25 +164,28 @@ brew 'selenium-server-standalone', restart_service: true
 brew 'shellcheck'
 brew 'siege'
 brew 'spark'
+brew 'sphinx-doc'
 brew 'stormssh'
+brew 'stormssh-completion'
 brew 'tbb'
 brew 'terminal-notifier'
 brew 'the_silver_searcher'
 brew 'thefuck'
 brew 'tintin'
-brew 'utf8proc'
 brew 'tmux'
 brew 'unar'
+brew 'unixodbc'
+brew 'utf8proc'
 brew 'v'
+brew 'vagrant-completion'
 brew 'vim'
 brew 'watson'
 brew 'wget'
+brew 'yarn'
 brew 'z'
 brew 'zsh'
 brew 'f/guardian/guardian'
 brew 'goles/battery/battery'
-brew 'homebrew/completions/stormssh-completion'
-brew 'homebrew/completions/vagrant-completion'
 brew 'homebrew/dupes/rsync'
 brew 'homebrew/dupes/zlib'
 brew 'homebrew/php/php70'
@@ -237,12 +238,12 @@ brew 'homebrew/php/phpunit'
 brew 'homebrew/php/pickle'
 brew 'homebrew/versions/bison27'
 brew 'keplersj/tap/update'
-brew 'neovim/neovim/neovim', args: ['HEAD']
 brew 'ravenac95/sudolikeaboss/sudolikeaboss'
 brew 'sdogruyol/cryload/cryload'
 cask 'anatine'
 cask 'betterzipql'
 cask 'hyper'
+cask 'insomnia'
 cask 'java'
 cask 'kap'
 cask 'keybase'
@@ -260,36 +261,30 @@ cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'webpquicklook'
-mas 'Numi 2', id: 692815145
-mas 'Transmit', id: 403388562
-mas 'CCMenu', id: 603117688
+mas 'QuickShot', id: 965442961
+mas 'Expressions', id: 913158085
+mas 'GIFHunter', id: 1031163338
+mas 'iA Writer', id: 775737590
+mas 'Helium', id: 1054607607
+mas 'Keynote', id: 409183694
 mas 'Duo', id: 777886035
+mas 'Rested', id: 421879749
+mas 'Caffeine', id: 411246225
+mas 'The Unarchiver', id: 425424353
+mas 'CCMenu', id: 603117688
+mas 'Boom', id: 415312377
+mas 'Pixelmator', id: 407963104
+mas 'Tweetbot', id: 557168941
+mas 'Numbers', id: 409203825
+mas 'Xcode', id: 497799835
+mas 'Characters', id: 536511979
+mas 'Pages', id: 409201541
+mas 'Wunderlist', id: 410628904
+mas 'Transmit', id: 403388562
 mas 'Reeder', id: 880001334
 mas 'Raindrop.io', id: 957810159
-mas 'Affinity Designer', id: 824171161
-mas 'Xcode', id: 497799835
-mas 'Pixelmator', id: 407963104
-mas 'Enpass', id: 732710998
-mas 'Sip', id: 507257563
-mas 'Tweetbot', id: 557168941
-mas 'Electron APIs', id: 1119345146
-mas 'Characters', id: 536511979
-mas 'Sketch', id: 402476602
-mas 'The Unarchiver', id: 425424353
-mas 'Rested', id: 421879749
-mas 'Wunderlist', id: 410628904
-mas 'PopHub', id: 928494006
-mas 'Sunrise Calendar', id: 886106985
-mas 'Pages', id: 409201541
-mas 'Helium', id: 1054607607
-mas 'Slack', id: 803453959
-mas 'Dashlane', id: 552383089
-mas 'GIFHunter', id: 1031163338
-mas 'Caffeine', id: 411246225
-mas 'Boom', id: 415312377
-mas 'Numbers', id: 409203825
+mas 'Spark', id: 1176895641
 mas 'Paste', id: 967805235
-mas 'Bear', id: 1091189122
-mas 'Keynote', id: 409183694
-mas 'iA Writer', id: 775737590
-mas 'QuickShot', id: 965442961
+mas 'Sketch', id: 402476602
+mas 'Slack', id: 803453959
+mas 'Affinity Designer', id: 824171161
