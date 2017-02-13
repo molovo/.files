@@ -9,7 +9,6 @@
 Icon
 
 # Thumbnails
-._*
 Thumbs.db
 
 # Files that might appear in the root of a volume
@@ -54,8 +53,6 @@ sftp-config.json
 
 
 ### Vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
 *.un~
 Session.vim
 .netrwhist
