@@ -118,8 +118,6 @@
   "imdone-atom":
     openIn: {}
     todaysJournal: {}
-  "imdone-atom-github":
-    accessToken: "109fa60c09ed2757d193af7d9719b34e92744034"
   linter:
     errorPanelHeight: 327
     showErrorTabLine: true
@@ -189,8 +187,6 @@
     alwaysOpenInSameWindow: true
   "project-plus":
     showPath: true
-  "pull-requests":
-    githubAuthorizationToken: "75c9848867d8cc699811d7eb92de27a28f759427"
   "regex-railroad-diagram": {}
   "seti-icons":
     iconsPlus: true
@@ -206,11 +202,6 @@
     leftEditorColor: "red"
     rightEditorColor: "green"
     syncHorizontalScroll: true
-  "sync-settings":
-    _analyticsUserId: "3c8fed7b-8f4c-4314-b1f6-a39d2648e2dc"
-    _lastBackupHash: "1e91b3db5f38ed7c09055883e06ddb9d9ce4dbde"
-    gistId: "d89098d55c8c9151aed5"
-    personalAccessToken: "85cfad119950d302c83011b96848d0dbbf360013"
   tabs:
     enableVcsColoring: true
   "tidy-markdown":
