@@ -28,14 +28,12 @@
 
 function test_file {
     file="${1}"
-    if [ ! -f "${file}" ] ; then
-        return
-    fi
-    head -n 1 "${file}" | grep '<?php' > /dev/null
-    if [ "$?" -eq 0 ] ; then
+    if [ -f "${file}" ] ; then
+      if [ "${file:${#1}-4:4}" = ".php" ]; then
         set -e
         php -l "${file}"
         set +e
+      fi
     fi
 }
 
