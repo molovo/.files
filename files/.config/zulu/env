@@ -1,1 +1,2 @@
 export FILTHY_SHOW_EXIT_CODE='1'
+export TIPZ_TEXT='💡 '
