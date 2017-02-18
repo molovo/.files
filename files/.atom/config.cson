@@ -119,7 +119,7 @@
     openIn: {}
     todaysJournal: {}
   linter:
-    errorPanelHeight: 327
+    errorPanelHeight: 82
     showErrorTabLine: true
     statusIconScope: "File"
   "linter-coffee-variables": {}

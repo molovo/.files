@@ -60,4 +60,11 @@
           "php"
         ]
   }
+  {
+    title: "zvm"
+    paths: [
+      "/Users/molovo/.zulu/packages/zvm"
+      "/Users/molovo/.zvm"
+    ]
+  }
 ]
