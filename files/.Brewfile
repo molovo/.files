@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+tap 'cema-sp/tap'
 tap 'f/guardian'
 tap 'goles/battery'
 tap 'hhvm/hhvm'
@@ -116,10 +117,11 @@ brew 'highlight'
 brew 'htop-osx'
 brew 'httpie'
 brew 'hub'
+brew 'perl'
+brew 'imagemagick'
 brew 'jemalloc'
 brew 'oniguruma'
 brew 'jq'
-brew 'keybase'
 brew 'libelf'
 brew 'libssh2'
 brew 'libgit2'
@@ -153,9 +155,10 @@ brew 'newt'
 brew 'openssl@1.1'
 brew 'nginx', args: ['devel', 'with-http2'], restart_service: true
 brew 'node'
-brew 'perl'
 brew 'pinentry-mac'
 brew 'potrace'
+brew 'ruby-build'
+brew 'rbenv'
 brew 're2c'
 brew 'reattach-to-user-namespace'
 brew 'redis', restart_service: true
@@ -182,13 +185,14 @@ brew 'vim'
 brew 'watson'
 brew 'wget'
 brew 'yarn'
+brew 'yasm'
 brew 'z'
 brew 'zsh'
 brew 'f/guardian/guardian'
 brew 'goles/battery/battery'
 brew 'homebrew/dupes/rsync'
 brew 'homebrew/dupes/zlib'
-brew 'homebrew/php/php70'
+brew 'homebrew/php/php71'
 brew 'homebrew/php/composer'
 brew 'homebrew/php/igbinary'
 brew 'homebrew/php/php-code-sniffer'
@@ -197,7 +201,6 @@ brew 'homebrew/php/php54'
 brew 'homebrew/php/php54-igbinary'
 brew 'homebrew/php/php54-intl'
 brew 'homebrew/php/php54-mcrypt'
-brew 'homebrew/php/php54-memcached'
 brew 'homebrew/php/php54-redis'
 brew 'homebrew/php/php54-xdebug'
 brew 'homebrew/php/php54-xhprof'
@@ -206,7 +209,6 @@ brew 'homebrew/php/php55'
 brew 'homebrew/php/php55-igbinary'
 brew 'homebrew/php/php55-intl'
 brew 'homebrew/php/php55-mcrypt'
-brew 'homebrew/php/php55-memcached'
 brew 'homebrew/php/php55-redis'
 brew 'homebrew/php/php55-xdebug'
 brew 'homebrew/php/php55-xhprof'
@@ -215,19 +217,17 @@ brew 'homebrew/php/php56'
 brew 'homebrew/php/php56-igbinary'
 brew 'homebrew/php/php56-intl'
 brew 'homebrew/php/php56-mcrypt'
-brew 'homebrew/php/php56-memcached'
 brew 'homebrew/php/php56-redis'
 brew 'homebrew/php/php56-xdebug'
 brew 'homebrew/php/php56-xhprof'
 brew 'homebrew/php/php56-yaml'
+brew 'homebrew/php/php70'
 brew 'homebrew/php/php70-igbinary', args: ['HEAD']
 brew 'homebrew/php/php70-intl'
 brew 'homebrew/php/php70-mcrypt'
-brew 'homebrew/php/php70-memcached', args: ['HEAD']
 brew 'homebrew/php/php70-redis'
 brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-yaml', args: ['HEAD']
-brew 'homebrew/php/php71'
 brew 'homebrew/php/php71-intl'
 brew 'homebrew/php/php71-mcrypt'
 brew 'homebrew/php/php71-redis'
@@ -238,15 +238,17 @@ brew 'homebrew/php/phpunit'
 brew 'homebrew/php/pickle'
 brew 'homebrew/versions/bison27'
 brew 'keplersj/tap/update'
+brew 'neovim/neovim/neovim', args: ['HEAD']
 brew 'ravenac95/sudolikeaboss/sudolikeaboss'
 brew 'sdogruyol/cryload/cryload'
-cask 'anatine'
+cask '1password'
 cask 'betterzipql'
 cask 'hyper'
 cask 'insomnia'
 cask 'java'
 cask 'kap'
 cask 'keybase'
+cask 'numi'
 cask 'qlcolorcode'
 cask 'qlimagesize'
 cask 'qlmarkdown'
@@ -264,27 +266,29 @@ cask 'webpquicklook'
 mas 'QuickShot', id: 965442961
 mas 'Expressions', id: 913158085
 mas 'GIFHunter', id: 1031163338
-mas 'iA Writer', id: 775737590
-mas 'Helium', id: 1054607607
 mas 'Keynote', id: 409183694
-mas 'Duo', id: 777886035
+mas 'Helium', id: 1054607607
+mas 'iA Writer', id: 775737590
+mas 'TickTick', id: 966085870
 mas 'Rested', id: 421879749
-mas 'Caffeine', id: 411246225
+mas 'Duo', id: 777886035
 mas 'The Unarchiver', id: 425424353
-mas 'CCMenu', id: 603117688
 mas 'Boom', id: 415312377
 mas 'Pixelmator', id: 407963104
+mas 'CCMenu', id: 603117688
+mas 'stts', id: 1187772509
 mas 'Tweetbot', id: 557168941
-mas 'Numbers', id: 409203825
+mas 'Paste', id: 967805235
 mas 'Xcode', id: 497799835
 mas 'Characters', id: 536511979
 mas 'Pages', id: 409201541
 mas 'Wunderlist', id: 410628904
+mas 'Bear', id: 1091189122
 mas 'Transmit', id: 403388562
-mas 'Reeder', id: 880001334
-mas 'Raindrop.io', id: 957810159
+mas 'Numbers', id: 409203825
 mas 'Spark', id: 1176895641
-mas 'Paste', id: 967805235
+mas 'Reeder', id: 880001334
 mas 'Sketch', id: 402476602
-mas 'Slack', id: 803453959
+mas 'Sunrise Calendar', id: 886106985
 mas 'Affinity Designer', id: 824171161
+mas 'PopHub', id: 928494006
