@@ -38,3 +38,4 @@ alias labels='github-label-sync --labels ~/labels.json $(git config remote.origi
 alias tt='cd ~/.ateraan; tt++'
 alias gcam='git commit --amend --allow-empty --reset-author'
 alias grb='git rebase -p --autostash'
+alias update='command update && zulu self-update && zulu update && zulu upgrade'
