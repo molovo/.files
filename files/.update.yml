@@ -1,12 +1,16 @@
 ---
 - stuff: Atom Packages
-  executable: apm
+  executable: apm-beta
   command: update --confirm false
 
-- stuff: OS X and App Store installed apps
+- stuff: OS X updates
   executable: softwareupdate
   command: --install --all
   sudo: true
+
+- stuff: Mac App Store Apps
+  executable: mas
+  command: upgrade
 
 - stuff: Composer Packages
   executable: composer
