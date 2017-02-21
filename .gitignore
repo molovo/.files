@@ -45,3 +45,11 @@ files/.vim/.netrwhist
 
 # Sprout
 files/.config/sprout/
+
+# Sublime
+files/.sublime/SublimeLinter/*(SL).tmTheme
+files/.sublime/*.cache
+files/.sublime/*.crt
+files/.sublime/*-ca-bundle
+files/.sublime/Package\ Control.last-run
+files/.sublime/Projects/recent.json

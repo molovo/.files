@@ -1,0 +1,176 @@
+{
+	"user":
+	{
+		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+		"lint_mode": "background",
+		"linters":
+		{
+			"alex":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"annotations":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"errors":
+				[
+					"FIXME"
+				],
+				"excludes":
+				[
+				],
+				"warnings":
+				[
+					"NOTE",
+					"README",
+					"TODO",
+					"XXX",
+					"@todo"
+				]
+			},
+			"bashate":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"error": "",
+				"excludes":
+				[
+				],
+				"ignore": "",
+				"warn": ""
+			},
+			"coffee":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"coffeelint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"csslint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"errors": "",
+				"excludes":
+				[
+				],
+				"ignore": "",
+				"warnings": ""
+			},
+			"flow":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"show-all-errors": true
+			},
+			"json":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"strict": true
+			},
+			"php":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"phpmd":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"rulesets": "/Users/molovo/.phpmd.xml"
+			},
+			"puglint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"reporter": "inline"
+			},
+			"sass":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"shellcheck":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"exclude": "",
+				"excludes":
+				[
+				]
+			},
+			"xo":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"disable_if_not_dependency": true,
+				"enable_if_dependency": true,
+				"excludes":
+				[
+				]
+			}
+		},
+		"mark_style": "outline"
+	}
+}

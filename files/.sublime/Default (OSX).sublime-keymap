@@ -1,0 +1,8 @@
+[
+	{ "keys": ["super+alt+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	{ "keys": ["super+shift+a"], "command": "gs_quick_stage" },
+	{ "keys": ["super+alt+shift+a"], "command": "gs_add_edit" },
+	{ "keys": ["super+shift+c"], "command": "gs_commit" },
+	{ "keys": ["super+shift+p"], "command": "gs_push" },
+	{ "keys": ["super+alt+shift+p"], "command": "gs_pull" },
+]
