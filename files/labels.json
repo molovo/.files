@@ -68,5 +68,10 @@
     "name": "bug",
     "color": "fc2929",
     "aliases": []
+  },
+  {
+    "name": "testing",
+    "color": "fcda50",
+    "aliases": []
   }
 ]
