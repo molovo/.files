@@ -5,16 +5,20 @@
 	],
 	"installed_packages":
 	[
+		"AVA",
 		"ayu",
 		"Better CoffeeScript",
 		"Composer",
 		"Crystal",
+		"DocBlockr",
 		"GitGutter",
 		"GitSavvy",
-		"Jade",
 		"Markdown Extended",
 		"MarkdownEditing",
 		"Package Control",
+		"PHP Companion",
+		"Phpcs",
+		"PhpSimpleRefactor",
 		"ProjectManager",
 		"Pug",
 		"Sass",
@@ -33,9 +37,11 @@
 		"SublimeLinter-flow",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
-		"SublimeLinter-phpmd",
 		"SublimeLinter-shellcheck",
 		"Theme - Spacegray",
 		"Themes Menu Switcher"
+	],
+	"repositories":
+	[
 	]
 }

@@ -89,7 +89,8 @@
 			<string>Variable</string>
 			<key>scope</key>
 			<string>variable,
-punctuation.definition.variable.php</string>
+punctuation.definition.variable.php,
+source.coffee</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -103,7 +104,8 @@ punctuation.definition.variable.php</string>
 			<string>keyword,
 support.type.property-name,
 meta.property-name,
-meta.namespace.php</string>
+meta.namespace.php,
+source.sass</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -139,6 +141,8 @@ meta.namespace.php</string>
 			<string>Class name</string>
 			<key>scope</key>
 			<string>entity.name.class,
+meta.class.coffee,
+entity.name.type.class.coffee,
 support.other.namespace.php</string>
 			<key>settings</key>
 			<dict>
@@ -290,7 +294,8 @@ meta.function.arguments</string>
 			<string>punctuation,
 source.php.embedded,
 meta.brace,
-meta.brace.square.coffee</string>
+meta.brace.square.coffee,
+meta.brace.round.coffee</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -317,7 +322,7 @@ meta.scope.case-pattern.shell</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.dark.monokai</string>
+	<string>theme.dark.alternatone_stark_sea</string>
 	<key>author</key>
 	<string>molovo</string>
 </dict>

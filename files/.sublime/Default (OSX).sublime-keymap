@@ -5,4 +5,11 @@
 	{ "keys": ["super+shift+c"], "command": "gs_commit" },
 	{ "keys": ["super+shift+p"], "command": "gs_push" },
 	{ "keys": ["super+alt+shift+p"], "command": "gs_pull" },
+	{ "keys": ["f6"], "command": "expand_fqcn" },
+	{ "keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} },
+	{ "keys": ["super+enter"], "command": "find_use" },
+	{ "keys": ["f4"], "command": "import_namespace" },
+	{ "keys": ["super+shift+enter"], "command": "implement" },
+	{ "keys": ["ctrl+enter"], "command": "goto_definition_scope" },
+	{ "keys": ["alt+shift+p"], "command": "insert_php_constructor_property" }
 ]
