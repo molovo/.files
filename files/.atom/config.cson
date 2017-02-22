@@ -40,6 +40,7 @@
   "color-picker":
     preferredFormat: "HEX"
   core:
+    closeDeletedFileTabs: true
     disabledPackages: [
       "linter-phpcs"
       "language-gfm"
@@ -119,7 +120,7 @@
     openIn: {}
     todaysJournal: {}
   linter:
-    errorPanelHeight: 82
+    errorPanelHeight: 214
     showErrorTabLine: true
     statusIconScope: "File"
   "linter-coffee-variables": {}
