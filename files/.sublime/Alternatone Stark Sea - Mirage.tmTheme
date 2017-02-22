@@ -7,24 +7,24 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Alternatone Stark Sea</string>
+	<string>Alternatone Stark Sea - Mirage</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#0F1419</string>
+				<string>#212733</string>
 				<key>caret</key>
 				<string>#76EFC7</string>
 				<key>foreground</key>
 				<string>#D6E8FD</string>
 				<key>invisibles</key>
-				<string>#181D24</string>
+				<string>#2C3545</string>
 				<key>lineHighlight</key>
-				<string>#181D24</string>
+				<string>#2C3545</string>
 				<key>selection</key>
-				<string>#181D24</string>
+				<string>#2C3545</string>
 			</dict>
 		</dict>
 		<dict>

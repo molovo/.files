@@ -1,0 +1,40 @@
+{
+	"Ayu Dark + Alternatone":
+	{
+		"Preferences":
+		{
+			"color_scheme": "Packages/User/Alternatone Stark Sea.tmTheme",
+			"font_face": "Fira Code",
+			"font_size": 18,
+			"theme": "ayu-dark.sublime-theme"
+		},
+		"SublimeLinter":
+		{
+			"user":
+			{
+				"error_color": "D02000",
+				"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+				"warning_color": "DDB700"
+			}
+		}
+	},
+	"Ayu Mirage + Alternatone":
+	{
+		"Preferences":
+		{
+			"color_scheme": "Packages/User/Alternatone Stark Sea - Mirage.tmTheme",
+			"font_face": "Fira Code",
+			"font_size": 18,
+			"theme": "ayu-mirage.sublime-theme"
+		},
+		"SublimeLinter":
+		{
+			"user":
+			{
+				"error_color": "D02000",
+				"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+				"warning_color": "DDB700"
+			}
+		}
+	}
+}

@@ -7,8 +7,7 @@
 	],
 	"settings": {
 		"phpcoverage": {
-			"report_path": "system/tests/_output/coverage.xml",
-			"debug": true
+			"report_path": "system/tests/_output/coverage.xml"
 		}
 	}
 }
