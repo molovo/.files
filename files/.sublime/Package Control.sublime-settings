@@ -13,12 +13,15 @@
 		"DocBlockr",
 		"GitGutter",
 		"GitSavvy",
+		"JSONComma",
 		"Markdown Extended",
 		"MarkdownEditing",
 		"Package Control",
+		"PHP Code Coverage",
 		"PHP Companion",
-		"Phpcs",
+		"PhpCodeGen",
 		"PhpSimpleRefactor",
+		"Pretty JSON",
 		"ProjectManager",
 		"Pug",
 		"Sass",
@@ -39,7 +42,10 @@
 		"SublimeLinter-php",
 		"SublimeLinter-shellcheck",
 		"Theme - Spacegray",
-		"Themes Menu Switcher"
+		"Themes Menu Switcher",
+		"Travis YML Lint",
+		"Travis-CI",
+		"Xdebug Client"
 	],
 	"repositories":
 	[

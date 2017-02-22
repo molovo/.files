@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "/usr/local/var/www/rma.dev"
+		}
+	],
+	"settings": {
+		"phpcoverage": {
+			"report_path": "system/tests/_output/coverage.xml",
+			"debug": true
+		}
+	}
+}

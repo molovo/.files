@@ -53,3 +53,4 @@ files/.sublime/*.crt
 files/.sublime/*-ca-bundle
 files/.sublime/Package\ Control.last-run
 files/.sublime/Projects/recent.json
+files/.sublime/Xdebug.log

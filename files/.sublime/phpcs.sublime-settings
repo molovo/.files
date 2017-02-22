@@ -2,7 +2,7 @@
     // Plugin settings
 
     // Turn the debug output on/off
-    "show_debug": true,
+    "show_debug": false,
 
     // Which file types (file extensions), do you want the plugin to
     // execute for
@@ -181,7 +181,7 @@
     //  "-strict" : ""
     //}
     "scheck_additional_args": {
-        "-with_graph_code": "/Users/molovo/projects/interrogate/.php_code_graph/graph_code.marshall",
+        "-with_graph_code": ".php_code_graph/graph_code.marshall",
         "-php_stdlib": "/Users/molovo/projects/pfff/data/php_stdlib",
         "-strict" : ""
     }

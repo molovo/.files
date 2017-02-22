@@ -64,7 +64,7 @@
        "all" - add word completions from all views from active window
        "none" - do not add word completions
     */
-    "codeintel_word_completions": "buffer",
+    "codeintel_word_completions": "all",
 
     /*
        Insert functions snippets.
@@ -81,7 +81,7 @@
     /* Code Scanning: Controls how the Code Intelligence system scans your source code files. */
 
     /* Maximum directory depth: */
-    "codeintel_max_recursive_dir_depth": 10,
+    "codeintel_max_recursive_dir_depth": 30,
 
     /* Include all files and directories from the project base directory: */
     "codeintel_scan_files_in_project": true,
@@ -105,7 +105,7 @@
            Drupal (for PHP: A full-featured PHP content management/discussion engine -- v5.1)
            PECL (for PHP: A collection of PHP Extensions)
     */
-    "codeintel_selected_catalogs": [],
+    "codeintel_selected_catalogs": ["PECL"],
 
     /*
         When editing within a defined scope, no live completion will trigger. ex: ["comment"]
@@ -135,7 +135,7 @@
         },
         "PHP": {
             "php": "/usr/local/bin/php",
-            "codeintel_scan_extra_dir": [],
+            "codeintel_scan_extra_dir": ["vendor/composer"],
             "codeintel_scan_files_in_project": true,
             "codeintel_max_recursive_dir_depth": 15,
             "codeintel_scan_exclude_dir":[""]
