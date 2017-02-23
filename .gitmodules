@@ -121,3 +121,6 @@
 [submodule "files/.vim/bundle/vim-bracketed-paste"]
 	path = files/.vim/bundle/vim-bracketed-paste
 	url = git://github.com/ConradIrwin/vim-bracketed-paste.git
+[submodule "files/.vim/bundle/vim-zsh-completion"]
+	path = files/.vim/bundle/vim-zsh-completion
+	url = git://github.com/Valodim/vim-zsh-completion.git
