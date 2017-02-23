@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 zmodload 'zsh/zprof'
 
 setopt CORRECT
