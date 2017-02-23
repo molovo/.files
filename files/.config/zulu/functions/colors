@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+(( $+functions[colors] )) || function colors() {
+  echo "\e[0;30mBlack\e[0;m         0"
+  echo "\e[0;31mRed\e[0;m           1"
+  echo "\e[0;32mGreen\e[0;m         2"
+  echo "\e[0;33mYellow\e[0;m        3"
+  echo "\e[0;34mBlue\e[0;m          4"
+  echo "\e[0;35mMagenta\e[0;m       5"
+  echo "\e[0;36mCyan\e[0;m          6"
+  echo "\e[0;37mWhite\e[0;m         7"
+  echo
+  echo "\e[1;37mBold\e[0;m          1"
+  echo "\e[2;37mItalic\e[0;m        2"
+  echo "\e[4;37mUnderline\e[0;m     4"
+  echo "\e[7;37mInverse\e[0;m       7"
+  echo "\e[9;37mStrikethrough\e[0;m 9"
+}
