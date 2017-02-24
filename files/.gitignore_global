@@ -96,3 +96,6 @@ fabric.properties
 
 ### Git Plugins ###
 .github-todos
+
+### Compiled ZSH scripts ###
+*.zwc
