@@ -1,3 +1,4 @@
 export FILTHY_SHOW_EXIT_CODE='1'
 export TIPZ_TEXT='💡'
 export ZVM_AUTO_USE='1'
+export FILTHY_SHOW_CI_STATUS='1'
