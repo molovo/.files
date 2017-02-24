@@ -48,6 +48,7 @@ files/.config/sprout/
 
 # Sublime
 files/.sublime/SublimeLinter/*(SL).tmTheme
+files/.sublime/Color\ Highlighter/themes/*(SL).tmTheme
 files/.sublime/*.cache
 files/.sublime/*.crt
 files/.sublime/*-ca-bundle
