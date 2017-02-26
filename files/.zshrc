@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-zmodload 'zsh/zprof'
-
 setopt CORRECT
 
 [[ "$TERM_PROGRAM" != "Hyper" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
@@ -12,7 +10,7 @@ export WATSON_DIR=~/.config/watson
 
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
-zulu init --check-for-update
+zulu init
 
 if builtin type thefuck >/dev/null 2>&1; then
   eval $(thefuck --alias)
@@ -33,4 +31,3 @@ if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; t
     eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
   fi
 fi
-
