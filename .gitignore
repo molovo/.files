@@ -47,8 +47,8 @@ files/.vim/.netrwhist
 files/.config/sprout/
 
 # Sublime
-files/.sublime/SublimeLinter/*(SL).tmTheme
-files/.sublime/Color\ Highlighter/themes/*(SL).tmTheme
+files/.sublime/SublimeLinter/*.tmTheme
+files/.sublime/Color\ Highlighter/themes/*.tmTheme
 files/.sublime/*.cache
 files/.sublime/*.crt
 files/.sublime/*-ca-bundle
