@@ -41,4 +41,4 @@
 	default = simple
 	followTags = true
 [alias]
-	up = !git fetch && git rebase --autostash FETCH_HEAD
+	up = !git fetch && git rebase -p --autostash FETCH_HEAD
