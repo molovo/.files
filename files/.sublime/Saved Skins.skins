@@ -4,8 +4,6 @@
 		"Preferences":
 		{
 			"color_scheme": "Packages/User/Alternatone Stark Sea.tmTheme",
-			"font_face": "Fira Code",
-			"font_size": 16,
 			"theme": "ayu-dark.sublime-theme"
 		}
 	},
@@ -14,8 +12,6 @@
 		"Preferences":
 		{
 			"color_scheme": "Packages/User/Alternatone Stark Sea - Mirage.tmTheme",
-			"font_face": "Fira Code",
-			"font_size": 16,
 			"theme": "ayu-mirage.sublime-theme"
 		}
 	}
