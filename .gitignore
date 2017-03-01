@@ -49,12 +49,17 @@ files/.config/sprout/
 # Sublime
 files/.sublime/SublimeLinter/*.tmTheme
 files/.sublime/Color\ Highlighter/themes/*.tmTheme
+files/.sublime/Color\ Highlighter/icons/
 files/.sublime/*.cache
 files/.sublime/*.crt
 files/.sublime/*-ca-bundle
 files/.sublime/Package\ Control.last-run
 files/.sublime/Projects/recent.json
 files/.sublime/Xdebug.log
+
+# Yarn
+files/.config/yarn/global/node_modules/
+files/.config/yarn/global/node_modules/.yarn-integrity
 
 # ZSH
 *.zwc
