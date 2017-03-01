@@ -116,6 +116,17 @@ support.command-switch.shell</string>
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Command Switch</string>
+			<key>scope</key>
+			<string>support.command-switch.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Storage</string>
 			<key>scope</key>
 			<string>storage</string>
