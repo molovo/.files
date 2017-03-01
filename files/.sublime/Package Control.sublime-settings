@@ -48,6 +48,7 @@
 		"SublimeLinter-contrib-bashate",
 		"SublimeLinter-contrib-pug-lint",
 		"SublimeLinter-contrib-sass-lint",
+		"SublimeLinter-contrib-write-good",
 		"SublimeLinter-contrib-xo",
 		"SublimeLinter-csslint",
 		"SublimeLinter-flow",
