@@ -2,6 +2,7 @@
 	"extensions":
 	[
 		"zsh",
-		"zunit"
+		"zunit",
+		"zsh-completion"
 	]
 }
