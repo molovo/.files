@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+(( $+functions[gtf] )) || function gtf() {
+  git tag -sf v$1 -m "Release $1"
+}
