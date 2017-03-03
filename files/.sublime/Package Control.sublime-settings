@@ -16,6 +16,7 @@
 		"Color Highlighter",
 		"Composer",
 		"Crystal",
+		"CustomPATH",
 		"DocBlockr",
 		"Fix Mac Path",
 		"Git Config",
@@ -58,6 +59,7 @@
 		"tern_for_sublime",
 		"Theme - Spacegray",
 		"Themes Menu Switcher",
+		"TidyTabs",
 		"Travis YML Lint",
 		"Travis-CI",
 		"Xdebug Client"
