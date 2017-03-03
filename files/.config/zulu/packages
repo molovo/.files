@@ -32,7 +32,6 @@ docker
 zsh-hints-integration
 zsh-hints
 dpkg
-crash
 dwim
 fasd
 osx
@@ -43,3 +42,4 @@ autopair
 zvm
 zsh-bd
 solarized-man
+crash
