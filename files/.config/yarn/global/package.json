@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@captainsafia/legit": "^2.0.1",
     "alex": "^4.0.1",
     "ava": "^0.18.2",
     "browser-sync": "^2.18.8",
