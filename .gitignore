@@ -64,3 +64,6 @@ files/.config/yarn/global/yarn.lock
 
 # ZSH
 *.zwc
+
+# Zulu
+files/.config/zulu/env.private
