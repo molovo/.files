@@ -1,5 +1,4 @@
 archive
-async
 autosuggestions
 color
 command-not-found
@@ -27,7 +26,6 @@ filthy
 transfer
 fzf-z
 homebrew
-node
 docker
 zsh-hints-integration
 zsh-hints
@@ -44,3 +42,4 @@ zsh-bd
 solarized-man
 crash
 warhol
+async
