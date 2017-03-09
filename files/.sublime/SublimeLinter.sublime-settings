@@ -104,8 +104,12 @@
         "no_column_highlights_line": false,
         "passive_warnings": false,
         "paths": {
-            "linux": [],
-            "osx": [],
+            "linux": [
+                "/Users/molovo/.config/yarn/global/node_modules/.bin"
+            ],
+            "osx": [
+                "/Users/molovo/.config/yarn/global/node_modules/.bin"
+            ],
             "windows": []
         },
         "python_paths": {

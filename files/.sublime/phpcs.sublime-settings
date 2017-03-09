@@ -54,7 +54,7 @@
     // PHP_CodeSniffer settings
 
     // Do you want to run the phpcs checker?
-    "phpcs_sniffer_run": true,
+    "phpcs_sniffer_run": false,
 
     // Execute the sniffer on file save
     "phpcs_command_on_save": true,

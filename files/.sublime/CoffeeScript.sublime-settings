@@ -7,12 +7,12 @@
 		"envPATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 	*/
-	"envPATH": "",
+	"envPATH": "/usr/local/bin",
 	/*
 		The directory containing your coffee binary. Usually
 		/usr/local/bin or /usr/bin.
 	*/
-	"binDir": "/usr/local/bin"
+	"binDir": "/Users/molovo/.config/yarn/global/node_modules/.bin"
 
 	/*
 		Compile without the top-level function wrapper (coffee -b).
