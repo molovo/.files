@@ -29,3 +29,7 @@
 - stuff: Node Packages
   executable: npm
   command: update -g
+
+- stuff: Yarn Packages
+  executable: yarn
+  command: global upgrade
