@@ -46,6 +46,7 @@ brew 'autoconf'
 brew 'automake'
 brew 'bats'
 brew 'bdw-gc'
+brew 'bison@2.7'
 brew 'boost'
 brew 'ocaml'
 brew 'ocamlbuild'
@@ -107,6 +108,7 @@ brew 'gnupg2'
 brew 'go'
 brew 'libtool'
 brew 'graphicsmagick'
+brew 'grc'
 brew 'hicolor-icon-theme'
 brew 'icu4c'
 brew 'harfbuzz'
@@ -130,7 +132,10 @@ brew 'libmemcached'
 brew 'libogg'
 brew 'libpcl'
 brew 'libressl'
+brew 'libtermkey'
+brew 'libuv'
 brew 'libvorbis'
+brew 'libvterm'
 brew 'libxml2'
 brew 'libzip'
 brew 'lnav'
@@ -140,7 +145,7 @@ brew 'logstalgia'
 brew 'luajit'
 brew 'lz4'
 brew 'makedepend'
-brew 'mariadb', restart_service: true
+brew 'mariadb'
 brew 'mas'
 brew 'mhash'
 brew 'mcrypt'
@@ -148,8 +153,11 @@ brew 'md5sha1sum'
 brew 's-lang'
 brew 'midnight-commander'
 brew 'mongodb'
+brew 'msgpack'
 brew 'mycli'
 brew 'mysqltuner'
+brew 'screenresolution'
+brew 'neofetch'
 brew 'popt'
 brew 'newt'
 brew 'openssl@1.1'
@@ -177,6 +185,7 @@ brew 'thefuck'
 brew 'tintin'
 brew 'tmux'
 brew 'unar'
+brew 'unibilium'
 brew 'unixodbc'
 brew 'utf8proc'
 brew 'v'
@@ -192,7 +201,7 @@ brew 'f/guardian/guardian'
 brew 'goles/battery/battery'
 brew 'homebrew/dupes/rsync'
 brew 'homebrew/dupes/zlib'
-brew 'homebrew/php/php71'
+brew 'homebrew/php/php70'
 brew 'homebrew/php/composer'
 brew 'homebrew/php/igbinary'
 brew 'homebrew/php/php-code-sniffer'
@@ -221,13 +230,13 @@ brew 'homebrew/php/php56-redis'
 brew 'homebrew/php/php56-xdebug'
 brew 'homebrew/php/php56-xhprof'
 brew 'homebrew/php/php56-yaml'
-brew 'homebrew/php/php70'
 brew 'homebrew/php/php70-igbinary', args: ['HEAD']
 brew 'homebrew/php/php70-intl'
 brew 'homebrew/php/php70-mcrypt'
 brew 'homebrew/php/php70-redis'
 brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-yaml', args: ['HEAD']
+brew 'homebrew/php/php71'
 brew 'homebrew/php/php71-intl'
 brew 'homebrew/php/php71-mcrypt'
 brew 'homebrew/php/php71-redis'
@@ -236,18 +245,19 @@ brew 'homebrew/php/php71-yaml'
 brew 'homebrew/php/phpdocumentor'
 brew 'homebrew/php/phpunit'
 brew 'homebrew/php/pickle'
-brew 'homebrew/versions/bison27'
 brew 'keplersj/tap/update'
 brew 'neovim/neovim/neovim', args: ['HEAD']
 brew 'ravenac95/sudolikeaboss/sudolikeaboss'
 brew 'sdogruyol/cryload/cryload'
 cask '1password'
 cask 'betterzipql'
+cask 'dash'
 cask 'hyper'
 cask 'insomnia'
 cask 'java'
 cask 'kap'
 cask 'keybase'
+cask 'mysimbl'
 cask 'numi'
 cask 'qlcolorcode'
 cask 'qlimagesize'
@@ -258,37 +268,39 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'raindropio'
 cask 'slack-beta'
+cask 'sublime-text'
 cask 'suspicious-package'
 cask 'vagrant'
 cask 'vagrant-manager'
+cask 'veertu-desktop'
 cask 'virtualbox'
 cask 'webpquicklook'
-mas 'QuickShot', id: 965442961
+mas 'Affinity Designer', id: 824171161
+mas 'Bear', id: 1091189122
+mas 'Boom', id: 415312377
+mas 'CCMenu', id: 603117688
+mas 'Characters', id: 536511979
+mas 'Duo', id: 777886035
 mas 'Expressions', id: 913158085
 mas 'GIFHunter', id: 1031163338
-mas 'Keynote', id: 409183694
 mas 'Helium', id: 1054607607
 mas 'iA Writer', id: 775737590
-mas 'TickTick', id: 966085870
-mas 'Rested', id: 421879749
-mas 'Duo', id: 777886035
-mas 'The Unarchiver', id: 425424353
-mas 'Boom', id: 415312377
-mas 'Pixelmator', id: 407963104
-mas 'CCMenu', id: 603117688
-mas 'stts', id: 1187772509
-mas 'Tweetbot', id: 557168941
-mas 'Paste', id: 967805235
-mas 'Xcode', id: 497799835
-mas 'Characters', id: 536511979
-mas 'Pages', id: 409201541
-mas 'Wunderlist', id: 410628904
-mas 'Bear', id: 1091189122
-mas 'Transmit', id: 403388562
+mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
-mas 'Spark', id: 1176895641
-mas 'Reeder', id: 880001334
-mas 'Sketch', id: 402476602
-mas 'Sunrise Calendar', id: 886106985
-mas 'Affinity Designer', id: 824171161
+mas 'Pages', id: 409201541
+mas 'Paste', id: 967805235
+mas 'Pixelmator', id: 407963104
 mas 'PopHub', id: 928494006
+mas 'QuickShot', id: 965442961
+mas 'Reeder', id: 880001334
+mas 'Rested', id: 421879749
+mas 'Sketch', id: 402476602
+mas 'Spark', id: 1176895641
+mas 'stts', id: 1187772509
+mas 'Sunrise Calendar', id: 886106985
+mas 'The Unarchiver', id: 425424353
+mas 'TickTick', id: 966085870
+mas 'Transmit', id: 403388562
+mas 'Tweetbot', id: 557168941
+mas 'Wunderlist', id: 410628904
+mas 'Xcode', id: 497799835
