@@ -73,5 +73,20 @@
     "name": "testing",
     "color": "fcda50",
     "aliases": []
+  },
+  {
+    "name": "duplicate",
+    "color": "eaeaea",
+    "aliases": []
+  },
+  {
+    "name": "invalid",
+    "color": "eaeaea",
+    "aliases": []
+  },
+  {
+    "name": "wontfix",
+    "color": "eaeaea",
+    "aliases": []
   }
 ]
