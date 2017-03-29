@@ -29,7 +29,6 @@ homebrew
 docker
 zsh-hints-integration
 zsh-hints
-dpkg
 dwim
 fasd
 osx
@@ -43,3 +42,4 @@ solarized-man
 crash
 warhol
 async
+node
