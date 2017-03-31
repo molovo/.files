@@ -1,6 +1,5 @@
 archive
 autosuggestions
-color
 command-not-found
 completions
 crystal
@@ -43,3 +42,5 @@ crash
 warhol
 async
 node
+zshbuild
+color

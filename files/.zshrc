@@ -4,13 +4,9 @@ setopt CORRECT
 
 [[ "$TERM_PROGRAM" != "Hyper" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
 
-export EDITOR='vim'
-
-export WATSON_DIR=~/.config/watson
-
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
-zulu init
+zulu init --next
 
 if builtin type thefuck >/dev/null 2>&1; then
   eval $(thefuck --alias)
