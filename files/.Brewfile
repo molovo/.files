@@ -40,6 +40,7 @@ brew 'pixman'
 brew 'cairo'
 brew 'git'
 brew 'pkg-config'
+brew 'python'
 brew 'gobject-introspection'
 brew 'atk'
 brew 'autoconf'
@@ -60,7 +61,6 @@ brew 'coreutils'
 brew 'gmp'
 brew 'libevent'
 brew 'libyaml'
-brew 'python'
 brew 'llvm'
 brew 'crystal-lang'
 brew 'ctags'
@@ -92,6 +92,8 @@ brew 'shared-mime-info'
 brew 'gdk-pixbuf'
 brew 'gem-completion'
 brew 'gflags'
+brew 'ruby'
+brew 'ghi'
 brew 'gist'
 brew 'git-cal'
 brew 'git-extras'
@@ -145,7 +147,7 @@ brew 'logstalgia'
 brew 'luajit'
 brew 'lz4'
 brew 'makedepend'
-brew 'mariadb'
+brew 'mariadb', restart_service: true
 brew 'mas'
 brew 'mhash'
 brew 'mcrypt'
@@ -170,7 +172,6 @@ brew 'rbenv'
 brew 're2c'
 brew 'reattach-to-user-namespace'
 brew 'redis', restart_service: true
-brew 'ruby'
 brew 'selenium-server-standalone', restart_service: true
 brew 'shellcheck'
 brew 'siege'
@@ -210,6 +211,7 @@ brew 'homebrew/php/php56'
 brew 'homebrew/php/php56-igbinary'
 brew 'homebrew/php/php56-intl'
 brew 'homebrew/php/php56-mcrypt'
+brew 'homebrew/php/php56-memcached'
 brew 'homebrew/php/php56-redis'
 brew 'homebrew/php/php56-xdebug'
 brew 'homebrew/php/php56-xhprof'
@@ -217,6 +219,7 @@ brew 'homebrew/php/php56-yaml'
 brew 'homebrew/php/php70-igbinary'
 brew 'homebrew/php/php70-intl'
 brew 'homebrew/php/php70-mcrypt'
+brew 'homebrew/php/php70-memcached'
 brew 'homebrew/php/php70-redis'
 brew 'homebrew/php/php70-xdebug'
 brew 'homebrew/php/php70-yaml'
@@ -234,10 +237,14 @@ brew 'neovim/neovim/neovim', args: ['HEAD']
 brew 'ravenac95/sudolikeaboss/sudolikeaboss'
 brew 'sdogruyol/cryload/cryload'
 cask '1password'
+cask 'anatine'
 cask 'betterzipql'
+cask 'coderunner'
 cask 'dash'
+cask 'flashlight'
 cask 'hyper'
 cask 'insomnia'
+cask 'itsycal'
 cask 'java'
 cask 'kap'
 cask 'keybase'
@@ -251,6 +258,7 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'raindropio'
+cask 'sip'
 cask 'skyfonts'
 cask 'slack-beta'
 cask 'sublime-text'
@@ -261,8 +269,10 @@ cask 'veertu-desktop'
 cask 'virtualbox'
 cask 'webpquicklook'
 mas 'Affinity Designer', id: 824171161
+mas 'Battery Indicator', id: 1206020918
 mas 'Bear', id: 1091189122
 mas 'Boom', id: 415312377
+mas 'Caffeine', id: 411246225
 mas 'CCMenu', id: 603117688
 mas 'Characters', id: 536511979
 mas 'Duo', id: 777886035
@@ -277,9 +287,11 @@ mas 'Paste', id: 967805235
 mas 'Pixelmator', id: 407963104
 mas 'PopHub', id: 928494006
 mas 'QuickShot', id: 965442961
+mas 'Raindrop.io', id: 957810159
 mas 'Reeder', id: 880001334
 mas 'Rested', id: 421879749
 mas 'Sketch', id: 402476602
+mas 'Slack', id: 803453959
 mas 'Spark', id: 1176895641
 mas 'stts', id: 1187772509
 mas 'Sunrise Calendar', id: 886106985
