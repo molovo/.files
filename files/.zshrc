@@ -6,7 +6,7 @@ setopt CORRECT
 
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
-zulu init --next
+zulu init --dev
 
 if builtin type thefuck >/dev/null 2>&1; then
   eval $(thefuck --alias)
