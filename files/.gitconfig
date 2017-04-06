@@ -13,7 +13,8 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustexitcode = true
 [merge]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
+  conflictstyle = diff3
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
@@ -39,6 +40,8 @@
 
 [push]
 	default = simple
-	followTags = true
+  followTags = true
+[transfer]
+  fsckobjects = true
 [alias]
 	up = !git fetch && git rebase -p --autostash FETCH_HEAD
