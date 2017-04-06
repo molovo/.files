@@ -118,7 +118,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-blink", "hyperterm-clicky", "hyperline", "hyperterm-tab-icons"],
+  plugins: [
+    "hyperterm-blink",
+    "hyperterm-clicky",
+    "hyper-statusline",
+    "hyperterm-paste",
+    "hyper-tab-icons"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
