@@ -16,6 +16,7 @@
     "gulp-cli": "^1.2.2",
     "hpm-cli": "^2.0.0",
     "htmlhint": "^0.9.13",
+    "http-server": "^0.9.0",
     "internal-ip": "^1.2.0",
     "is-online-cli": "^2.0.0",
     "itunes-remote": "^2.1.0",
