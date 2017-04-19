@@ -5,6 +5,9 @@
 			"path": "/usr/local/var/www/rma.dev"
 		}
 	],
+	"codeintel_settings": {
+		"codeintel_database_dir": "~/.codeintel/database/rma"
+	},
 	"settings": {
 		"phpcoverage": {
 			"report_path": "system/tests/_output/coverage.xml"
