@@ -138,6 +138,7 @@
 	"remember_full_screen": true,
 	"rulers":
 	[
+		80
 	],
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
