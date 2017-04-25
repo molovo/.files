@@ -22,6 +22,7 @@ set swapfile           " keep unsaved changes in a swapfile
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set undodir=~/.vim/tmp
+set backupskip=/tmp/*,/private/tmp/*
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
