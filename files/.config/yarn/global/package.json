@@ -22,7 +22,7 @@
     "itunes-remote": "^2.1.0",
     "jsonlint": "^1.6.2",
     "less": "^2.7.2",
-    "multicolour": "^0.6.3",
+    "multicolour": "^0.6.6",
     "netlify-cli": "^1.2.2",
     "node-sass": "^4.5.0",
     "pageres-cli": "^4.0.0",
