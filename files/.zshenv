@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
 
-typeset -Uga fpath path
-path=($(cat ${ZULU_CONFIG_DIR:-"${ZDOTDIR:-$HOME}/.config/zulu"}/path))
+typeset -Uga fpath
 fpath=($(cat ${ZULU_CONFIG_DIR:-"${ZDOTDIR:-$HOME}/.config/zulu"}/fpath))
