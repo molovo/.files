@@ -1,7 +1,7 @@
 archive
 async
 autopair
-autosuggestions, branch: develop
+autosuggestions
 color
 command-not-found
 completions
@@ -9,7 +9,6 @@ crash
 crystal
 directory
 docker
-done
 dwim
 fasd
 fast-syntax-highlighting
