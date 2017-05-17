@@ -25,6 +25,7 @@
     "multicolour": "^0.6.6",
     "netlify-cli": "^1.2.2",
     "node-sass": "^4.5.0",
+    "now": "^5.3.0",
     "pageres-cli": "^4.0.0",
     "phantomjs-prebuilt": "^2.1.14",
     "public-ip": "^2.3.3",
