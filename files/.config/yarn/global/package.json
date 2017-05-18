@@ -14,7 +14,6 @@
     "google-font-installer": "^1.0.8",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.2",
-    "hpm-cli": "^2.0.0",
     "htmlhint": "^0.9.13",
     "http-server": "^0.9.0",
     "internal-ip": "^1.2.0",
