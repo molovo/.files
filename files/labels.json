@@ -88,5 +88,20 @@
     "name": "wontfix",
     "color": "eaeaea",
     "aliases": []
+  },
+  {
+    "name": "stale",
+    "color": "eaeaea",
+    "aliases": []
+  },
+  {
+    "name": "more information needed",
+    "color": "cc317c",
+    "aliases": []
+  },
+  {
+    "name": "next",
+    "color": "fcda50",
+    "aliases": []
   }
 ]
