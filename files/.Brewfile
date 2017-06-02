@@ -1,278 +1,233 @@
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'cema-sp/tap'
-tap 'drujensen/kgen'
-tap 'f/guardian'
-tap 'goles/battery'
-tap 'hhvm/hhvm'
-tap 'homebrew/binary'
-tap 'homebrew/bundle'
-tap 'homebrew/command-not-found'
-tap 'homebrew/completions'
-tap 'homebrew/core'
-tap 'homebrew/devel-only'
-tap 'homebrew/dupes'
-tap 'homebrew/nginx'
-tap 'homebrew/php'
-tap 'homebrew/services'
-tap 'homebrew/versions'
-tap 'homebrew/x11'
-tap 'keplersj/tap'
-tap 'neovim/neovim'
-tap 'ravenac95/sudolikeaboss'
-tap 'sdogruyol/cryload'
-tap 'thoughtbot/formulae'
-brew 'gdbm'
-brew 'openssl'
-brew 'sqlite'
-brew 'xz'
-brew 'python3'
-brew 'asciinema'
-brew 'aspell'
-brew 'libpng'
-brew 'freetype'
-brew 'fontconfig'
-brew 'gettext'
-brew 'pcre'
-brew 'glib'
-brew 'pixman'
-brew 'cairo'
-brew 'git'
-brew 'python'
-brew 'atk'
-brew 'autoconf'
-brew 'automake'
-brew 'bats'
-brew 'bdw-gc'
-brew 'bison@2.7'
-brew 'boost'
-brew 'ocaml'
-brew 'ocamlbuild'
-brew 'camlp4'
-brew 'cctools'
-brew 'checkbashisms'
-brew 'chromedriver', restart_service: true
-brew 'clog'
-brew 'cmake'
-brew 'coreutils'
-brew 'gmp'
-brew 'libyaml'
-brew 'crystal-lang'
-brew 'ctags'
-brew 'direnv'
-brew 'libgpg-error'
-brew 'libassuan'
-brew 'libgcrypt'
-brew 'libksba'
-brew 'pth'
-brew 'dirmngr'
-brew 'doctl'
-brew 'doxygen'
-brew 'dwarfutils'
-brew 'exercism'
-brew 'pcre2'
-brew 'fish'
-brew 'flex'
-brew 'flow'
-brew 'fpp'
-brew 'freetds'
-brew 'fzf'
-brew 'mpfr'
-brew 'gawk'
-brew 'jpeg'
-brew 'gd'
-brew 'shared-mime-info'
-brew 'gdk-pixbuf'
-brew 'gem-completion'
-brew 'gflags'
-brew 'gist'
-brew 'git-cal'
-brew 'git-extras'
-brew 'git-flow'
-brew 'git-hooks'
-brew 'glew'
-brew 'glog'
-brew 'gnu-sed'
-brew 'libusb'
-brew 'pinentry'
-brew 'gnupg'
-brew 'go'
-brew 'gpg-agent'
-brew 'libtool'
-brew 'graphicsmagick'
-brew 'grc'
-brew 'icu4c'
-brew 'harfbuzz'
-brew 'hicolor-icon-theme'
-brew 'pango'
-brew 'gtk+'
-brew 'lua'
-brew 'highlight'
-brew 'htop-osx'
-brew 'httpie'
-brew 'hub'
-brew 'perl'
-brew 'imagemagick'
-brew 'jemalloc'
-brew 'oniguruma'
-brew 'jq'
-brew 'libelf'
-brew 'libssh2'
-brew 'libgit2'
-brew 'memcached'
-brew 'libmemcached'
-brew 'libogg'
-brew 'libpcl'
-brew 'libressl'
-brew 'libtermkey'
-brew 'libusb-compat'
-brew 'libuv'
-brew 'libvorbis'
-brew 'libvterm'
-brew 'libxml2'
-brew 'libzip'
-brew 'lnav'
-brew 'sdl2'
-brew 'sdl2_image'
-brew 'logstalgia'
-brew 'luajit'
-brew 'lynx'
-brew 'lz4'
-brew 'makedepend'
-brew 'mariadb', restart_service: true
-brew 'mas'
-brew 'mhash'
-brew 'mcrypt'
-brew 'md5sha1sum'
-brew 's-lang'
-brew 'midnight-commander'
-brew 'mongodb'
-brew 'msgpack'
-brew 'mycli'
-brew 'mysqltuner'
-brew 'neofetch'
-brew 'popt'
-brew 'newt'
-brew 'openssl@1.1'
-brew 'nginx', args: ['devel', 'with-http2'], restart_service: true
-brew 'node'
-brew 'pinentry-mac'
-brew 'potrace'
-brew 'rbenv'
-brew 're2c'
-brew 'reattach-to-user-namespace'
-brew 'redis', restart_service: true
-brew 'rsync'
-brew 'ruby'
-brew 'selenium-server-standalone', restart_service: true
-brew 'shellcheck'
-brew 'siege'
-brew 'spark'
-brew 'sphinx-doc'
-brew 'stormssh'
-brew 'stormssh-completion'
-brew 'tbb'
-brew 'terminal-notifier'
-brew 'the_silver_searcher'
-brew 'thefuck'
-brew 'tintin'
-brew 'tmux'
-brew 'unar'
-brew 'unibilium'
-brew 'unixodbc'
-brew 'utf8proc'
-brew 'v'
-brew 'vagrant-completion'
-brew 'vim'
-brew 'watson'
-brew 'wget'
-brew 'yarn'
-brew 'yasm'
-brew 'z'
-brew 'zlib'
-brew 'zsh'
-brew 'drujensen/kgen/kgen'
-brew 'f/guardian/guardian'
-brew 'goles/battery/battery'
-brew 'homebrew/php/composer'
-brew 'homebrew/php/igbinary'
-brew 'homebrew/php/php71'
-brew 'homebrew/php/php-code-sniffer'
-brew 'homebrew/php/php-cs-fixer'
-brew 'homebrew/php/php56-igbinary'
-brew 'homebrew/php/php56-intl'
-brew 'homebrew/php/php56-mcrypt'
-brew 'homebrew/php/php56-redis'
-brew 'homebrew/php/php56-xdebug'
-brew 'homebrew/php/php56-xhprof'
-brew 'homebrew/php/php56-yaml'
-brew 'homebrew/php/php70-igbinary'
-brew 'homebrew/php/php70-intl'
-brew 'homebrew/php/php70-mcrypt'
-brew 'homebrew/php/php70-memcached'
-brew 'homebrew/php/php70-redis'
-brew 'homebrew/php/php70-xdebug'
-brew 'homebrew/php/php70-yaml'
-brew 'homebrew/php/php71-intl'
-brew 'homebrew/php/php71-mcrypt'
-brew 'homebrew/php/php71-redis'
-brew 'homebrew/php/php71-xdebug'
-brew 'homebrew/php/php71-yaml'
-brew 'homebrew/php/phpdocumentor'
-brew 'homebrew/php/phpunit'
-brew 'homebrew/php/pickle'
-brew 'keplersj/tap/update'
-brew 'neovim/neovim/neovim', args: ['HEAD']
-brew 'ravenac95/sudolikeaboss/sudolikeaboss'
-brew 'sdogruyol/cryload/cryload'
-cask '1password'
-cask 'alfred'
-cask 'betterzipql'
-cask 'catlight'
-cask 'hyper'
-cask 'insomnia'
-cask 'java'
-cask 'kap'
-cask 'keybase'
-cask 'numi'
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlprettypatch'
-cask 'qlstephen'
-cask 'quicklook-csv'
-cask 'quicklook-json'
-cask 'raindropio'
-cask 'skyfonts'
-cask 'slack-beta'
-cask 'sublime-text'
-cask 'suspicious-package'
-cask 'vagrant'
-cask 'vagrant-manager'
-cask 'virtualbox'
-cask 'webpquicklook'
-mas 'Affinity Designer', id: 824171161
-mas 'Bear', id: 1091189122
-mas 'Boom', id: 415312377
-mas 'CCMenu', id: 603117688
-mas 'Characters', id: 536511979
-mas 'Expressions', id: 913158085
-mas 'GIFHunter', id: 1031163338
-mas 'Helium', id: 1054607607
-mas 'iA Writer', id: 775737590
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'OhMyStar2', id: 1218642292
-mas 'Pages', id: 409201541
-mas 'Paste', id: 967805235
-mas 'Pixelmator', id: 407963104
-mas 'PopHub', id: 928494006
-mas 'QuickShot', id: 965442961
-mas 'Reeder', id: 880001334
-mas 'Spark', id: 1176895641
-mas 'The Unarchiver', id: 425424353
-mas 'TickTick', id: 966085870
-mas 'Transmit', id: 403388562
-mas 'Tweetbot', id: 557168941
-mas 'Tyme', id: 670592452
-mas 'Xcode', id: 497799835
+tap "caskroom/cask"
+tap "caskroom/versions"
+tap "cema-sp/tap"
+tap "codeclimate/formulae"
+tap "drujensen/kgen"
+tap "f/guardian"
+tap "goles/battery"
+tap "hhvm/hhvm"
+tap "homebrew/binary"
+tap "homebrew/bundle"
+tap "homebrew/command-not-found"
+tap "homebrew/completions"
+tap "homebrew/core"
+tap "homebrew/devel-only"
+tap "homebrew/dupes"
+tap "homebrew/nginx"
+tap "homebrew/php"
+tap "homebrew/services"
+tap "homebrew/versions"
+tap "homebrew/x11"
+tap "keplersj/tap"
+tap "neovim/neovim"
+tap "ravenac95/sudolikeaboss"
+tap "sdogruyol/cryload"
+tap "thoughtbot/formulae"
+brew "gdbm"
+brew "openssl"
+brew "sqlite"
+brew "xz"
+brew "python3"
+brew "asciinema"
+brew "aspell"
+brew "libpng"
+brew "freetype"
+brew "fontconfig"
+brew "gettext"
+brew "pcre"
+brew "glib"
+brew "pixman"
+brew "cairo"
+brew "perl"
+brew "git"
+brew "python"
+brew "atk"
+brew "autoconf"
+brew "automake"
+brew "bats"
+brew "bdw-gc"
+brew "boost"
+brew "checkbashisms"
+brew "chromedriver", restart_service: true
+brew "cmake"
+brew "coreutils"
+brew "gmp"
+brew "libyaml"
+brew "crystal-lang"
+brew "ctags"
+brew "docker"
+brew "doctl"
+brew "doxygen"
+brew "exercism"
+brew "flex"
+brew "flow"
+brew "fpp"
+brew "fzf"
+brew "mpfr"
+brew "gawk"
+brew "jpeg"
+brew "gd"
+brew "shared-mime-info"
+brew "gdk-pixbuf"
+brew "gem-completion"
+brew "gflags"
+brew "gist"
+brew "git-cal"
+brew "git-extras"
+brew "git-flow"
+brew "git-hooks"
+brew "glew"
+brew "gnu-sed"
+brew "libgpg-error"
+brew "libassuan"
+brew "libgcrypt"
+brew "libksba"
+brew "libusb"
+brew "pinentry"
+brew "gnupg"
+brew "go"
+brew "pth"
+brew "gpg-agent"
+brew "libtool"
+brew "graphicsmagick"
+brew "grc"
+brew "icu4c"
+brew "harfbuzz"
+brew "hicolor-icon-theme"
+brew "pango"
+brew "gtk+"
+brew "lua"
+brew "highlight"
+brew "htop-osx"
+brew "httpie"
+brew "hub"
+brew "imagemagick"
+brew "libssh2"
+brew "libgit2"
+brew "memcached"
+brew "libmemcached"
+brew "libpcl"
+brew "libressl"
+brew "libxml2"
+brew "libzip"
+brew "lynx"
+brew "makedepend"
+brew "mariadb", restart_service: true
+brew "mas"
+brew "mhash"
+brew "mcrypt"
+brew "md5sha1sum"
+brew "mycli"
+brew "mysqltuner"
+brew "openssl@1.1"
+brew "nginx", args: ["devel"], restart_service: true
+brew "node"
+brew "ocaml"
+brew "pcre2"
+brew "pinentry-mac"
+brew "potrace"
+brew "reattach-to-user-namespace"
+brew "redis", restart_service: true
+brew "rsync"
+brew "ruby"
+brew "selenium-server-standalone", restart_service: true
+brew "shellcheck"
+brew "spark"
+brew "sphinx-doc"
+brew "stormssh"
+brew "stormssh-completion"
+brew "terminal-notifier"
+brew "the_silver_searcher"
+brew "thefuck"
+brew "tintin"
+brew "tmux"
+brew "unixodbc"
+brew "vagrant-completion"
+brew "vim"
+brew "watson"
+brew "wget"
+brew "wrk"
+brew "yarn"
+brew "z"
+brew "zsh"
+brew "drujensen/kgen/kgen"
+brew "f/guardian/guardian"
+brew "goles/battery/battery"
+brew "homebrew/php/composer"
+brew "homebrew/php/igbinary"
+brew "homebrew/php/php-code-sniffer"
+brew "homebrew/php/php-cs-fixer"
+brew "homebrew/php/php56-igbinary"
+brew "homebrew/php/php56-intl"
+brew "homebrew/php/php56-mcrypt"
+brew "homebrew/php/php56-redis"
+brew "homebrew/php/php56-xdebug"
+brew "homebrew/php/php56-xhprof"
+brew "homebrew/php/php56-yaml"
+brew "homebrew/php/php70-igbinary"
+brew "homebrew/php/php70-intl"
+brew "homebrew/php/php70-mcrypt"
+brew "homebrew/php/php70-memcached"
+brew "homebrew/php/php70-redis"
+brew "homebrew/php/php70-xdebug"
+brew "homebrew/php/php70-yaml"
+brew "homebrew/php/php71"
+brew "homebrew/php/php71-intl"
+brew "homebrew/php/php71-mcrypt"
+brew "homebrew/php/php71-redis"
+brew "homebrew/php/php71-xdebug"
+brew "homebrew/php/php71-yaml"
+brew "homebrew/php/phpdocumentor"
+brew "homebrew/php/phpunit"
+brew "homebrew/php/pickle"
+brew "keplersj/tap/update"
+brew "ravenac95/sudolikeaboss/sudolikeaboss"
+brew "sdogruyol/cryload/cryload"
+cask "1password"
+cask "alfred"
+cask "betterzipql"
+cask "catlight"
+cask "hyper"
+cask "insomnia"
+cask "java"
+cask "kap"
+cask "keybase"
+cask "numi"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlprettypatch"
+cask "qlstephen"
+cask "quicklook-csv"
+cask "quicklook-json"
+cask "raindropio"
+cask "skyfonts"
+cask "slack-beta"
+cask "sublime-text"
+cask "suspicious-package"
+cask "vagrant"
+cask "vagrant-manager"
+cask "virtualbox"
+cask "webpquicklook"
+mas "Affinity Designer", id: 824171161
+mas "Boom", id: 415312377
+mas "CCMenu", id: 603117688
+mas "Characters", id: 536511979
+mas "Expressions", id: 913158085
+mas "GIFHunter", id: 1031163338
+mas "Helium", id: 1054607607
+mas "iA Writer", id: 775737590
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Paste", id: 967805235
+mas "Pixelmator", id: 407963104
+mas "PopHub", id: 928494006
+mas "QuickShot", id: 965442961
+mas "Reeder", id: 880001334
+mas "Spark", id: 1176895641
+mas "The Unarchiver", id: 425424353
+mas "Transmit", id: 403388562
+mas "Tweetbot", id: 557168941
+mas "Tyme", id: 670592452
+mas "Xcode", id: 497799835
