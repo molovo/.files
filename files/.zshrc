@@ -24,6 +24,6 @@ if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; t
     GPG_TTY=$(tty)
     export GPG_TTY
   else
-    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+    eval $(gpg-agent --daemon)
   fi
 fi

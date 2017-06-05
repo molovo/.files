@@ -35,7 +35,7 @@ function run_tests {
   # Stash untracked changes prior to starting
   git stash -q --keep-index
 
-  # Run codeception tests
+  # Run ZUnit tests
   zunit run
   local RESULT=$?
 
@@ -54,6 +54,6 @@ case "${1}" in
     echo "Run ZUnit tests if they are configured."
     ;;
   * )
-    run_tests
+    #run_tests
     ;;
 esac
