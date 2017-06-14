@@ -5,7 +5,7 @@
   "node_path": {
     "windows": "node.exe",
     "linux": "/usr/bin/nodejs",
-    "osx": "/usr/local/bin/node"
+    "osx": "/Users/molovo/.files/files/.config/yarn/global/node_modules/.bin/eslint"
   },
 
   // The location to search for a locally installed eslint package.
