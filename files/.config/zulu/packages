@@ -45,3 +45,5 @@ zsh-hints-integration
 zshbuild
 zunit, branch: next
 zvm
+zbrowse
+zui
