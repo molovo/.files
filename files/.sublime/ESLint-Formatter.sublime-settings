@@ -22,7 +22,7 @@
   "eslint_path": {
     "windows": "%APPDATA%/npm/node_modules/eslint/bin/eslint",
     "linux": "/usr/bin/eslint",
-    "osx": "/usr/local/bin/eslint"
+    "osx": "/Users/molovo/.files/files/.config/yarn/global/node_modules/.bin/eslint"
   },
 
   // Specify this path to an eslint config file to override the default behavior.

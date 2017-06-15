@@ -164,7 +164,7 @@
     // PHP Scheck settings
 
     // Execute scheck
-    "scheck_run": true,
+    "scheck_run": false,
 
     // Execute the scheck on file save
     "scheck_command_on_save": true,
