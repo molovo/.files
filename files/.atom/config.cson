@@ -76,7 +76,7 @@
       "spacegray-dark-neue-ui"
       "alternatone-stark-sea-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   crystal:
     compilerColorOutput: true
     formatOnSave: true
@@ -86,7 +86,6 @@
     executablePath: "/usr/local/bin/ctags"
   docblockr:
     development_mode: true
-    spacer_between_sections: true
   editor:
     backUpBeforeSaving: true
     fontFamily: "Fira Code"
@@ -119,10 +118,7 @@
   "imdone-atom":
     openIn: {}
     todaysJournal: {}
-  linter:
-    errorPanelHeight: 214
-    showErrorTabLine: true
-    statusIconScope: "File"
+  linter: {}
   "linter-coffee-variables": {}
   "linter-jade": {}
   "linter-php": {}
@@ -133,6 +129,7 @@
     rulesets: "/Users/molovo/.phpmd.xml"
   "linter-sass-lint":
     configPath: "/Users/molovo/.sass-lint.yml"
+  "linter-ui-default": {}
   "markdown-deluxe": {}
   "markdown-preview-plus": {}
   minimap:
