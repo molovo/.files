@@ -63,7 +63,7 @@
 	url = git://github.com/molovo/vim-airline.git
 [submodule "files/.vim/bundle/ctrlp.vim"]
 	path = files/.vim/bundle/ctrlp.vim
-	url = git://github.com/kien/ctrlp.vim.git
+	url = git://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "files/.vim/bundle/tagbar"]
 	path = files/.vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
