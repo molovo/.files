@@ -36,6 +36,7 @@
     "now": "^5.3.0",
     "np": "^2.16.0",
     "nyc": "^10.3.2",
+    "pa11y-ci": "^1.2.0",
     "pageres-cli": "^4.0.0",
     "phantomjs-prebuilt": "^2.1.14",
     "preact-cli": "^1.1.1",
