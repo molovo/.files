@@ -30,7 +30,7 @@
     "less": "^2.7.2",
     "micro": "^7.3.3",
     "mjml": "^3.3.2",
-    "multicolour": "^0.6.6",
+    "multicolour": "^0.6.10",
     "netlify-cli": "^1.2.2",
     "node-sass": "^4.5.0",
     "now": "^5.3.0",
