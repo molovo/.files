@@ -1,5 +1,5 @@
 {
-	"Ayu Dark + Alternatone":
+	"Ayu Dark + Alternatone Stark Sea":
 	{
 		"Preferences":
 		{
@@ -7,11 +7,19 @@
 			"theme": "ayu-dark.sublime-theme"
 		}
 	},
-	"Ayu Mirage + Alternatone":
+	"Ayu Mirage + Alternatone Stark Sea":
 	{
 		"Preferences":
 		{
 			"color_scheme": "Packages/User/Alternatone Stark Sea - Mirage.tmTheme",
+			"theme": "ayu-mirage.sublime-theme"
+		}
+	},
+	"Ayu Mirage + Alternatone Fiery Sea":
+	{
+		"Preferences":
+		{
+			"color_scheme": "Packages/User/Alternatone Fiery Sea - Mirage.tmTheme",
 			"theme": "ayu-mirage.sublime-theme"
 		}
 	}

@@ -79,6 +79,7 @@
 		"SublimeLinter-flow",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
+		"SublimeLinter-phpmd",
 		"SublimeLinter-shellcheck",
 		"SyncedSideBar",
 		"tern_for_sublime",
@@ -89,7 +90,6 @@
 		"TodoReview",
 		"Travis YML Lint",
 		"Travis-CI",
-		"Vuejs Complete Package",
 		"Xdebug Client",
 		"ZSH"
 	],

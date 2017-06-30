@@ -43,7 +43,7 @@
 	"caret_extra_width": 1,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Alternatone Stark Sea - Mirage (SL).tmTheme",
+	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": false,
 	"default_encoding": "UTF-8",
@@ -90,8 +90,7 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS",
-		"node_modules"
+		"CVS"
 	],
 	"font_face": "Operator Mono Book",
 	"font_options":
@@ -152,7 +151,7 @@
 	"show_line_endings": false,
 	"show_panel_on_build": true,
 	"show_tab_close_buttons": true,
-	"skin": "User/Ayu Mirage + Alternatone",
+	"skin": "ayu/ayu mirage",
 	"smart_indent": true,
 	"spell_check": false,
 	"spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
