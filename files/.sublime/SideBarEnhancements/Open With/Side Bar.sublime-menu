@@ -18,6 +18,20 @@
 				"open_automatically" : false // will close the view/tab and launch the application
 			},
 
+			{
+				"caption": "Pixelmator",
+				"id": "side-bar-files-open-with-pixelmator",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "Pixelmator.app", // OSX
+					"extensions": "png|jpg|jpeg|gif",
+					"args": []
+				},
+				"open_automatically": true
+			},
+
 			//separator
 			{"caption":"-"},
 

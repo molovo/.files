@@ -81,7 +81,8 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace"
+		"*.sublime-workspace",
+		"*.scssc"
 	],
 	"find_selected_text": true,
 	"fold_buttons": true,
@@ -90,7 +91,8 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		".sass-cache"
 	],
 	"font_face": "Operator Mono Book",
 	"font_options":
