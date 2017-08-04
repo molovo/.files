@@ -38,5 +38,5 @@ windows:
       # synchronize: after
       panes:
         - gulp
-        - browser-sync start --proxy 'bigsky.dev' --serveStatic 'web' --files 'web' --files 'src' --files 'app'
+        - browser-sync start --proxy 'bigsky.james.superrb.build' --serveStatic 'web' --files 'web' --files 'src' --files 'app'
         - git status --short
