@@ -42,10 +42,19 @@ rules:
   force-pseudo-nesting: 1
 
   # Name Formats
+  bem-depth:
+    - 1
+    - max-depth: 1
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
   function-name-format: 1
   mixin-name-format: 1
   placeholder-name-format: 1
-  variable-name-format: 1
+  variable-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: camelcase
 
   # Style Guide
   border-zero: 1
