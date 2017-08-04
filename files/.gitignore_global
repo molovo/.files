@@ -99,3 +99,6 @@ fabric.properties
 
 ### Compiled ZSH scripts ###
 *.zwc
+
+### Visual Studio Code ###
+.vscode/
