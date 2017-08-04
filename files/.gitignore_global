@@ -102,3 +102,7 @@ fabric.properties
 
 ### Visual Studio Code ###
 .vscode/
+.sonarlint/
+
+### Sass ###
+.sass-cache/
