@@ -40,3 +40,4 @@ alias update='command update && zulu self-update && zulu update && zulu upgrade 
 alias s='subl'
 alias gu='git up'
 alias guu='git up && git submodule update --init --recursive'
+alias memcache='telnet localhost 11211'
