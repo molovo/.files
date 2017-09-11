@@ -103,5 +103,20 @@
     "name": "next",
     "color": "fcda50",
     "aliases": []
+  },
+  {
+    "name": "confirmed",
+    "color": "5ed9c7",
+    "aliases": []
+  },
+  {
+    "name": "feature",
+    "color": "fba226",
+    "aliases": []
+  },
+  {
+    "name": "release",
+    "color": "cc317c",
+    "aliases": []
   }
 ]
