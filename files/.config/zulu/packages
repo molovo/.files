@@ -1,7 +1,7 @@
 archive
 async
 autopair
-autosuggestions
+autosuggestions, branch: develop
 color
 command-not-found
 completions
@@ -9,6 +9,7 @@ crash
 crystal
 directory
 docker
+done
 dwim
 fasd
 fast-syntax-highlighting
@@ -44,7 +45,6 @@ zsh-editing-workbench
 zsh-hints
 zsh-hints-integration
 zshbuild
-zui
-zulu-aliases
+zulu-theme
 zunit, branch: next
 zvm
