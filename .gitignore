@@ -21,13 +21,17 @@ files/.composer/keys.*
 
 # Config
 files/.config/asciinema
+files/.config/codeclimate
 files/.config/configstore
 files/.config/direnv
 files/.config/git
 files/.config/hub
 files/.config/psysh
 files/.config/roots
+files/.config/storjshare
 files/.config/thefuck/settings.pyc
+files/.config/zew
+files/.config/zbrowse
 
 # Watson
 files/.config/watson/frames
