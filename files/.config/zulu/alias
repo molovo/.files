@@ -1,5 +1,3 @@
-alias more='vim'
-alias vi='vim'
 alias h='history'
 alias j='jobs -l'
 alias path='echo -e ${PATH//:/}'

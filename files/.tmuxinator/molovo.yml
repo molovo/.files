@@ -30,8 +30,7 @@ root: ~/projects/molovo
 windows:
   - roots:
       root: ~/projects/molovo
-      layout: 7f43,119x75,0,0[119x56,0,0,0,119x18,0,57,1]
-      #layout: 099e,127x28,0,0[127x19,0,0,1,127x8,0,20,3]
+      layout: e1ba,212x43,0,0[212x26,0,0,8,212x16,0,27,9]
       panes:
-        - 
-        - roots watch
+        - git status
+        - gulp serve

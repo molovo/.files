@@ -71,3 +71,5 @@ files/.config/yarn/global/yarn.lock
 
 # Zulu
 files/.config/zulu/env.private
+files/.config/thefuck/__pycache__/
+files/.config/zbrowse/

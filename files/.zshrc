@@ -2,7 +2,7 @@
 
 setopt CORRECT
 
-[[ "$TERM_PROGRAM" != "Hyper" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
+[[ "$TERM_PROGRAM" != "Hyper" && "$TERM_PROGRAM" != "vscode" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux -u
 
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"

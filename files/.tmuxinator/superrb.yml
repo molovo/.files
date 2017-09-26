@@ -1,7 +1,7 @@
-# ~/.tmuxinator/giftfinder.yml
+# ~/.tmuxinator/superrb.yml
 
-name: no6
-root: ~/projects/no6
+name: superrb
+root: ~/projects/superrb
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,7 +28,7 @@ root: ~/projects/no6
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t giftfinder
+# post: tmux -CC attach -t superrb
 
 windows:
   - editor:
@@ -37,6 +37,5 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - git status --short
         - gulp
-        - browser-sync start --proxy 'no6.james.superrb.build' --files 'web' --files 'src' --files 'app'
+        - git status --short

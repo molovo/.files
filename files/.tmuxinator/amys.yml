@@ -1,7 +1,7 @@
-# ~/.tmuxinator/giftfinder.yml
+# ~/.tmuxinator/amys.yml
 
-name: no6
-root: ~/projects/no6
+name: amys
+root: ~/projects/amys
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,7 +28,7 @@ root: ~/projects/no6
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t giftfinder
+# post: tmux -CC attach -t amys
 
 windows:
   - editor:
@@ -39,4 +39,4 @@ windows:
       panes:
         - git status --short
         - gulp
-        - browser-sync start --proxy 'no6.james.superrb.build' --files 'web' --files 'src' --files 'app'
+        - browser-sync start --proxy 'amys.james.superrb.build' --serveStatic 'web' --files 'web' --files 'src' --files 'app'

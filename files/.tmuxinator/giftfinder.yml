@@ -32,11 +32,11 @@ root: ~/projects/giftfinder
 
 windows:
   - editor:
-      layout: 4753,212x43,0,0[212x21,0,0{106x21,0,0,0,105x21,107,0,2},212x21,0,22,1]
+      layout: c780,212x43,0,0{106x43,0,0,4,105x43,107,0[105x21,107,0,6,105x21,107,22,7]}
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - gulp
-        - browser-sync start --proxy 'giftfinder.james.superrb.build' --serveStatic 'web' --files 'web' --files 'src' --files 'app'
         - git status --short
+        - gulp
+        - browser-sync start --proxy 'giftfinder.james.superrb.build' --files 'web' --files 'src' --files 'app'

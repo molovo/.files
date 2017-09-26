@@ -1,7 +1,7 @@
-# ~/.tmuxinator/giftfinder.yml
+# ~/.tmuxinator/busterandpunch.yml
 
-name: no6
-root: ~/projects/no6
+name: busterandpunch
+root: ~/projects/busterandpunch
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,7 +28,7 @@ root: ~/projects/no6
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t giftfinder
+# post: tmux -CC attach -t busterandpunch
 
 windows:
   - editor:
@@ -38,5 +38,7 @@ windows:
       # synchronize: after
       panes:
         - git status --short
-        - gulp
-        - browser-sync start --proxy 'no6.james.superrb.build' --files 'web' --files 'src' --files 'app'
+        - sass:
+            - cd skin/frontend/buster/default
+            - onchange sass/**/* -- compass compile
+        - browser-sync start --proxy 'busterandpunch.james.superrb.build' --files 'app' --files 'media' --files 'skin'
