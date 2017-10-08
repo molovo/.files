@@ -1,4 +1,4 @@
-# ~/.tmuxinator/project.yml
+# ~/.tmuxinator/molovo.yml
 
 name: molovo
 root: ~/projects/molovo
@@ -7,7 +7,7 @@ root: ~/projects/molovo
 # socket_name: foo
 
 # Runs before everything. Use it to start daemons etc.
-# pre: export PATH=~/projects/phillip:$PATH
+# pre: sudo /etc/rc.d/mysqld start
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -19,18 +19,23 @@ root: ~/projects/molovo
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: logs
+# startup_window: editor
+
+# Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
 
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t project
+# post: tmux -CC attach -t molovo
 
 windows:
-  - roots:
-      root: ~/projects/molovo
-      layout: e1ba,212x43,0,0[212x26,0,0,8,212x16,0,27,9]
+  - editor:
+      layout: c780,212x43,0,0{106x43,0,0,4,105x43,107,0[105x21,107,0,6,105x21,107,22,7]}
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      #synchronize: after
       panes:
-        - git status
-        - gulp serve
+        - git status --short
+        - gulp
