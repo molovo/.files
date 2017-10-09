@@ -124,3 +124,6 @@
 [submodule "files/.vim/bundle/vim-zsh-completion"]
 	path = files/.vim/bundle/vim-zsh-completion
 	url = git://github.com/Valodim/vim-zsh-completion.git
+[submodule "files/.vim/bundle/elvish.vim"]
+	path = files/.vim/bundle/elvish.vim
+	url = git://github.com/dmix/elvish.vim.git
