@@ -73,3 +73,4 @@ files/.config/yarn/global/yarn.lock
 files/.config/zulu/env.private
 files/.config/thefuck/__pycache__/
 files/.config/zbrowse/
+files/.vim/plugged/

@@ -136,69 +136,6 @@ nnoremap <F4><F4> :set invwrap wrap?<CR>  " use f4f4 to toggle wordwrap
 nnoremap <F2><F2> :vsplit<CR>
 nnoremap <F3><F3> <C-W>w
 
-" Load all pathogen plugins
-execute pathogen#infect()
-
-" Map keyboard shortcuts for tabularize
-let mapleader=','
-if exists(":Tabularize")
-  nmap <Leader>a= :Tabularize /=<CR>
-  vmap <Leader>a= :Tabularize /=<CR>
-  nmap <Leader>a: :Tabularize /:\zs<CR>
-  vmap <Leader>a: :Tabularize /:\zs<CR>
-endif
-
-" Auto align equals signs whilst typing
-"inoremap <silent> = =<Esc>:call <SID>ealign()<CR>a
-"function! s:ealign()
-""  let p = '^.*=[^>|]*$'
-""  if exists(':Tabularize') && getline('.') =~# '^.*=' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-""    let column = strlen(substitute(getline('.')[0:col('.')],'[^=]','','g'))
-""    let position = strlen(matchstr(getline('.')[0:col('.')],'.*=\s*\zs.*'))
-""    Tabularize/=/l1
-""    normal! 0
-""    call search(repeat('[^=]*=',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
-""  endif
-"endfunction
-
-" Auto align colons whilst typing
-"inoremap <silent> : :<Esc>:call <SID>calign()<CR>a
-"function! s:calign()
-""  let p = '^.*:\s.*$'
-""  if exists(':Tabularize') && getline('.') =~# '^.*:' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-""    let column = strlen(substitute(getline('.')[0:col('.')],'[^:]','','g'))
-""    let position = strlen(matchstr(getline('.')[0:col('.')],'.*:\s*\zs.*'))
-""    Tabularize/:/l1
-""    normal! 0
-""    call search(repeat('[^:]*:',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
-""  endif
-"endfunction
-
-" Auto align bars whilst typing
-"inoremap <silent> <Bar>   <Bar><Esc>:call <SID>baralign()<CR>a
-"function! s:baralign()
-""  let p = '^\s*|\s.*\s|\s*$'
-""  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-""    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-""    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
-""    Tabularize/|/l1
-""    normal! 0
-""    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
-""  endif
-"endfunction
-
-" Syntastic Settings
-set statusline+=%{fugitive#statusline()}
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" A few syntastic settings
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list            = 1
-let g:syntastic_check_on_open            = 1
-let g:syntastic_check_on_wq              = 0
-
 " Stop vim-json from hiding quotes in JSON files
 let g:vim_json_syntax_conceal = 0
 
@@ -245,65 +182,14 @@ highlight TabLineSel ctermbg  = black
 highlight Title ctermfg       = blue
 highlight Title ctermbg       = black
 
-" Set sections in statusline
-let g:airline_section_a = '%m'
-let g:airline_section_b = '%{fugitive#statusline()}'
-let g:airline_section_c = '%f %y'
-
-" Set statusline theme
-let g:airline_theme='molovo'
-
-nmap <C-r> :TagbarToggle<CR>
-nmap <C-t> :CtrlP<CR>
-nmap <C-e> :NERDTreeToggle<CR>
 nmap <C-n> :tabnew<CR>
 
-map gn :bn<cr>
-map gp :bp<cr>
-map gd :bd<cr>
-
 set tags=./.vimtags;/
-
-let g:easytags_async          = 1
-let g:easytags_auto_update    = 0
-let g:easytags_auto_highlight = 0
-let g:easytags_opts           = ['--PHP-kinds=+cf']
-
-inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
-noremap <Leader>u :call PhpInsertUse()<CR>
-
-autocmd StdinReadPre * let s:std_in = 1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <Leader><Up> :wincmd k<CR>
 map <Leader><Down> :wincmd j<CR>
 map <Leader><Left> :wincmd h<CR>
 map <Leader><Right> :wincmd l<CR>
-
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-let NERDTreeShowHidden = 1
-
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('scss', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('sass', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('less', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'yellow', 'none', '#ff00ff', '#151515')
 
 " Enable spellchecking for markdown and git commits
 autocmd FileType markdown setlocal spell
@@ -333,15 +219,9 @@ set numberwidth=5
 set splitbelow
 set splitright
 
-" configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open           = 1
-let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
-let g:syntastic_aggregate_errors        = 1
-let g:syntastic_quiet_messages          = { "type": "style" }
-
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
-set spellfile=$HOME/.zprezto/runcoms/.vim/spell-en.utf-8.add
+set spellfile=$HOME/.vim/spell-en.utf-8.add
 
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell
@@ -349,48 +229,16 @@ set complete+=kspell
 " Always use vertical diffs
 set diffopt+=vertical
 
-let g:phpcomplete_index_composer_command       = "/usr/local/bin/composer"
-let g:phpcomplete_complete_for_unknown_classes = 1
-let g:phpcomplete_search_tags_for_variables    = 1
-let g:phpcomplete_parse_docblock_comments      = 1
-let g:phpcomplete_cache_taglists               = 1
-let g:phpcomplete_enhance_jump_to_definition   = 1
-
-" If php-cs-fixer is in $PATH, you don't need to define line below
-let g:php_cs_fixer_path="/usr/local/bin/php-cs-fixer" " path to the php-cs-fixer
-let g:php_cs_fixer_level="symfony"                    " which level ?
-" let g:php_cs_fixer_config="default"                 " configuration
-let g:php_cs_fixer_php_path="/usr/local/bin/php"      " Path to PHP
-" If you want to define specific fixers:
-let g:php_cs_fixer_fixers_list="-unalign_equals,-unalign_double_arrow,align_equals,align_double_arrow,,phpdoc_order,ordered_use,-phpdoc_indent,-phpdoc_inline_tag,header_comment,-psr0,-new_with_braces,-unused_use"
-" let g:php_cs_fixer_enable_default_mapping=1         " Enable mapping (<leader>pcd)
-" let g:php_cs_fixer_dry_run=0                        " Call command with dry-run option
-" let g:php_cs_fixer_verbose=0                        " Return the output of command if 1, else an inline information.
-
 au BufNewFile,BufRead *.sublime-project set filetype=json
 au BufNewFile,BufRead Phakefile set filetype=php
 
 filetype plugin on
 
-function! Smart_TabComplete()
-  let line = getline('.')                         " current line
+call plug#begin('~/.vim/plugged')
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+call plug#end()
 
-  let substr = strpart(line, -1, col('.')+1)      " from the start of the current
-                                                  " line to one character right
-                                                  " of the cursor
-  let substr = matchstr(substr, "[^ \t]*$")       " word till cursor
-  if (strlen(substr)==0)                          " nothing to match on empty string
-    return "\<tab>"
-  endif
-  let has_period = match(substr, '\.') != -1      " position of period, if any
-  let has_slash = match(substr, '\/') != -1       " position of slash, if any
-  if (!has_period && !has_slash)
-    return "\<C-X>\<C-P>"                         " existing text matching
-  elseif ( has_slash )
-    return "\<C-X>\<C-F>"                         " file matching
-  else
-    return "\<C-X>\<C-O>"                         " plugin matching
-  endif
-endfunction
-
-inoremap <tab> <c-r>=Smart_TabComplete()<CR>
+nmap ; :Buffers<CR>
+nmap <C-t> :Files<CR>
+nmap <C-r> :Tags<CR>
