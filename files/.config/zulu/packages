@@ -1,7 +1,7 @@
 archive
 async
 autopair
-autosuggestions, branch: develop
+autosuggestions
 color
 command-not-found
 completions
@@ -9,7 +9,6 @@ crash
 crystal
 directory
 docker
-done
 dwim
 fasd
 fast-syntax-highlighting
@@ -28,7 +27,6 @@ k
 load-graph
 lumberjack
 node
-nvm-auto-use
 osx
 pretty-time
 revolver
@@ -45,8 +43,8 @@ zsh-editing-workbench
 zsh-hints
 zsh-hints-integration
 zshbuild
-zulu-theme
-zunit, branch: next
 zui
 zulu-aliases
+zulu-theme
+zunit branch: next
 zvm
