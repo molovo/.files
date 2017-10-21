@@ -48,9 +48,17 @@ rules:
   class-name-format:
     - 1
     - convention: hyphenatedbem
-  function-name-format: 1
-  mixin-name-format: 1
-  placeholder-name-format: 1
+  function-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: camelcase
+  mixin-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: camelcase
+  placeholder-name-format:
+    - 1
+    - convention: hyphenatedbem
   variable-name-format:
     - 1
     - allow-leading-underscore: false
