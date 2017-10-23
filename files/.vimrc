@@ -24,6 +24,18 @@ set directory=~/.vim/tmp
 set undodir=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
+call plug#begin('~/.vim/plugged')
+Plug 'ayu-theme/ayu-vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
+Plug 'itchyny/lightline.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'Yggdroot/indentLine'
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+call plug#end()
+
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 
@@ -95,11 +107,14 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 
-
 syntax on
+let g:polyglot_disabled = ['js']
+
+set termguicolors
+set noshowmode
 set background=dark
 let ayucolor="mirage"
-colorscheme ayu
+colorscheme base16-ocean
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
@@ -115,6 +130,8 @@ set mouse=a				                              " Enable mouse usage (all modes) in
 set number                                      " Show line numbers
 highlight LineNr ctermfg=08 ctermbg=black       " Remove hideous green background from line numbers
 let g:indentLine_color_term = 08
+let g:indentLine_char = '|'
+let g:indentLine_showFirstIndentLevel = 1
 
 " tabs -> spaces
 set expandtab
@@ -199,12 +216,6 @@ autocmd FileType gitcommit setlocal spell
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching=0
 endif
 
 " Make it obvious where 80 characters is
@@ -297,15 +308,7 @@ let g:ale_linters = {
 " This is off by default.
 let g:ale_fix_on_save = 1
 
-call plug#begin('~/.vim/plugged')
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'w0rp/ale'
-Plug 'itchyny/lightline.vim'
-Plug 'sheerun/vim-polyglot'
-call plug#end()
-
+" Set keymappings for FZF plugin
 nmap ; :Buffers<CR>
 nmap <C-t> :Files<CR>
 nmap <C-r> :Tags<CR>
