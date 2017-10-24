@@ -7,16 +7,18 @@
 "     for Unix:  ~/.vimrc
 "     for MS-DOS and Win32:  $VIM\_vimrc
 
+let mapleader = ","
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set backup             " keep a backup file (restore to previous version)
-set undofile           " keep an undo file (undo changes after closing)
-set history=50         " keep 50 lines of command line history
-set ruler              " show the cursor position all the time
-set showcmd            " display incomplete commands
-set incsearch          " do incremental searching
-set swapfile           " keep unsaved changes in a swapfile
+set backup     " keep a backup file (restore to previous version)
+set undofile   " keep an undo file (undo changes after closing)
+set history=50 " keep 50 lines of command line history
+set ruler      " show the cursor position all the time
+set showcmd    " display incomplete commands
+set incsearch  " do incremental searching
+set swapfile   " keep unsaved changes in a swapfile
 
 " Set backup directories rather than leaving hidden files everywhere
 set backupdir=~/.vim/tmp
@@ -32,9 +34,18 @@ Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'Yggdroot/indentLine'
+Plug 'ap/vim-buftabline'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
+Plug 'junegunn/vim-easy-align'
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
+
+" color scheme
+set termguicolors
+set noshowmode
+let ayucolor="mirage"
+colorscheme base16-ocean
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -71,8 +82,8 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  " For all text files set 'textwidth' to 80 characters.
+  autocmd FileType text setlocal textwidth=80
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -107,31 +118,26 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 
-syntax on
-let g:polyglot_disabled = ['js']
-
-set termguicolors
-set noshowmode
-set background=dark
-let ayucolor="mirage"
-colorscheme base16-ocean
-
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-set showcmd				                              " Show (partial) command in status line.
-set showmatch			                              " Show matching brackets.
-set ignorecase		                              " Do case insensitive matching
-set smartcase			                              " Do smart case matching
-set incsearch			                              " Incremental search
-set hlsearch
-set autowrite		                                " Automatically save before commands like :next and :make
-set hidden                                      " Hide buffers when they are abandoned
-set mouse=a				                              " Enable mouse usage (all modes) in terminals
-set number                                      " Show line numbers
-highlight LineNr ctermfg=08 ctermbg=black       " Remove hideous green background from line numbers
-let g:indentLine_color_term = 08
-let g:indentLine_char = '|'
-let g:indentLine_showFirstIndentLevel = 1
+set showcmd    " Show (partial) command in status line.
+set showmatch  " Show matching brackets.
+set ignorecase " Do case insensitive matching
+set smartcase  " Do smart case matching
+set incsearch  " Incremental search
+set hlsearch   " Highlight search terms
+set autowrite  " Automatically save before commands like :next and :make
+set hidden     " Hide buffers when they are abandoned
+set mouse=a    " Enable mouse usage (all modes) in terminals
+set number     " Show line numbers
+hi LineNr ctermfg=238 ctermbg=00   " Remove hideous green background from line numbers
+
+" show indentation
+set listchars=space:·
+set list
+hi SpecialKey ctermfg=238
+hi ExtraWhitespace ctermbg=Red
+match ExtraWhitespace /\s\+$/
 
 " tabs -> spaces
 set expandtab
@@ -155,9 +161,6 @@ nnoremap <F3><F3> <C-W>w
 
 " Stop vim-json from hiding quotes in JSON files
 let g:vim_json_syntax_conceal = 0
-
-" Set a better line indent indicator
-let g:indentLine_char = '·'
 
 " Gitgutter settings
 set signcolumn=yes
@@ -184,13 +187,13 @@ highlight GitGutterChangeDelete ctermbg = black
 highlight GitGutterChangeDelete ctermfg = yellow
 
 " StatusLine color highlighting
-highlight StatusLine ctermfg            = black
-highlight StatusLine ctermbg            = white
-highlight StatusLineNC ctermfg          = black
-highlight StatusLineNC ctermbg          = white
+highlight StatusLine ctermfg   = black
+highlight StatusLine ctermbg   = white
+highlight StatusLineNC ctermfg = black
+highlight StatusLineNC ctermbg = white
 
 " TabLine color highlighting
-highlight TabLineFill ctermfg = white
+highlight TabLineFill ctermfg = black
 highlight TabLineFill ctermbg = black
 highlight TabLine ctermfg     = white
 highlight TabLine ctermbg     = black
@@ -312,3 +315,9 @@ let g:ale_fix_on_save = 1
 nmap ; :Buffers<CR>
 nmap <C-t> :Files<CR>
 nmap <C-r> :Tags<CR>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
