@@ -126,10 +126,10 @@
     executablePath: "/Users/molovo/.composer/vendor/bin/phpcs"
   "linter-phpmd":
     executablePath: "/Users/molovo/.composer/vendor/bin/phpmd"
-    rulesets: "/Users/molovo/.phpmd.xml"
   "linter-sass-lint":
     configPath: "/Users/molovo/.sass-lint.yml"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-deluxe": {}
   "markdown-preview-plus": {}
   minimap:
@@ -179,7 +179,6 @@
     defaultShowInherited: true
   pigments:
     extendAutocompleteToVariables: true
-    markerType: "dot"
     traverseIntoSymlinkDirectories: true
   "project-manager":
     alwaysOpenInSameWindow: true
