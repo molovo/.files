@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+(( $+functions[tmux-tc] )) || function tmux-tc() {
+  if [[ -z $TMUX ]]; then
+    if ! tmux attach; then
+      command tmux -u new-session \; new-window "tmux set-option -ga terminal-overrides \",$TERM:Tc\"; tmux detach"
+      command tmux attach
+    fi
+  fi
+}

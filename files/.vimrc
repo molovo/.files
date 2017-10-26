@@ -35,8 +35,6 @@ Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-buftabline'
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
@@ -44,8 +42,20 @@ call plug#end()
 " color scheme
 set termguicolors
 set noshowmode
+set cursorline
+
 let ayucolor="mirage"
-colorscheme base16-ocean
+colorscheme ayu
+
+if &term =~# '^xterm'
+  " Colors in tmux
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
+" Italics
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -120,16 +130,17 @@ endif
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-set showcmd    " Show (partial) command in status line.
-set showmatch  " Show matching brackets.
-set ignorecase " Do case insensitive matching
-set smartcase  " Do smart case matching
-set incsearch  " Incremental search
-set hlsearch   " Highlight search terms
-set autowrite  " Automatically save before commands like :next and :make
-set hidden     " Hide buffers when they are abandoned
-set mouse=a    " Enable mouse usage (all modes) in terminals
-set number     " Show line numbers
+set showcmd     " Show (partial) command in status line.
+set showmatch   " Show matching brackets.
+set ignorecase  " Do case insensitive matching
+set smartcase   " Do smart case matching
+set incsearch   " Incremental search
+set hlsearch    " Highlight search terms
+set autowrite   " Automatically save before commands like :next and :make
+set hidden      " Hide buffers when they are abandoned
+set mouse=a     " Enable mouse usage (all modes) in terminals
+set number      " Show line numbers
+set scrolloff=3 " Show 3 lines above/below the cursor
 hi LineNr ctermfg=238 ctermbg=00   " Remove hideous green background from line numbers
 
 " show indentation
@@ -138,6 +149,9 @@ set list
 hi SpecialKey ctermfg=238
 hi ExtraWhitespace ctermbg=Red
 match ExtraWhitespace /\s\+$/
+
+" show comments in italics
+hi Comment cterm=italic
 
 " tabs -> spaces
 set expandtab
