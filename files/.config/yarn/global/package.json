@@ -42,7 +42,6 @@
     "jsonlint": "^1.6.2",
     "less": "^2.7.2",
     "lighthouse": "^2.5.0",
-    "lighthouse-security": "^0.6.0",
     "micro": "^7.3.3",
     "mjml": "^3.3.2",
     "multicolour": "^0.6.10",
