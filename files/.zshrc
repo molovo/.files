@@ -27,3 +27,7 @@ if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; t
 fi
 
 [[ "$TERM_PROGRAM" != "Hyper" && "$TERM_PROGRAM" != "vscode" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux-tc -u
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source /Users/molovo/.rvm/scripts/rvm
