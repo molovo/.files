@@ -1,8 +1,4 @@
 ---
-- stuff: Atom Packages
-  executable: apm-beta
-  command: update --confirm false
-
 - stuff: OS X updates
   executable: softwareupdate
   command: --install --all

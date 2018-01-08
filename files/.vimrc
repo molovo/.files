@@ -27,7 +27,7 @@ set undodir=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
 call plug#begin('~/.vim/plugged')
-Plug 'ayu-theme/ayu-vim'
+"Plug 'ayu-theme/ayu-vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
@@ -37,6 +37,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-buftabline'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " color scheme
@@ -44,8 +46,10 @@ set termguicolors
 set noshowmode
 set cursorline
 
-let ayucolor="mirage"
-colorscheme ayu
+"let ayucolor="mirage"
+"colorscheme ayu
+colorscheme palenight
+let g:palenight_terminal_italics=1
 
 if &term =~# '^xterm'
   " Colors in tmux
@@ -264,10 +268,13 @@ filetype plugin on
 
 " Lightline
 let g:lightline = {
-\ 'colorscheme': 'wombat',
+\ 'colorscheme': 'one',
 \ 'active': {
-\   'left': [['mode', 'paste'], ['filename', 'modified']],
+\   'left': [['mode', 'paste'], ['gitbranch'], ['filename'], ['modified']],
 \   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_warnings', 'linter_errors', 'linter_ok']]
+\ },
+\ 'component_function': {
+\   'gitbranch': 'fugitive#head'
 \ },
 \ 'component_expand': {
 \   'linter_warnings': 'LightlineLinterWarnings',
