@@ -33,3 +33,6 @@ if [[ -f "~/.rvm/scripts/rvm" ]]; then
   export PATH="$PATH:$HOME/.rvm/bin"
   source /Users/molovo/.rvm/scripts/rvm
 fi
+
+# Enable vi-mode
+bindkey -v
