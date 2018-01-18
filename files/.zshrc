@@ -29,5 +29,7 @@ fi
 [[ "$TERM_PROGRAM" != "Hyper" && "$TERM_PROGRAM" != "vscode" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux-tc -u
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-source /Users/molovo/.rvm/scripts/rvm
+if [[ -f "~/.rvm/scripts/rvm" ]]; then
+  export PATH="$PATH:$HOME/.rvm/bin"
+  source /Users/molovo/.rvm/scripts/rvm
+fi
