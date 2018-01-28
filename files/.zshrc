@@ -2,6 +2,8 @@
 
 setopt CORRECT
 
+export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH
+
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
 zulu init --dev
@@ -25,6 +27,9 @@ if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; t
     eval $(gpg-agent --daemon)
   fi
 fi
+
+export GOPATH=~/go
+export GOBIN=$GOPATH/bin
 
 [[ "$TERM_PROGRAM" != "Hyper" && "$TERM_PROGRAM" != "vscode" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux-tc -u
 

@@ -1,4 +1,4 @@
-# ~/.tmuxinator/project.yml
+# ~/.tmuxinator/zunit.yml
 
 name: zunit
 root: ~/projects/zunit
@@ -7,7 +7,7 @@ root: ~/projects/zunit
 # socket_name: foo
 
 # Runs before everything. Use it to start daemons etc.
-# pre: export PATH=~/projects/phillip:$PATH
+# pre: sudo /etc/rc.d/mysqld start
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -19,18 +19,21 @@ root: ~/projects/zunit
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: logs
+# startup_window: editor
+
+# Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
 
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t project
+# post: tmux -CC attach -t zunit
 
 windows:
   - zunit:
-      layout: 7f43,119x75,0,0[119x56,0,0,0,119x18,0,57,1]
-      #layout: 099e,127x28,0,0[127x19,0,0,1,127x8,0,20,3]
+      root: ~/.zulu/packages/zunit
+      layout: c780,212x43,0,0{106x43,0,0,4,105x43,107,0[105x21,107,0,6,105x21,107,22,7]}
       panes:
-        - 
+        - git status --short
         - guardian

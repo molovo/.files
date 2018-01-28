@@ -22,7 +22,7 @@ root: ~/projects/nightingale
 # on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+# pre_window:
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -44,14 +44,16 @@ root: ~/projects/nightingale
 
 windows:
   - frontend:
-      layout: main-vertical
-      root: ~/projects/nightingale-frontend
+      layout: c780,212x43,0,0{106x43,0,0,4,105x43,107,0[105x21,107,0,6,105x21,107,22,7]}
       panes:
         - git status
-        - yarn dev
+        - gulp --env dev --baseurl 'http://localhost:3000' --socketbaseurl 'ws://localhost:3000'
   - server:
-      layout: main-vertical
-      root: ~/projects/nightingale
+      layout: c780,212x43,0,0{106x43,0,0,4,105x43,107,0[105x21,107,0,6,105x21,107,22,7]}
       panes:
         - git status
-        - ./sentry
+        - sentry:
+          - "export NIGHTINGALE_BASEURL='http://localhost:3000'"
+          - "export NIGHTINGALE_SOCKET_BASEURL='ws://localhost:3000'"
+          - export PKG_CONFIG_PATH=/usr/local/Cellar/openssl@1.1/1.1.0f/lib/pkgconfig
+          - ./sentry -w "src/**/*.cr" -w "templates/**/*.ecr" -w "views/**/*.ecr"

@@ -25,11 +25,13 @@ files/.config/codeclimate
 files/.config/configstore
 files/.config/direnv
 files/.config/git
+files/.config/heroku
 files/.config/hub
 files/.config/psysh
 files/.config/roots
 files/.config/storjshare
 files/.config/thefuck/settings.pyc
+files/.config/yarn/link
 files/.config/zew
 files/.config/zbrowse
 
