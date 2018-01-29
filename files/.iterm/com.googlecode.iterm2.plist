@@ -12,6 +12,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>BadgeFont</key>
+	<string>Operator Mono Book</string>
 	<key>Control</key>
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
@@ -33802,6 +33804,8 @@
 	<integer>2</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>LowFiCombiningMarks</key>
+	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -33842,7 +33846,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2698 588 620 392 2048 72 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2387 291 918 381 2048 -124 1920 1080 </string>
+	<string>2387 442 1018 447 2048 -124 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>2048 -124 650 577 2048 -124 1920 1080 </string>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F</key>
@@ -34523,6 +34527,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>OperatorMono-Book 15</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -34534,7 +34540,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>10000</integer>
 			<key>Scrollback in Alternate Screen</key>
 			<false/>
 			<key>Selected Text Color</key>
@@ -34584,9 +34590,13 @@
 			<key>Thin Strokes</key>
 			<integer>0</integer>
 			<key>Transparency</key>
-			<real>0.18936529215976333</real>
+			<real>0.0</real>
+			<key>Unicode Normalization</key>
+			<integer>0</integer>
+			<key>Unicode Version</key>
+			<integer>8</integer>
 			<key>Unlimited Scrollback</key>
-			<true/>
+			<false/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -35457,13 +35467,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-04T08:56:26Z</date>
+	<date>2018-01-26T09:32:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
+	<key>SlowFrameRate</key>
+	<real>60</real>
 	<key>SwitchPaneModifier</key>
 	<integer>9</integer>
 	<key>SwitchTabModifier</key>
