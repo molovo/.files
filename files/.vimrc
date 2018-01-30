@@ -19,6 +19,7 @@ set ruler      " show the cursor position all the time
 set showcmd    " display incomplete commands
 set incsearch  " do incremental searching
 set swapfile   " keep unsaved changes in a swapfile
+set autoread   " automatically update buffer if file on disk changes
 
 " Set backup directories rather than leaving hidden files everywhere
 set backupdir=~/.vim/tmp
@@ -39,6 +40,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 call plug#end()
 
 " color scheme
