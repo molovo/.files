@@ -51,7 +51,7 @@ set cursorline
 colorscheme palenight
 let g:palenight_terminal_italics=1
 
-if &term =~# '^screen'
+if &term =~# '^tmux'
   " Colors in tmux
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
