@@ -22,7 +22,6 @@ alias we="watson edit"
 alias wf="watson frames"
 alias wss="watson status"
 alias wrm="watson remove"
-alias tmux="tmux -u"
 alias sql='mycli'
 alias phake='phake -q'
 alias nwa='telnet www.ateraan.com 4002'
