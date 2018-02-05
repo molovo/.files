@@ -7,3 +7,4 @@ export FZF_DEFAULT_OPTS='--color fg:242,hl:65,fg+:15,bg+:239,hl+:108 --color inf
 export FZF_DEFAULT_COMMAND='ag --hidden --nocolor -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --nocolor -g ""'
 export FZF_ALT_C_COMMAND='fd --type d --follow --hidden --no-ignore'
+export FILTHY_SHOW_ZSH_VERSION='1'
