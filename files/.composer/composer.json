@@ -12,8 +12,14 @@
         "phpunit/phpunit": "*",
         "laravel/installer": "^1.3",
         "laravel/lumen-installer": "^1.0",
-        "laravel/valet": "^2.0",
+        "laravel/valet": "dev-master as 2.0",
         "asm89/twig-lint": "@stable"
     },
-    "minimum-stability" : "stable"
+    "minimum-stability" : "stable",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/warp-lab/valet"
+      }
+    ]
 }
