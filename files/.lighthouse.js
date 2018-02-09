@@ -11,7 +11,6 @@ module.exports = {
     {
       passName: 'extraPass',
       gatherers: [
-        'styles',
         'css-usage',
         'js-usage',
       ],
@@ -26,7 +25,6 @@ module.exports = {
   audits: [
     'byte-efficiency/unused-css-rules',
     'byte-efficiency/unused-javascript',
-    'dobetterweb/no-old-flexbox',
     'seo/meta-description',
     'seo/http-status-code',
   ],
@@ -54,7 +52,6 @@ module.exports = {
     },
     'best-practices': {
       audits: [
-        {id: 'no-old-flexbox', weight: 1},
       ],
     },
     'seo': {
