@@ -223,6 +223,11 @@ highlight Title ctermfg       = blue
 highlight Title ctermbg       = black
 
 nmap <C-n> :tabnew<CR>
+nmap <C-e> :Vex<CR>
+
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
 
 set tags=./.vimtags;/
 
