@@ -46,7 +46,11 @@ call plug#end()
 " color scheme
 set termguicolors
 set noshowmode
-set cursorline
+set nocursorline
+set nolist
+let g:loaded_matchparen=1
+set lazyredraw
+set ttyfast
 
 "let ayucolor="mirage"
 "colorscheme ayu
@@ -150,11 +154,11 @@ set scrolloff=3 " Show 3 lines above/below the cursor
 hi LineNr ctermfg=238 ctermbg=00   " Remove hideous green background from line numbers
 
 " show indentation
-set listchars=space:·
-set list
-hi SpecialKey ctermfg=238
-hi ExtraWhitespace ctermbg=Red
-match ExtraWhitespace /\s\+$/
+"set listchars=space:·
+"set list
+"hi SpecialKey ctermfg=238
+"hi ExtraWhitespace ctermbg=Red
+"match ExtraWhitespace /\s\+$/
 
 " show comments in italics
 hi Comment cterm=italic
@@ -349,3 +353,4 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
