@@ -20,7 +20,6 @@ fzf-z
 git
 gitignore
 gitio
-history-search-multi-word
 history-substring-search
 homebrew
 insert-sudo
