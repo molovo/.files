@@ -31,8 +31,8 @@ fi
 
 # Link pinentry and gpg-agent
 if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; then
-  if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
-    source ~/.gnupg/.gpg-agent-info
+  if test -f $HOME/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
+    source $HOME/.gnupg/.gpg-agent-info
     export GPG_AGENT_INFO
     GPG_TTY=$(tty)
     export GPG_TTY
@@ -41,11 +41,11 @@ if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; t
   fi
 fi
 
-export GOPATH=~/go
+export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-if [[ -f "~/.rvm/scripts/rvm" ]]; then
+if [[ -f "$HOME/.rvm/scripts/rvm" ]]; then
   export PATH="$PATH:$HOME/.rvm/bin"
   source /Users/molovo/.rvm/scripts/rvm
 fi
