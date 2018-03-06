@@ -183,6 +183,9 @@ nnoremap <F4><F4> :set invwrap wrap?<CR>  " use f4f4 to toggle wordwrap
 nnoremap <F2><F2> :vsplit<CR>
 nnoremap <F3><F3> <C-W>w
 
+" Map jk to <Esc>
+inoremap jk <Esc>
+
 " Remove search highlighting with Esc-Esc
 nnoremap <Esc><Esc> :noh<CR>
 
