@@ -183,6 +183,12 @@ nnoremap <F4><F4> :set invwrap wrap?<CR>  " use f4f4 to toggle wordwrap
 nnoremap <F2><F2> :vsplit<CR>
 nnoremap <F3><F3> <C-W>w
 
+" Remove search highlighting with Esc-Esc
+nnoremap <Esc><Esc> :noh<CR>
+
+" Save file with Esc-Esc in insert mode
+inoremap <Esc><Esc> <Esc>:w<CR>
+
 " Stop vim-json from hiding quotes in JSON files
 let g:vim_json_syntax_conceal = 0
 
