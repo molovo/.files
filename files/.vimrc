@@ -41,6 +41,17 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'lifepillar/vim-mucomplete'
+Plug 'othree/yajs.vim', {'for': 'javascript'}
+Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+Plug 'mxw/vim-jsx', {'for': 'javascript'}
+Plug 'elzr/vim-json', {'for': 'json'}
+Plug 'heavenshell/vim-jsdoc', {'for': 'javascript'}
+Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}
+Plug 'ternjs/tern_for_vim', {'do': 'npm install', 'for': 'javascript'}
+Plug 'othree/jspc.vim', {'for': 'javascript'}
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
+Plug 'Shougo/unite.vim'
 call plug#end()
 
 " color scheme
@@ -66,6 +77,16 @@ endif
 " Italics
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+
+" Completion options
+set noinfercase
+set completeopt+=menuone
+set completeopt+=noinsert
+let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#spel#good_words = 1
+
+  " JavaScript
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -154,11 +175,11 @@ set scrolloff=3 " Show 3 lines above/below the cursor
 hi LineNr ctermfg=238 ctermbg=00   " Remove hideous green background from line numbers
 
 " show indentation
-"set listchars=space:·
-"set list
-"hi SpecialKey ctermfg=238
-"hi ExtraWhitespace ctermbg=Red
-"match ExtraWhitespace /\s\+$/
+set listchars=space:·
+set list
+hi SpecialKey ctermfg=238
+hi ExtraWhitespace ctermbg=Red
+match ExtraWhitespace /\s\+$/
 
 " show comments in italics
 hi Comment cterm=italic
@@ -168,6 +189,10 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+
+autocmd FileType php setlocal tabstop=4
+autocmd FileType php setlocal softtabstop=4
+autocmd FileType php setlocal shiftwidth=4
 
 " Show statusline by default
 set laststatus=2
