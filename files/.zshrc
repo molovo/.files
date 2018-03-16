@@ -2,24 +2,11 @@
 
 setopt CORRECT
 
-(( $+functions[tmux] )) || function tmux() {
-  if [[ -z $TMUX && ${#@} -eq 0 ]]; then
-    if ! command tmux has-session >/dev/null 2>&1; then
-      command tmux -u new-session -s $(whoami) \; new-window "tmux set-option -ga terminal-overrides \",$TERM:Tc\"; tmux detach"
-    fi
-
-    command tmux attach
-    return
-  fi
-
-  command tmux "$@"
-}
-
-[[ "$TERM_PROGRAM" != "vscode" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux
-
 # Initialise zulu plugin manager
 source "${ZULU_DIR:-"${ZDOTDIR:-$HOME}/.zulu"}/core/zulu"
 zulu init --dev
+
+[[ "$TERM_PROGRAM" != "vscode" && -z $SSH_CONNECTION && -z $TMUX ]] && tmux
 
 if builtin type thefuck >/dev/null 2>&1; then
   eval $(thefuck --alias)
