@@ -9,7 +9,6 @@ crash
 crystal
 directory
 docker
-done
 dwim
 fasd
 fast-syntax-highlighting
@@ -20,13 +19,11 @@ fzf-z
 git
 gitignore
 gitio
-history-substring-search
 homebrew
 insert-sudo
 k
 load-graph
 lumberjack
-node
 osx
 pretty-time
 revolver
@@ -37,12 +34,9 @@ utility
 warhol
 z
 z-cd
-zbrowse
 zsh-bd
-zsh-editing-workbench
 zsh-hints
 zsh-hints-integration
-zshbuild
-zulu-theme
+zulu-aliases
 zunit
 zvm
