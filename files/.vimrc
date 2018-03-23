@@ -9,6 +9,10 @@
 
 let mapleader = ","
 
+" Set UTF-8 encoding
+set encoding=utf-8
+scriptencoding utf-8
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
