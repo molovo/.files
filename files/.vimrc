@@ -32,7 +32,7 @@ set undodir=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
 call plug#begin('~/.vim/plugged')
-"Plug 'ayu-theme/ayu-vim'
+Plug 'ayu-theme/ayu-vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
@@ -42,7 +42,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-buftabline'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
-Plug 'drewtempelmeyer/palenight.vim'
+"Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'lifepillar/vim-mucomplete'
@@ -67,10 +67,10 @@ let g:loaded_matchparen=1
 set lazyredraw
 set ttyfast
 
-"let ayucolor="mirage"
-"colorscheme ayu
-colorscheme palenight
-let g:palenight_terminal_italics=1
+let ayucolor="mirage"
+colorscheme ayu
+"colorscheme palenight
+"let g:palenight_terminal_italics=1
 
 if &term =~# '^tmux'
   " Colors in tmux
@@ -113,6 +113,22 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+" Set up cursor switching in TMUX
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
+" Switch cursor upon entering or leaving vim, and entering or leaving insert mode
+autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
+autocmd VimLeave * silent exec "! echo -ne '\e[5 q'"
+
+" Reduce escape time
+set timeoutlen=1000 ttimeoutlen=0
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -219,8 +235,14 @@ inoremap jk <Esc>
 " Remove search highlighting with Esc-Esc
 nnoremap <Esc><Esc> :noh<CR>
 
-" Save file with Esc-Esc in insert mode
-inoremap <Esc><Esc> <Esc>:w<CR>
+" Save file when leaving insert mode
+autocmd InsertLeave * silent exec 'w'
+
+" Map CTRL-J and CTRL-K to switch buffers
+inoremap <C-J> <Esc>:bprev<CR>
+inoremap <C-K> <Esc>:bnext<CR>
+nnoremap <C-J> :bprev<CR>
+nnoremap <C-K> :bnext<CR>
 
 " Stop vim-json from hiding quotes in JSON files
 let g:vim_json_syntax_conceal = 0
