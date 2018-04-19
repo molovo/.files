@@ -56,6 +56,19 @@ Plug 'ternjs/tern_for_vim', {'do': 'npm install', 'for': 'javascript'}
 Plug 'othree/jspc.vim', {'for': 'javascript'}
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Shougo/unite.vim'
+Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 call plug#end()
 
 " color scheme
@@ -88,9 +101,10 @@ set completeopt+=menuone
 set completeopt+=noselect
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#spel#good_words = 1
+let g:deoplete#enable_at_startup = 1
 
-  " JavaScript
-  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+" JavaScript
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
