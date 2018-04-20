@@ -418,10 +418,20 @@ let g:ale_linters = {
 " This is off by default.
 let g:ale_fix_on_save = 1
 
+" :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
+" :Ag! - Start fzf in fullscreen and display the preview window above
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \                 <bang>0)
+
 " Set keymappings for FZF plugin
 nmap ; :Buffers<CR>
 nmap <C-t> :Files<CR>
-nmap <C-r> :Tags<CR>
+nmap <C-r> :BTags<CR>
+nmap <C-r><C-r> :Tags<CR>
+nmap <C-t><C-r> :Ag!<CR>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
