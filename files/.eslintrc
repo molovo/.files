@@ -1,0 +1,74 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true
+    }
+  },
+  "plugins": [
+    "standard",
+    "unicorn",
+    "xo",
+    "arca"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:xo/recommended",
+    "plugin:unicorn/recommended",
+    "standard"
+  ],
+  "rules": {
+    "block-spacing": [
+      1,
+      "always"
+    ],
+    "key-spacing": [
+      1,
+      {
+        "align": "value"
+      }
+    ],
+    "no-multi-spaces": [
+      1,
+      {
+        "ignoreEOLComments": true,
+        "exceptions": {
+          "VariableDeclarator": true,
+          "ImportDeclaration": true,
+          "Property": true
+        }
+      }
+    ],
+    "eqeqeq": "error",
+    "curly": "error",
+    "camelcase": "error",
+    "arrow-parens": [
+      2,
+      "as-needed"
+    ],
+    "valid-jsdoc": [
+      2,
+      {
+        "prefer": {
+          "arg": "param",
+          "argument": "param",
+          "class": "constructor",
+          "returns": "return",
+          "virtual": "abstract"
+        },
+        "requireReturn": false,
+        "requireParamDescription": false,
+        "requireReturnDescription": false
+      }
+    ],
+    "arca/import-align": 1,
+    "arca/import-ordering": 1,
+    "arca/newline-after-import-section": 1
+  }
+}
