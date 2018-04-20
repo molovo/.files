@@ -41,6 +41,9 @@ files/.config/watson/frames.bak
 files/.config/watson/state
 files/.config/watson/state.bak
 
+# Unneeded local shares
+files/.local/share/bower/
+
 # Maid
 files/.maid/maid.log
 
