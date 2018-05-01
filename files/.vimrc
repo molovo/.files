@@ -44,6 +44,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 "Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
+Plug 'dhruvasagar/vim-prosession'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/yajs.vim', {'for': 'javascript'}
