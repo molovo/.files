@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@captainsafia/legit": "^2.0.1",
+    "@shopify/slate": "^0.13.0",
     "@storybook/cli": "^3.0.1",
     "alex": "^4.0.1",
     "apostrophe-cli": "^2.1.4",
@@ -66,6 +67,8 @@
     "sass-lint": "^1.10.2",
     "sprout-cli": "^1.1.1",
     "standard": "^10.0.2",
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.2.0",
     "stylint": "^1.5.9",
     "stylus": "^0.54.5",
     "tap": "^10.3.0",
