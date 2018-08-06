@@ -1,7 +1,7 @@
-# ~/.tmuxinator/superrb.yml
+# ~/.tmuxinator/compass.yml
 
-name: superrb
-root: ~/projects/superrb
+name: compass
+root: ~/projects/compass
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,7 +28,7 @@ root: ~/projects/superrb
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t superrb
+# post: tmux -CC attach -t compass
 
 windows:
   - editor:
@@ -39,7 +39,7 @@ windows:
       panes:
         - vim:
           - vim
-        - gulp:
-          - gulp
+        - encore:
+          - node_modules/.bin/encore dev-server --hot
         - cli:
           - git status --short

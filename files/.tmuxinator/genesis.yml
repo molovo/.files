@@ -40,6 +40,6 @@ windows:
         - vim:
           - vim
         - encore:
-          - node_modules/.bin/encore dev-server
+          - node_modules/.bin/encore dev-server --hot
         - cli:
           - git status --short

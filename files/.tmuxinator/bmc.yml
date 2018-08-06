@@ -1,19 +1,19 @@
-# ~/.tmuxinator/superrb.yml
+# ~/.tmuxinator/bmc.yml
 
-name: superrb
-root: ~/projects/superrb
+name: bmc
+root: ~/projects/bmc
 
 # Optional tmux socket
 # socket_name: foo
 
 # Runs before everything. Use it to start daemons etc.
-# pre: sudo /etc/rc.d/mysqld start
+# pre: tmux has-session >/dev/null 2>&1 && tmux -u new-session -s bmc \; new-window "tmux set-option -ga terminal-overrides \",tmux-256color,Tc\"; tmux detach"
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+# pre_window: do-something
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
-# tmux_options: -f ~/.tmux.mac.conf
+# tmux_options: -f ~/tmux.conf
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
@@ -28,18 +28,19 @@ root: ~/projects/superrb
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t superrb
+# post: tmux -CC attach -t bmc
 
 windows:
   - editor:
       layout: c780,212x43,0,0{106x43,0,0,4,105x43,107,0[105x21,107,0,6,105x21,107,22,7]}
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      #synchronize: after
+      # synchronize: after
       panes:
         - vim:
           - vim
-        - gulp:
-          - gulp
+        - less:
+          - npm run build
+          - guardian
         - cli:
           - git status --short
