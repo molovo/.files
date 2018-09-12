@@ -2,7 +2,7 @@
 [core]
   # Please adapt and uncomment the following lines:
   user = James Dinsdale
-  email = hi@molovo.co.uk
+	email = hi@molovo.co
 	excludesfile = /Users/molovo/.gitignore_global
 [user]
 	name = James Dinsdale
