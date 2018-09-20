@@ -79,3 +79,10 @@ function zle-line-finish
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
+
+# Emacs and Vi
+for keymap in 'emacs' 'viins'; do
+  builtin bindkey -M "$keymap" "$key_info[Up]" history-substring-search-up
+  builtin bindkey -M "$keymap" "$key_info[Down]" history-substring-search-down
+done
+
