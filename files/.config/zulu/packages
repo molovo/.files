@@ -19,6 +19,7 @@ fzf-z
 git
 gitignore
 gitio
+history-substring-search
 homebrew
 insert-sudo
 k
