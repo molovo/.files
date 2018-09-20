@@ -27,6 +27,7 @@ files/.config/direnv
 files/.config/git
 files/.config/heroku
 files/.config/hub
+files/.config/lab.hcl
 files/.config/psysh
 files/.config/roots
 files/.config/storjshare
