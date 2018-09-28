@@ -9,6 +9,7 @@ crash
 crystal
 directory
 docker
+done
 dwim
 fasd
 fast-syntax-highlighting
@@ -28,6 +29,7 @@ lumberjack
 osx
 pretty-time
 revolver
+safe-paste
 solarized-man
 tipz
 transfer
