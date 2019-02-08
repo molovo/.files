@@ -73,6 +73,8 @@ files/.config/valet/CA/*
 files/.config/valet/Certificates/*
 files/.config/valet/Log/*
 files/.config/valet/Nginx/*
+files/.config/valet/config.json
+files/.config/valet/dnsmasq.conf
 
 # Yarn
 files/.config/yarn/global/node_modules/
