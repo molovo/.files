@@ -76,6 +76,9 @@ files/.config/valet/Nginx/*
 files/.config/valet/config.json
 files/.config/valet/dnsmasq.conf
 
+# Vladgsound
+files/.config/vladgsound/
+
 # Yarn
 files/.config/yarn/global/node_modules/
 files/.config/yarn/global/node_modules/.yarn-integrity
