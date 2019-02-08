@@ -38,7 +38,7 @@ class JekyllValetDriver extends ValetDriver
             return $staticFilePath;
         }
 
-        return false;
+        return $sitePath.'/_site/404.html';
     }
 
     /**
