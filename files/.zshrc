@@ -86,3 +86,5 @@ for keymap in 'emacs' 'viins'; do
   builtin bindkey -M "$keymap" "$key_info[Down]" history-substring-search-down
 done
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

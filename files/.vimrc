@@ -33,7 +33,7 @@ set backupskip=/tmp/*,/private/tmp/*
 
 call plug#begin('~/.vim/plugged')
 Plug 'ayu-theme/ayu-vim'
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
