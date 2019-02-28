@@ -35,12 +35,12 @@ function run_checks {
   for file in `git diff-index --cached --name-only HEAD` ; do
     if [ -f ${file} ]; then
       if [ "${file:${#1}-4:4}" = ".php" ]; then
-        php-cs-fixer fix -q --dry-run --config=/Users/molovo/.files/files/.php_cs ${file} 2>&1 > /dev/null
+        php-cs-fixer fix -q --dry-run ${file} 2>&1 > /dev/null
 
         if [ $? -ne 0 ]; then
           error_message+="  - ${file}\n"
           php_errors_found=true
-          php-cs-fixer fix -q --config=/Users/molovo/.files/files/.php_cs ${file} 2>&1 > /dev/null
+          php-cs-fixer fix -q ${file} 2>&1 > /dev/null
         fi
       fi
     fi
