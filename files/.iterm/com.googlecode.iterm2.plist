@@ -33848,9 +33848,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2698 392 620 392 2048 -124 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2318 393 928 394 2048 -124 1920 1080 </string>
+	<string>2318 484 928 394 2048 -125 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2048 -54 650 577 2048 -124 1920 1080 </string>
+	<string>2048 -125 650 577 2048 -125 1920 1080 </string>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F_selection</key>
@@ -35305,7 +35305,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Scrollback in Alternate Screen</key>
 			<false/>
 			<key>Selected Text Color</key>
@@ -35382,6 +35382,8 @@
 			<string>/Users/molovo</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -35461,9 +35463,9 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUAutomaticallyUpdate</key>
-	<true/>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
@@ -35471,7 +35473,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-20T07:47:53Z</date>
+	<date>2019-02-15T09:15:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -35503,7 +35505,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0</string>
+	<string>3.2.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
