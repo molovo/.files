@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+(( $+functions[ip] )) || function ip() {
+  echo
+  echo "    Public IPv4    \e[0;32m$(command -v public-ip >/dev/null && public-ip -4 || hostname -i)\e[0m"
+  echo "  Internal IPv6    \e[0;33m$(command -v internal-ip >/dev/null && internal-ip -6 || hostname -I)\e[0m"
+  echo "  Internal IPv4    \e[0;33m$(command -v internal-ip >/dev/null && internal-ip -4 || hostname -I)\e[0m"
+  echo "  Hostname         \e[0;34m$(hostname -s)\e[0m"
+  echo "      FQDN         \e[0;34m$(hostname -f)\e[0m"
+}
