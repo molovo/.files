@@ -468,3 +468,6 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+" prosession config
+let g:prosession_tmux_title = 1
+let g:prosession_per_branch = 1
