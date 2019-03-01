@@ -38,6 +38,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
+Plug 'pearofducks/vim-quack-lightline'
 Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-buftabline'
 Plug 'junegunn/vim-easy-align'
@@ -84,6 +85,58 @@ set nolist
 let g:loaded_matchparen=1
 set lazyredraw
 set ttyfast
+
+" Lightline
+let g:lightline = {
+\ 'colorscheme': 'one',
+\ 'active': {
+\   'left': [['mode', 'paste'], ['gitbranch'], ['filename'], ['modified']],
+\   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_warnings', 'linter_errors', 'linter_ok']]
+\ },
+\ 'component_function': {
+\   'gitbranch': 'fugitive#head'
+\ },
+\ 'component_expand': {
+\   'linter_warnings': 'LightlineLinterWarnings',
+\   'linter_errors': 'LightlineLinterErrors',
+\   'linter_ok': 'LightlineLinterOK'
+\ },
+\ 'component_type': {
+\   'readonly': 'error',
+\   'linter_warnings': 'warning',
+\   'linter_errors': 'error'
+\ },
+\ }
+
+function! LightlineLinterWarnings() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+  return l:counts.total == 0 ? '' : printf('%d ◆', all_non_errors)
+endfunction
+
+function! LightlineLinterErrors() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+  return l:counts.total == 0 ? '' : printf('%d ✗', all_errors)
+endfunction
+
+function! LightlineLinterOK() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+  return l:counts.total == 0 ? '✓ ' : ''
+endfunction
+
+autocmd User ALELint call s:MaybeUpdateLightline()
+
+" Update and show lightline but only if it's visible (e.g., not in Goyo)
+function! s:MaybeUpdateLightline()
+  if exists('#lightline')
+    call lightline#update()
+  end
+endfunction
 
 let ayucolor="mirage"
 colorscheme ayu
@@ -290,12 +343,6 @@ highlight DiffChangeDelete ctermfg      = yellow
 highlight GitGutterChangeDelete ctermbg = black
 highlight GitGutterChangeDelete ctermfg = yellow
 
-" StatusLine color highlighting
-highlight StatusLine ctermfg   = black
-highlight StatusLine ctermbg   = white
-highlight StatusLineNC ctermfg = black
-highlight StatusLineNC ctermbg = white
-
 " TabLine color highlighting
 highlight TabLineFill ctermfg = black
 highlight TabLineFill ctermbg = black
@@ -335,7 +382,7 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
-set autochdir
+" set autochdir
 
 set tags=./.vimtags;/
 
@@ -381,58 +428,6 @@ au BufNewFile,BufRead Phakefile set filetype=php
 
 filetype plugin on
 
-" Lightline
-let g:lightline = {
-\ 'colorscheme': 'one',
-\ 'active': {
-\   'left': [['mode', 'paste'], ['gitbranch'], ['filename'], ['modified']],
-\   'right': [['lineinfo'], ['percent'], ['readonly', 'linter_warnings', 'linter_errors', 'linter_ok']]
-\ },
-\ 'component_function': {
-\   'gitbranch': 'fugitive#head'
-\ },
-\ 'component_expand': {
-\   'linter_warnings': 'LightlineLinterWarnings',
-\   'linter_errors': 'LightlineLinterErrors',
-\   'linter_ok': 'LightlineLinterOK'
-\ },
-\ 'component_type': {
-\   'readonly': 'error',
-\   'linter_warnings': 'warning',
-\   'linter_errors': 'error'
-\ },
-\ }
-
-function! LightlineLinterWarnings() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '' : printf('%d ◆', all_non_errors)
-endfunction
-
-function! LightlineLinterErrors() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '' : printf('%d ✗', all_errors)
-endfunction
-
-function! LightlineLinterOK() abort
-  let l:counts = ale#statusline#Count(bufnr(''))
-  let l:all_errors = l:counts.error + l:counts.style_error
-  let l:all_non_errors = l:counts.total - l:all_errors
-  return l:counts.total == 0 ? '✓ ' : ''
-endfunction
-
-autocmd User ALELint call s:MaybeUpdateLightline()
-
-" Update and show lightline but only if it's visible (e.g., not in Goyo)
-function! s:MaybeUpdateLightline()
-  if exists('#lightline')
-    call lightline#update()
-  end
-endfunction
-
 " Put this in vimrc or a plugin file of your own.
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_fixers = {
@@ -471,3 +466,27 @@ nmap ga <Plug>(EasyAlign)
 " prosession config
 let g:prosession_tmux_title = 1
 let g:prosession_per_branch = 1
+
+" fzf.vim config
+" [Buffers] Jump to the existing window if possible
+let g:fzf_buffers_jump = 1
+
+" Augmenting Ag command using fzf#vim#with_preview function
+"   * fzf#vim#with_preview([[options], [preview window], [toggle keys...]])
+"     * For syntax-highlighting, Ruby and any of the following tools are required:
+"       - Bat: https://github.com/sharkdp/bat
+"       - Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
+"       - CodeRay: http://coderay.rubychan.de/
+"       - Rouge: https://github.com/jneen/rouge
+"
+"   :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
+"   :Ag! - Start fzf in fullscreen and display the preview window above
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 fzf#vim#with_preview('right:50%'),
+  \                 <bang>0)
+
+command! -bang -nargs=* Files
+  \ call fzf#vim#files(<q-args>,
+  \                 fzf#vim#with_preview('right:50%'),
+  \                 <bang>0)
