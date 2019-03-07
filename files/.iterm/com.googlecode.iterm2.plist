@@ -33687,7 +33687,7 @@
 	<key>DimOnlyText</key>
 	<false/>
 	<key>DisableFullscreenTransparency</key>
-	<false/>
+	<true/>
 	<key>FlashTabBarInFullscreen</key>
 	<true/>
 	<key>FocusFollowsMouse</key>
@@ -33848,9 +33848,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2698 392 620 392 2048 -124 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2318 484 928 394 2048 -125 1920 1080 </string>
+	<string>301 642 918 423 0 0 2048 1152 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2048 -125 650 577 2048 -125 1920 1080 </string>
+	<string>0 0 650 577 0 0 2048 1152 </string>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_E7295901-324F-441B-8409-FA27576E7A0F_selection</key>
@@ -34540,7 +34540,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>1</integer>
 			<key>Scrollback Lines</key>
 			<integer>10000</integer>
 			<key>Scrollback in Alternate Screen</key>
@@ -35494,6 +35494,8 @@
 	<integer>0</integer>
 	<key>UseBorder</key>
 	<false/>
+	<key>UseMetal</key>
+	<true/>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WordCharacters</key>
@@ -35510,5 +35512,7 @@
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
+	<key>metalMaximizeThroughput</key>
+	<true/>
 </dict>
 </plist>
