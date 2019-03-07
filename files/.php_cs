@@ -25,6 +25,7 @@ return PhpCsFixer\Config::create()
             'only_untyped' => false,
         ],
         'phpdoc_order'                => true,
+        'phpdoc_to_comment'           => false,
         //'semicolon_after_instruction' => true,
         'simplified_null_return'      => false,
     ]);
