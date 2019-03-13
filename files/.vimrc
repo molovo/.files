@@ -31,6 +31,12 @@ set directory=~/.vim/tmp
 set undodir=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
+" Auto-install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent execute "!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 Plug 'ayu-theme/ayu-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -67,6 +73,7 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+Plug 'ludovicchabant/vim-gutentags'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -432,10 +439,12 @@ filetype plugin on
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
+\   'php': ['php_cs_fixer'],
 \}
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'php': ['phpmd'],
 \}
 
 " Set this setting in vimrc if you want to fix files automatically on save.
@@ -490,3 +499,6 @@ command! -bang -nargs=* Files
   \ call fzf#vim#files(<q-args>,
   \                 fzf#vim#with_preview('right:50%'),
   \                 <bang>0)
+
+" Make y and p copy and paste from global buffer
+set clipboard+=unnamed
