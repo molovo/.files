@@ -8,9 +8,9 @@
       command tmux -u new-session -s "terminal-override" \; new-window "tmux set-option -ga terminal-overrides \",$TERM:Tc\"; tmux detach"
     fi
 
-    if ! command tmux has-session -t $(whoami) >/dev/null 2>&1; then
+    if ! command tmux has-session -t "launch" >/dev/null 2>&1; then
       # Create another new session, and this time stay attached
-      command tmux -u new-session -s $(whoami)
+      command tmux -u new-session -s "launch"
       return
     fi
 
