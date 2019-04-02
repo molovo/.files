@@ -13,7 +13,8 @@
         "laravel/installer": "^1.3",
         "laravel/lumen-installer": "^1.0",
         "laravel/valet": "^2.1.1",
-        "asm89/twig-lint": "@stable"
+        "asm89/twig-lint": "@stable",
+        "phan/phan": "^1.2"
     },
     "minimum-stability" : "stable"
 }
