@@ -207,7 +207,7 @@ autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
 autocmd VimLeave * silent exec "! echo -ne '\e[5 q'"
 
 " Reduce escape time
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=100 ttimeoutlen=0
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -502,3 +502,7 @@ command! -bang -nargs=* Files
 
 " Make y and p copy and paste from global buffer
 set clipboard+=unnamed
+
+" use hybrid line numbering
+set number relativenumber
+set nu rnu
