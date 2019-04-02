@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+(( $+functions[scc] )) || function scc() {
+  rm -rf var/cache/*
+  php bin/console doctrine:cache:clear-query
+  php bin/console doctrine:cache:clear-query --env=prod
+  php bin/console doctrine:cache:clear-result
+  php bin/console doctrine:cache:clear-result --env=prod
+  php bin/console doctrine:cache:clear-metadata
+  php bin/console doctrine:cache:clear-metadata --env=prod
+  php bin/console cache:clear
+  php bin/console cache:clear --env=prod
+  php bin/console cache:warmup
+  php bin/console cache:warmup --env=prod
+}
