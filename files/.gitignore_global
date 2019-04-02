@@ -29,6 +29,9 @@ Temporary Items
 # Log files
 nohup.out
 
+### PHP ###
+.php_cs.cache
+.phan/
 
 ### SublimeText ###
 # cache files for sublime text
