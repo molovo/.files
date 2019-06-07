@@ -34,6 +34,9 @@ class JekyllValetDriver extends ValetDriver
         if (file_exists($staticFilePath = $sitePath . '/_site/' . $uri . 'index.html')) {
             return $staticFilePath;
         }
+        if (file_exists($staticFilePath = $sitePath . '/_site/' . $uri . '.html')) {
+            return $staticFilePath;
+        }
         if (file_exists($staticFilePath = $sitePath . '/_site/' . $uri)) {
             return $staticFilePath;
         }
