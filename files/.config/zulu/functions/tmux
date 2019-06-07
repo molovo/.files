@@ -10,7 +10,7 @@
 
     if ! command tmux has-session -t "launch" >/dev/null 2>&1; then
       # Create another new session, and this time stay attached
-      command tmux -u new-session -s "launch"
+      command tmux -u new-session -s "launch" -c ~
       return
     fi
 
