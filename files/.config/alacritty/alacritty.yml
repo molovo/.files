@@ -70,24 +70,24 @@ colors:
   # Normal colors
   normal:
     black:   '0x1f2430'
-    red:     '0xff3333'
+    red:     '0xf28779'
     green:   '0xbae67e'
-    yellow:  '0xffd57f'
+    yellow:  '0xffd580'
     blue:    '0x73d0ff'
     magenta: '0xd4bfff'
-    cyan:    '0x83CEC6'
+    cyan:    '0x5ccfe6'
     white:   '0xcbccc6'
 
   # Bright colors
   bright:
-    black:   '0x737d87'
-    red:     '0xff3333'
+    black:   '0x5c6773'
+    red:     '0xf28779'
     green:   '0xbae67e'
-    yellow:  '0xffd57f'
-    blue:    '0x59c2ff'
-    magenta: '0xb77ee0'
+    yellow:  '0xffd580'
+    blue:    '0x73d0ff'
+    magenta: '0xd4bfff'
     cyan:    '0x5ccfe6'
-    white: '0xcbccc6'
+    white:   '0xcbccc6'
 
 # Colors (Ayu)
  #  colors:
