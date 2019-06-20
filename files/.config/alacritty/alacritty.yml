@@ -6,6 +6,13 @@ dpi:
   x: 96.0
   y: 96.0
 
+window:
+  padding:
+    x: 10
+    y: 20
+  decorations: transparent
+  startup_mode: Fullscreen
+
 # Display tabs using this many cells (changes require restart)
 tabspaces: 2
 
@@ -16,74 +23,103 @@ draw_bold_text_with_bright_colors: true
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Operator Mono Book
+    family: Operator Mono
     # Style can be specified to pick a specific face.
-    # style: Regular
+    style: Book
 
   # The bold font face
   bold:
     family: Operator Mono
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Bold
 
   # The italic font face
   italic:
-    family: Operator Mono Book
+    family: Operator Mono
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Book Italic
 
   # Point size of the font
   size: 15.0
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
-    x: 0.0
-    y: 0.0
+    x: 0
+    y: 3
 
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
   # false.
-  use_thin_strokes: false
+  use_thin_strokes: true
 
 # Should display the render timer
-render_timer: false
+debug.render_timer: false
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
 cursor_style: Beam
 
-# Colors (Tomorrow Night Bright)
+# Colors (Ayu Dark)
 colors:
   # Default colors
   primary:
-    background: '0x292d3e'
-    foreground: '0x959dcb'
-  cursor:
-    background: '0xffcc00'
-    foreground: '0x292d3e'
+    background: '0x1f2430'
+    foreground: '0xcbccc6'
 
   # Normal colors
   normal:
-    black:   '0x292d3e'
-    red:     '0xf07178'
-    green:   '0xc3e88d'
-    yellow:  '0xffcb6b'
-    blue:    '0x82aaff'
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xd0d0d0'
+    black:   '0x1f2430'
+    red:     '0xff3333'
+    green:   '0xbae67e'
+    yellow:  '0xffd57f'
+    blue:    '0x73d0ff'
+    magenta: '0xd4bfff'
+    cyan:    '0x83CEC6'
+    white:   '0xcbccc6'
 
   # Bright colors
   bright:
-    black:   '0x434758'
-    red:     '0xff8b92'
-    green:   '0xddffa7'
-    yellow:  '0xffe585'
-    blue:    '0x9cc4ff'
-    magenta: '0xe1acff'
-    cyan:    '0xa3f7ff'
-    white:   '0xffffff'
+    black:   '0x737d87'
+    red:     '0xff3333'
+    green:   '0xbae67e'
+    yellow:  '0xffd57f'
+    blue:    '0x59c2ff'
+    magenta: '0xb77ee0'
+    cyan:    '0x5ccfe6'
+    white: '0xcbccc6'
+
+# Colors (Ayu)
+ #  colors:
+ #  # Default colors
+  # primary:
+ #    background: '0x1e2431'
+ #    foreground: '0x959dcb'
+ #  cursor:
+ #    background: '0xffca50'
+ #    foreground: '0xffffff'
+
+  # Normal colors
+ #  normal:
+ #    black:   '0x292d3e'
+ #    red:     '0xf07178'
+ #    green:   '0xc3e88d'
+  #   yellow:  '0xffcb6b'
+ #    blue:    '0x82aaff'
+ #    magenta: '0xc792ea'
+ #    cyan:    '0x89ddff'
+ #    white:   '0xd0d0d0'
+
+  # Bright colors
+ #  bright:
+ #    black:   '0x434758'
+ #    red:     '0xff8b92'
+ #    green:   '0xddffa7'
+ #    yellow:  '0xffe585'
+ #    blue:    '0x9cc4ff'
+ #    magenta: '0xe1acff'
+ #    cyan:    '0xa3f7ff'
+ #    white:   '0xffffff'
 
 # Colors (Solarized Dark)
 # colors:
@@ -215,3 +251,4 @@ mouse_bindings:
 #  program: /bin/bash
 #  args:
 #    - --login
+
