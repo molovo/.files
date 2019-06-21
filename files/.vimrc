@@ -74,6 +74,11 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'tobyS/vmustache'
+Plug 'tobyS/pdv', { 'for': 'php' }
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -222,8 +227,8 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-  " For all text files set 'textwidth' to 80 characters.
-  autocmd FileType text setlocal textwidth=80
+  " For all text files set 'textwidth' to disable wrapping.
+  autocmd FileType text setlocal textwidth=0
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -408,10 +413,6 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
-" Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
-
 " Numbers
 set number
 set numberwidth=5
@@ -506,3 +507,19 @@ set clipboard+=unnamed
 " use hybrid line numbering
 set number relativenumber
 set nu rnu
+
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates_snip"
+nnoremap <buffer> <Leader>d :call pdv#DocumentWithSnip()<CR>
+
+" Make it obvious where 80 characters is
+set textwidth=0
+set wrapmargin=0
+set formatoptions-=t
+set colorcolumn=+1
+
