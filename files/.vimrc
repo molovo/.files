@@ -450,6 +450,7 @@ let g:ale_linters = {
 " Set this setting in vimrc if you want to fix files automatically on save.
 " This is off by default.
 let g:ale_fix_on_save = 1
+let g:ale_php_cs_fixer_options = '--config="$HOME/.php_cs"'
 
 " :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
 " :Ag! - Start fzf in fullscreen and display the preview window above
