@@ -211,7 +211,7 @@ autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
 autocmd VimLeave * silent exec "! echo -ne '\e[5 q'"
 
 " Reduce escape time
-set timeoutlen=100 ttimeoutlen=0
+set timeoutlen=100 ttimeoutlen=10
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
