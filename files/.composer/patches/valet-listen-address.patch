@@ -1,0 +1,38 @@
+diff --git a/cli/stubs/secure.valet.conf b/cli/stubs/secure.valet.conf
+index f35c989..376e84a 100644
+--- a/cli/stubs/secure.valet.conf
++++ b/cli/stubs/secure.valet.conf
+@@ -1,11 +1,11 @@
+ server {
+-    listen 127.0.0.1:80;
++    listen 80;
+     server_name VALET_SITE www.VALET_SITE *.VALET_SITE;
+     return 301 https://$host$request_uri;
+ }
+ 
+ server {
+-    listen 127.0.0.1:443 ssl http2;
++    listen 443 ssl http2;
+     server_name VALET_SITE www.VALET_SITE *.VALET_SITE;
+     root /;
+     charset utf-8;
+@@ -48,7 +48,7 @@ server {
+ }
+ 
+ server {
+-    listen 127.0.0.1:60;
++    listen 60;
+     server_name VALET_SITE www.VALET_SITE *.VALET_SITE;
+     root /;
+     charset utf-8;
+diff --git a/cli/stubs/valet.conf b/cli/stubs/valet.conf
+index a11066a..e8f904e 100644
+--- a/cli/stubs/valet.conf
++++ b/cli/stubs/valet.conf
+@@ -1,5 +1,5 @@
+ server {
+-    listen 127.0.0.1:80 default_server;
++    listen 80 default_server;
+     root /;
+     charset utf-8;
+     client_max_body_size 128M;

@@ -1,0 +1,24 @@
+diff --git a/cli/stubs/etc-phpfpm-valet.conf b/cli/stubs/etc-phpfpm-valet.conf
+index 76c4ac7..85c175d 100644
+--- a/cli/stubs/etc-phpfpm-valet.conf
++++ b/cli/stubs/etc-phpfpm-valet.conf
+@@ -9,7 +9,7 @@ listen.group = staff
+ listen.mode = 0777
+ 
+ 
+-php_admin_value[memory_limit] = 128M
++php_admin_value[memory_limit] = 2G
+ php_admin_value[upload_max_filesize] = 128M
+ php_admin_value[post_max_size] = 128M
+ 
+diff --git a/cli/stubs/php-memory-limits.ini b/cli/stubs/php-memory-limits.ini
+index bd12ec0..f55b53d 100644
+--- a/cli/stubs/php-memory-limits.ini
++++ b/cli/stubs/php-memory-limits.ini
+@@ -1,5 +1,5 @@
+ ; Max memory per instance
+-memory_limit = 128M
++memory_limit = 2G
+ 
+ ;The maximum size of an uploaded file.
+ upload_max_filesize = 128M
