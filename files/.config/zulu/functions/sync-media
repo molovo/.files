@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+(( $+functions[sync-media] )) || function sync-media() {
+  local site=${1}
+  local dir='web/uploads/media/'
+  local newDir='public/uploads/media/'
+
+  if [[ ! -d $dir ]];
+  then
+    dir=$newDir
+  fi
+
+  if [[ ! -d $dir ]];
+  then
+    command mkdir -p $dir
+  fi
+
+  local host='live'
+  if [[ $site == *.superrb.build ]]; then
+    host='staging'
+  fi
+
+  command rsync -av --no-o --no-g -O ${host}:${site}/httpdocs/${dir} ${dir}
+}
