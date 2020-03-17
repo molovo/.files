@@ -14,8 +14,7 @@
   "plugins": [
     "standard",
     "unicorn",
-    "xo",
-    "arca"
+    "xo"
   ],
   "extends": [
     "eslint:recommended",
@@ -28,29 +27,16 @@
       1,
       "always"
     ],
-    "key-spacing": [
-      1,
-      {
-        "align": "value"
-      }
-    ],
-    "no-multi-spaces": [
-      1,
-      {
-        "ignoreEOLComments": true,
-        "exceptions": {
-          "VariableDeclarator": true,
-          "ImportDeclaration": true,
-          "Property": true
-        }
-      }
-    ],
     "eqeqeq": "error",
     "curly": "error",
     "camelcase": "error",
     "arrow-parens": [
       2,
       "as-needed"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "always"
     ],
     "valid-jsdoc": [
       2,
@@ -67,8 +53,6 @@
         "requireReturnDescription": false
       }
     ],
-    "arca/import-align": 1,
-    "arca/import-ordering": 1,
-    "arca/newline-after-import-section": 1
+    "xo/catch-error-name": "off"
   }
 }
