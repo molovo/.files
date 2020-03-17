@@ -11,7 +11,7 @@ class StaticSiteValetDriver extends ValetDriver
      */
     public function serves($sitePath, $siteName, $uri)
     {
-        if (is_dir($sitePath . '/assets/dist') && is_file($sitePath.'/index.html')) {
+        if (is_dir($sitePath . '/assets/dist') && is_file($sitePath.'/index.html') && !is_dir($sitePath . '/_site')) {
             return true;
         }
 
