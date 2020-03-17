@@ -56,7 +56,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch'
 Plug 'dhruvasagar/vim-prosession'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'lifepillar/vim-mucomplete'
+" Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 Plug 'mxw/vim-jsx', {'for': 'javascript'}
@@ -76,6 +76,9 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv', { 'for': 'php' }
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
+Plug 'Shougo/deoplete.nvim'
+Plug 'kristijanhusak/deoplete-phpactor'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
@@ -171,6 +174,11 @@ set completeopt+=noselect
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#spel#good_words = 1
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_start_length = 1
+if !exists('g:deoplete#omni#input_patterns')
+  let g:deoplete#omni#input_patterns = {}
+endif
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " JavaScript
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
@@ -364,7 +372,7 @@ highlight TabLineSel ctermbg  = black
 highlight Title ctermfg       = blue
 highlight Title ctermbg       = black
 
-nmap <C-n> :tabnew<CR>
+" nmap <C-n> :tabnew<CR>
 
 " Toggle Vexplore with Ctrl-E
 function! ToggleVExplorer()
@@ -510,9 +518,9 @@ set nu rnu
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates_snip"
 nnoremap <buffer> <Leader>d :call pdv#DocumentWithSnip()<CR>
@@ -522,4 +530,34 @@ set textwidth=0
 set wrapmargin=0
 set formatoptions-=t
 set colorcolumn=+1
+
+inoremap <expr><tab>      pumvisible()? "\<C-n>" : "\<tab>"
+inoremap <expr><S-tab>    pumvisible()? "\<C-p>" : "\<S-tab>"
+" inoremap <expr><Down>     pumvisible()? "\<C-n>" : "\<Down>"
+" inoremap <expr><Up>       pumvisible()? "\<C-p>" : "\<Up>"
+" inoremap <expr><Esc>      pumvisible()? "\<C-e>" : "\<Esc>"
+" inoremap <expr><CR>       pumvisible()? "\<C-y>" : "\<CR>"
+" inoremap <expr><PageDown> pumvisible()? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
+" inoremap <expr><PageUp>   pumvisible()? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
+
+" omnifuncs
+augroup omnifuncs
+  autocmd!
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  autocmd FileType php setlocal omnifunc=phpactor#Complete
+augroup end
+
+" tern
+if exists('g:plugs["tern_for_vim"]')
+  let g:tern_show_argument_hints = 'on_hold'
+  let g:tern_show_signature_in_pum = 1
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
+endif
+
+let g:phpactorOmniAutoClassImport = v:true
+let g:phpactorOmniError = v:true
 
