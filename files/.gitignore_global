@@ -32,6 +32,7 @@ nohup.out
 ### PHP ###
 .php_cs.cache
 .phan/
+.phpcd/
 
 ### SublimeText ###
 # cache files for sublime text
