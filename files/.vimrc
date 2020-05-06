@@ -79,8 +79,9 @@ Plug 'tobyS/pdv', { 'for': 'php' }
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'Shougo/deoplete.nvim'
 Plug 'kristijanhusak/deoplete-phpactor'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'lumiliet/vim-twig'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
