@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+(( $+functions[ssh] )) || function ssh() {
+  local original=$(tmux display-message -p '#W')
+  local args="$*"
+  tmux rename-window "$args"
+  command ssh $args
+  tmux rename-window "$original"
+}
