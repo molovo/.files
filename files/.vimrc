@@ -562,3 +562,6 @@ endif
 let g:phpactorOmniAutoClassImport = v:true
 let g:phpactorOmniError = v:true
 
+" Allow copying and pasting between instances of vim
+vmap <leader>y :w! /tmp/vitmp<CR>
+nmap <leader>p :r! cat /tmp/vitmp<CR>

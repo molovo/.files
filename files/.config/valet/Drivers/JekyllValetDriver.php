@@ -41,6 +41,10 @@ class JekyllValetDriver extends ValetDriver
             return $staticFilePath;
         }
 
+        if (file_exists($staticFilePath = $sitePath . '/_site/404/index.html')) {
+            return $staticFilePath;
+        }
+
         return $sitePath.'/_site/404.html';
     }
 

@@ -52,7 +52,7 @@
     "mjml": "^4.4.0-beta.1",
     "multicolour": "^0.6.36",
     "native-run": "^0.3.0",
-    "netlify-cli": "^2.8.1",
+    "netlify-cli": "^2.51.0",
     "node-gyp": "3.8.0",
     "node-sass": "^4.11.0",
     "now": "^14.0.1",
