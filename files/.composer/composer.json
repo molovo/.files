@@ -1,20 +1,10 @@
 {
     "require": {
         "phpmd/phpmd"                     : "*",
-        "codeception/codeception": "*",
-        "codeception/specify": "*",
-        "codeception/verify": "*",
-        "satooshi/php-coveralls": "*",
-        "molovo/phake": "*",
-        "producer/producer": "*",
-        "philliphq/phillip": "*",
-        "psy/psysh": "*",
-        "phpunit/phpunit": "*",
         "laravel/installer": "^1.3",
         "laravel/lumen-installer": "^1.0",
         "laravel/valet": "^2.7",
         "asm89/twig-lint": "@stable",
-        "phan/phan": "^1.2",
         "cweagans/composer-patches": "~1.0"
     },
     "minimum-stability" : "stable"
