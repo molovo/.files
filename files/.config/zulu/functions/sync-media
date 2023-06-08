@@ -15,7 +15,7 @@
     command mkdir -p $dir
   fi
 
-  local host='live'
+  local host='live.uk'
   if [[ $site == *.superrb.build ]]; then
     host='staging'
   fi

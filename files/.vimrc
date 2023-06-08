@@ -63,25 +63,17 @@ Plug 'mxw/vim-jsx', {'for': 'javascript'}
 Plug 'elzr/vim-json', {'for': 'json'}
 Plug 'heavenshell/vim-jsdoc', {'for': 'javascript'}
 Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}
-Plug 'ternjs/tern_for_vim', {'do': 'npm install', 'for': 'javascript'}
-Plug 'othree/jspc.vim', {'for': 'javascript'}
+Plug 'ternjs/tern_for_vim', {'do': 'npm install', 'for': ['javascript', 'javascript.jsx']}
+Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Shougo/unite.vim'
-Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv', { 'for': 'php' }
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
-Plug 'Shougo/deoplete.nvim'
-Plug 'kristijanhusak/deoplete-phpactor'
-" Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'lumiliet/vim-twig'
+Plug 'phpactor/phpactor', {'for': 'php', 'branch': 'master', 'do': 'composer install --no-dev -o'}
+Plug 'liuchengxu/vim-which-key'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -90,6 +82,19 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
+Plug 'kristijanhusak/deoplete-phpactor'
+
+" Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'lumiliet/vim-twig'
+
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'jparise/vim-graphql'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 " color scheme
@@ -100,6 +105,19 @@ set nolist
 let g:loaded_matchparen=1
 set lazyredraw
 set ttyfast
+
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-lists'
+\ ]
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
 
 " Lightline
 let g:lightline = {
@@ -172,8 +190,6 @@ let &t_ZR="\e[23m"
 set noinfercase
 set completeopt+=menuone
 set completeopt+=noselect
-let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#spel#good_words = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1
 if !exists('g:deoplete#omni#input_patterns')
@@ -181,8 +197,32 @@ if !exists('g:deoplete#omni#input_patterns')
 endif
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
-" JavaScript
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+call deoplete#custom#option({
+      \ 'auto_complete': v:true,
+      \ 'auto_complete_delay': 50,
+      \ 'smart_case': v:true
+      \ })
+
+let g:deoplete#omni#functions = {}
+let g:deoplete#omni#functions.javascript = [
+  \ 'tern#Complete',
+  \ 'jspc#omni'
+  \]
+
+let g:deoplete#omni#functions.php = [
+  \ 'phpactor#Complete',
+  \]
+
+set completeopt=longest,menuone,preview
+let g:deoplete#sources = {}
+let g:deoplete#sources.javascript = ['ternjs', 'file']
+let g:deoplete#sources['javascript.jsx'] = ['ternjs', 'file']
+let g:tern#command = ['tern']
+let g:tern#arguments = ['--persistent']
+
+let g:deoplete#sources = {}
+let g:deoplete#sources.php = ['omni', 'phpactor', 'buffer']
+
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -517,12 +557,6 @@ set clipboard+=unnamed
 set number relativenumber
 set nu rnu
 
-" Trigger configuration. Do not use <tab> if you use
-" https://github.com/Valloric/YouCompleteMe.
-" let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates_snip"
 nnoremap <buffer> <Leader>d :call pdv#DocumentWithSnip()<CR>
 
@@ -534,8 +568,8 @@ set colorcolumn=+1
 
 inoremap <expr><tab>      pumvisible()? "\<C-n>" : "\<tab>"
 inoremap <expr><S-tab>    pumvisible()? "\<C-p>" : "\<S-tab>"
-" inoremap <expr><Down>     pumvisible()? "\<C-n>" : "\<Down>"
-" inoremap <expr><Up>       pumvisible()? "\<C-p>" : "\<Up>"
+inoremap <expr><Down>     pumvisible()? "\<C-n>" : "\<Down>"
+inoremap <expr><Up>       pumvisible()? "\<C-p>" : "\<Up>"
 " inoremap <expr><Esc>      pumvisible()? "\<C-e>" : "\<Esc>"
 " inoremap <expr><CR>       pumvisible()? "\<C-y>" : "\<CR>"
 " inoremap <expr><PageDown> pumvisible()? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
@@ -559,9 +593,42 @@ if exists('g:plugs["tern_for_vim"]')
   autocmd FileType javascript setlocal omnifunc=tern#Complete
 endif
 
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" tern
+autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 let g:phpactorOmniAutoClassImport = v:true
 let g:phpactorOmniError = v:true
 
 " Allow copying and pasting between instances of vim
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
+
+nnoremap <silent> K :call CocAction('doHover')<CR>
+function! ShowDocIfNoDiagnostic(timer_id)
+  if (coc#float#has_float() == 0 && CocHasProvider('hover') == 1)
+    silent call CocActionAsync('doHover')
+  endif
+endfunction
+
+function! s:show_hover_doc()
+  call timer_start(500, 'ShowDocIfNoDiagnostic')
+endfunction
+
+autocmd CursorHoldI * :call <SID>show_hover_doc()
+autocmd CursorHold * :call <SID>show_hover_doc()
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
+nmap <leader>do <Plug>(coc-codeaction)
+nmap <leader>rn <Plug>(coc-rename)

@@ -67,6 +67,7 @@ tags
 tags1
 tags.bak
 .phpcomplete_extended/
+**/*/.tern-port
 
 
 ### PhpStorm ###

@@ -7,6 +7,7 @@
 [user]
 	name = James Dinsdale
 	email = hi@molovo.co
+	signingkey = 39C8E95B7DF422AF
 [diff]
 	tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
@@ -29,9 +30,11 @@
 	clean = git-lfs clean %f
 [init]
 	templatedir = /Users/molovo/.git_template
+	defaultBranch = main
 [hooks]
 [commit]
   template = /Users/molovo/.git_commit_msg
+	gpgsign = true
 [color "decorate"]
   current = blue
   local = magenta
@@ -45,3 +48,9 @@
   fsckobjects = true
 [alias]
 	up = !git fetch && git rebase --autostash FETCH_HEAD
+
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+[include]
+  path = /Users/molovo/.netlify/helper/git-config
+[url "git@github.com:"]
+	insteadOf = git://github.com/

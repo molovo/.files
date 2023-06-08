@@ -3,7 +3,7 @@
 (( $+functions[ssh] )) || function ssh() {
   local original=$(tmux display-message -p '#W')
   local args="$*"
-  tmux rename-window "$args"
+  tmux rename-window "SSH: $args"
   command ssh $args
   tmux rename-window "$original"
 }

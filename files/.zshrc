@@ -24,7 +24,9 @@ if builtin type gpg >/dev/null 2>&1 && builtin type gpg-agent >/dev/null 2>&1; t
     GPG_TTY=$(tty)
     export GPG_TTY
   else
-    eval $(gpg-agent --daemon)
+    if ! pgrep gpg-agent >/dev/null 2>&1; then
+      eval $(gpg-agent --daemon)
+    fi
   fi
 fi
 
@@ -37,54 +39,32 @@ if [[ -f "$HOME/.rvm/scripts/rvm" ]]; then
   source /Users/molovo/.rvm/scripts/rvm
 fi
 
-# Enable vi-mode
-bindkey -v
-
-# Prevent the delay when switching mode
-KEYTIMEOUT=5
-
-# Print DCS characters around an escape sequence
-function print_dcs {
-  print -n -- "\EP$1;\E$2\E\\"
-}
-
-function set_cursor_shape {
-  if [ -n "$TMUX" ]; then
-    # tmux will only forward escape sequences to the terminal if surrounded by
-    # a DCS sequence
-    print_dcs tmux "\E]50;CursorShape=$1\C-G"
-  else
-    print -n -- "\E]50;CursorShape=$1\C-G"
-  fi
-}
-
-function zle-keymap-select zle-line-init {
-  case $KEYMAP in
-    vicmd)
-      set_cursor_shape 0 # block cursor
-      ;;
-    *)
-      set_cursor_shape 1 # line cursor
-      ;;
-  esac
-  zle reset-prompt
-  zle -R
-}
-
-function zle-line-finish
-{
-  set_cursor_shape 1 # block cursor
-}
-
-zle -N zle-line-init
-zle -N zle-line-finish
-zle -N zle-keymap-select
-
 # Emacs and Vi
 for keymap in 'emacs' 'viins'; do
   builtin bindkey -M "$keymap" "$key_info[Up]" history-substring-search-up
   builtin bindkey -M "$keymap" "$key_info[Down]" history-substring-search-down
 done
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+if [ -f '/Users/molovo/.netlify/helper/path.zsh.inc' ]; then source '/Users/molovo/.netlify/helper/path.zsh.inc'; fi
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/Users/molovo'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+autoload -U add-zsh-hook
+set_shopify_store() {
+  if ! command git rev-parse --is-inside-work-tree &>/dev/null; then
+    return
+  fi
+
+  local GIT_ROOT=$(command git rev-parse --show-toplevel 2> /dev/null)
+  if [[ -f "$GIT_ROOT/.shopifystore" ]]; then
+    shopify theme list --store $(cat $GIT_ROOT/.shopifystore) 2>&1
+  fi
+}
+add-zsh-hook chpwd set_shopify_store
+
